@@ -84,6 +84,6 @@
     </div>
         <!-- Scripts -->
         <!-- @vite(['resources/sass/app.scss', 'resources/js/app.js']) -->
-        <script src="{{ asset('public/frontend/js/boostrap.bundle.min.js') }}" defer></script>
+        <script src="{{ asset('frontend/js/bootstrap.bundle.min.js') }}" defer></script>
 </body>
 </html>
