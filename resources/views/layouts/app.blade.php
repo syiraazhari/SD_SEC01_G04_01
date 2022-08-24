@@ -13,8 +13,9 @@
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
-    <!-- Styles -->
+    
 
+    <!-- Styles -->
     <link href="{{asset('frontend/css/bootstrap5.css') }}" rel="stylesheet">
     <link href="{{asset('frontend/css/custom.css') }}" rel="stylesheet">
 
@@ -83,7 +84,6 @@
         </main>
     </div>
         <!-- Scripts -->
-        <!-- @vite(['resources/sass/app.scss', 'resources/js/app.js']) -->
         <script src="{{ asset('frontend/js/bootstrap.bundle.min.js') }}" defer></script>
 </body>
 </html>
