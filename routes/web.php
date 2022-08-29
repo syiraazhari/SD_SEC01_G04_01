@@ -27,4 +27,12 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
         return view('admin.index');
     });
  });
+
+ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+ Route::middleware(['auth','isAdmin'])->group(function () {
+    Route::get('/dashboard2', function () {
+        return view('admin.index2');
+    });
+ });
  

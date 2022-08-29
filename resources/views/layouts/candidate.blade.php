@@ -25,15 +25,15 @@
 <body>
 
     <div class="wrapper">
-    @include('layouts.inc.admin.adminsidebar')
+    @include('layouts.inc.candidate.candidatesidebar')
 
         <div class="main-panel">
-            @include('layouts.inc.admin.adminnav')
+            @include('layouts.inc.candidate.candidatenav')
 
             <div class="content">
                 @yield('content')
             </div>
-            @include('layouts.inc.footer')
+            @include('layouts.inc.footer') 
 
         </div>
     </div>
