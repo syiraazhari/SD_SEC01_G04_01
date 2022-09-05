@@ -7,89 +7,75 @@
 
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
 
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- MATERIAL DESIGN ICONIC FONT -->
+		<link rel="stylesheet" href="{{asset('assets/fonts/material-design-iconic-font/css/material-design-iconic-font.min.css')}}">
         
-        <link href="{{asset('assets/css/style.css')}}" rel="stylesheet">
+        <!-- STYLE CSS -->
+        <link href="{{asset('assets/css(register page)/style.css')}}" rel="stylesheet">
+        
+        <style>
+
+    </style>
     </head>
 
 @extends('layouts.app')
 @section('content')
 
-	<body class="img js-fullheight" style="background-image: url(assets/img/Kampus-UTMKL.png); height: 100%; background-size: cover; backdrop-filter: blur(3px);">
+<body style="background-color:#EDDCD9; height: 100%; background-size: cover;">
     
-    <section class="ftco-section">
-		<div class="container">
-
-			<div class="row justify-content-center">
-				<div class="col-md-6 text-center mb-5">
-					<h2 class="heading-section">UndiMPP UTMKL</h2>
+    <div class="wrapper">
+        
+			<div class="inner">
+            <div class="image-holder" style="background-image: url(assets/img/ballotbox.png); background-size: 70%; background-color: #F5CAC2; background-repeat: no-repeat; background-position: center center;">
+                    
 				</div>
-			</div>
+				<form method="POST" action="{{ route('login') }}">
+                @csrf
 
-			<div class="row justify-content-center">
-				<div class="col-md-6 col-lg-4">
-					<div class="login-wrap p-0">
-
-		      	<h3 class="mb-4 text-center">Have an account? Login Now.</h3>
-		      	<form method="POST" action="{{ route('login') }}">
-                        @csrf
-                            
-                            <div class="form-group">
-                                <input id="email" style="background: transparent; border: #fffff; border-radius: 75px 75px" type="email" class="form-control @error('email') is-invalid @enderror" 
-                                placeholder="Email Address" name="email" value="{{ old('email') }}" 
-                                required autocomplete="email" autofocus>
+					<h3>Log In</h3>
+					<div class="form-wrapper">
+                        <h6>Email<h6>
+                    <input id="email" type="text" class="form-control @error('email') is-invalid @enderror" placeholder="joe@graduate.utm.my" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
                                 @error('email')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
-                            </div>
+						<i class="zmdi zmdi-email"></i>
+					</div>
 
-                            <div class="form-group">
-                                <input id="password" style="background: transparent; border: #fffff; border-radius: 75px 75px" type="password" class="form-control @error('password') is-invalid @enderror" 
-                                placeholder="Password" name="password" required autocomplete="current-password">
+					<div class="form-wrapper">
+                        <h6>Password<h6>
+                    <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" placeholder="Enter your Password" name="password" required autocomplete="new-password">
                                 @error('password')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
-                                <span toggle="#password" class="fa fa-fw fa-eye field-icon toggle-password"></span>
-                            </div>
-                        
-
-	                        <div class="form-group">
-	            	            <button type="submit" class="form-control submit px-3" style="border-radius: 75px 75px; background-color: #F8A617;">Sign In</button>
-	                        </div>
-                
-	                        <div class="form-group d-md-flex">
-	            	            <div class="w-50">
-		            	            <label class="checkbox-wrap checkbox-primary">Remember Me
-									  <input type="checkbox" checked>
-									  <span class="checkmark"></span>
-									</label>
-								</div>
-								<div class="w-50 text-md-right">
-                                    @if (Route::has('password.request'))
-                                    <a href="{{ route('password.request') }}" style="color: #fff">
-                                    {{ __('Forgot Password') }}
+                                
+						<i class="zmdi zmdi-lock"></i>
+					</div>
+                    <div style="text-align: right">
+                    @if (Route::has('password.request'))
+                                    <a href="{{ route('password.request') }}" style="color: #000000; text-decoration: none;">
+                                    {{ __('forgot password?') }}
                                     </a>
-                                    @endif
-								</div>
-	                        </div>
-	          </form>
-	          
-		            </div>
-				</div>
+                    @endif
+                    </div>
+
+                    <div>
+                        <br><br><br>
+					<button class="button" type="submit" style="border-radius: 5px 5px;">
+                        Sign In
+						<i class="zmdi zmdi-arrow-right"></i>
+					</button>
+                    </div>
+				</form>
 			</div>
-		</div>
-	</section>
+	</div>
 
-    <script src="{{asset('assets/js/jquery.min.js') }}" defer></script>
-    <script src="{{asset('assets/js/popper.js') }}" defer></script>
-    <script src="{{asset('assets/js/bootsrap.min.js') }}" defer></script>
-    <script src="{{asset('assets/js/main.js') }}" defer></script>
-
-    </body>
+</body>
 
 @endsection
+        
 </html>

@@ -26,7 +26,7 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-black shadow-sm" style="opacity: 0.7;">
+        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
         
             <div class="container">
             
@@ -41,19 +41,19 @@
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
-                                <a class="nav-link" style="color: white" href="{{ url('/') }}">{{ __('HOME') }}</a>    
+                                <a class="nav-link" style="color: black" href="{{ url('/') }}">{{ __('HOME') }}</a>    
                             </li>
                         <!-- Authentication Links -->
                         @guest
                             @if (Route::has('login'))
                                 <li class="nav-item">
-                                    <a class="nav-link" style="color: white" href="{{ route('login') }}">{{ __('LOGIN') }}</a>
+                                    <a class="nav-link" style="color: black" href="{{ route('login') }}">{{ __('LOGIN') }}</a>
                                 </li>
                             @endif
 
                             @if (Route::has('register'))
                                 <li class="nav-item">
-                                    <a class="nav-link" style="color: white" href="{{ route('register') }}">{{ __('REGISTER') }}</a>
+                                    <a class="nav-link" style="color: black" href="{{ route('register') }}">{{ __('REGISTER') }}</a>
                                 </li>
                             @endif
                         @else
