@@ -18,8 +18,11 @@
     <link href="{{asset('frontend/css/custom.css') }}" rel="stylesheet">
     <style>
         img {
-            max-width: 20%;
-            max-height: 20%;
+            padding: 0;
+            margin-top: 0px;
+            margin-bottom: 4px;
+            max-height: 22%;
+            max-width: 22%;
         }
         .navbar.navbar-default { margin-bottom: 0; }
 
@@ -37,24 +40,24 @@
                 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
-                    <img src="{{ asset('assets/img/utmxjpmpp.png') }}">
+                    <img src="{{ asset('assets/img/logo-utmxjpmpp.png') }}">
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
-                                <a class="nav-link" style="color: black" href="{{ url('/') }}">{{ __('HOME') }}</a>    
+                                <a class="nav-link" style="color: black" href="{{ url('/') }}">{{ __('Home') }}</a>    
                             </li>
                         <!-- Authentication Links -->
                         @guest
                             @if (Route::has('login'))
                                 <li class="nav-item">
-                                    <a class="nav-link" style="color: black" href="{{ route('login') }}">{{ __('LOGIN') }}</a>
+                                    <a class="nav-link" style="color: black" href="{{ route('login') }}">{{ __('Login') }}</a>
                                 </li>
                             @endif
 
                             @if (Route::has('register'))
                                 <li class="nav-item">
-                                    <a class="nav-link" style="color: black" href="{{ route('register') }}">{{ __('REGISTER') }}</a>
+                                    <a class="nav-link" style="color: black" href="{{ route('register') }}">{{ __('Register') }}</a>
                                 </li>
                             @endif
                         @else

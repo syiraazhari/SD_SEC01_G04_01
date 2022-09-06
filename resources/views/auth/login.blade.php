@@ -13,9 +13,6 @@
         <!-- STYLE CSS -->
         <link href="{{asset('assets/css(register page)/style.css')}}" rel="stylesheet">
         
-        <style>
-
-    </style>
     </head>
 
 @extends('layouts.app')
