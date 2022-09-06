@@ -20,12 +20,12 @@
 @extends('layouts.app')
 @section('content')
 
-<body style="background-color:#EDDCD9; height: 100%; background-size: cover;">
+<body style="background-color:#FEF1BE; height: 100%; background-size: cover;">
     
     <div class="wrapper">
         
 			<div class="inner">
-				<div class="image-holder" style="background-image: url(assets/img/voteicon.png); background-size: 70%; background-color: #F5CAC2; background-repeat: no-repeat; background-position: center center;">
+				<div class="image-holder" style="background-image: url(assets/img/signin.png); background-size: 90%; background-color: #FEE37D; background-repeat: no-repeat; background-position: center center;">
                     
 				</div>
 				<form method="POST" action="{{ route('register') }}">

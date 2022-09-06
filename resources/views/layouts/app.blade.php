@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'UndiMPP UTMKL') }}</title>
+    <title>UndiMPP UTMKL</title>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -21,12 +21,13 @@
             max-width: 20%;
             max-height: 20%;
         }
+        .navbar.navbar-default { margin-bottom: 0; }
 
     </style>
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <nav class="navbar navbar-default navbar-expand-md navbar-light bg-white shadow-sm">
         
             <div class="container">
             
@@ -82,10 +83,7 @@
                 </div>
             </div>
         </nav>
-
-        <main class="py-4">
-            @yield('content')
-        </main>
+        @yield('content')
     </div>
         <!-- Scripts -->
         <script src="{{ asset('frontend/js/bootstrap.bundle.min.js') }}" defer></script>

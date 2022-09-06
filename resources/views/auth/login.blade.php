@@ -21,21 +21,21 @@
 @extends('layouts.app')
 @section('content')
 
-<body style="background-color:#EDDCD9; height: 100%; background-size: cover;">
+<body style="background-color:#FEF1BE; height: 100%; background-size: cover;">
     
     <div class="wrapper">
         
 			<div class="inner">
-            <div class="image-holder" style="background-image: url(assets/img/ballotbox.png); background-size: 70%; background-color: #F5CAC2; background-repeat: no-repeat; background-position: center center;">
-                    
-				</div>
+                <div class="image-holder" style="background-image: url(assets/img/voting.png); background-size: 100%; background-color: #FEE37D; background-repeat: no-repeat; background-position: center center;">
+			    </div>
+
 				<form method="POST" action="{{ route('login') }}">
                 @csrf
 
 					<h3>Log In</h3>
 					<div class="form-wrapper">
-                        <h6>Email<h6>
-                    <input id="email" type="text" class="form-control @error('email') is-invalid @enderror" placeholder="joe@graduate.utm.my" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+                        <h6>Email</h6>
+                            <input id="email" type="text" class="form-control @error('email') is-invalid @enderror" placeholder="joe@graduate.utm.my" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
                                 @error('email')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
