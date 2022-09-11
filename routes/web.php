@@ -20,19 +20,27 @@ Route::get('/', function () {
 
 Auth::routes(['verify' => true]);
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::get('/voter', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/voter','App\Http\Controllers\HomeController@index');
+Route::get('/voter/profiles','App\Http\Controllers\Voter\ProfileController@index');
 
- Route::middleware(['auth','isAdmin'])->group(function () {
-    Route::get('/dashboard', function () {
-        return view('admin.index');
-    });
- });
+Route::get('/mppalumni','App\Http\Controllers\Public\MPPAlumniController@index');
+Route::get('/aboutmpp','App\Http\Controllers\Public\AboutMPPController@index');
+Route::get('/contact','App\Http\Controllers\Public\ContactController@index');
 
- Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
- Route::middleware(['auth','isAdmin'])->group(function () {
-    Route::get('/dashboard2', function () {
-        return view('admin.index2');
-    });
- });
+Route::middleware(['auth','isAdmin'])->group(function () {
+    Route::get('/adminpanel','App\Http\Controllers\Admin\FrontendController@index');
+
+    Route::get('adminpanel/profiles','App\Http\Controllers\Admin\ProfileController@index');
+
+    Route::get('adminpanel/votingpage','App\Http\Controllers\Admin\VotingPageController@index');
+    
+});
+
+Route::middleware(['auth','isCandidate'])->group(function () {
+    Route::get('/candidate','App\Http\Controllers\Candidate\FrontendController@index');
+
+    Route::get('candidate/profiles','App\Http\Controllers\Candidate\ProfileController@index');
+});
  

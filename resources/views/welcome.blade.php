@@ -43,9 +43,31 @@
         <ul>
           <li class="dropdown"><a href="#hero"><span>Home</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
+              {{-- Dashboard Button // Only appear when user logged in --}}
+              {{-- @if (Auth::user()->role_as == '0')
+                <li><a href="voter">Dashboard</a></li>
+              @endif
+              @if (Auth::user()->role_as == '1')
+                <li><a href="adminpanel">Dashboard</a></li>
+              @endif
+              @if (Auth::user()->role_as == '2')
+                <li><a href="candidate">Dashboard</a></li>
+              @endif --}}
+                
               <li><a href="#about">About</a></li>
               <li><a href="#services">Services</a></li>
               <li><a href="#contact">Contact</a></li>
+              {{-- Log out button but not working yet -mer --}}
+              {{-- @if ((Auth::user()->role_as == '0') || (Auth::user()->role_as == '1') || (Auth::user()->role_as == '2'))
+                <li>
+                  <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                  {{ __('Logout') }}
+                  </a>
+                  <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                      @csrf
+                  </form>
+                </li>
+              @endif --}}
             </ul>
           </li>
                 @guest

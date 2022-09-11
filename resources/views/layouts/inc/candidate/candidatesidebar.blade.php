@@ -1,68 +1,116 @@
+{{-- CANDIDATE SIDEBAR CONTENT --}}
 <div class="sidebar" data-color="white" data-active-color="danger">
-      <div class="logo">
-        <a href="" class="simple-text logo-mini">
-          <div class="logo-image-small">
-            <img src="{{ asset('assets/img/logo-utm.png') }}">
-          </div>
-          <!-- <p>CT</p> -->
-        </a>
-        <a href="" class="simple-text logo-normal">
-          MPP Voting System
-          <!-- <div class="logo-image-big">
-            <img src="../assets/img/logo-big.png">
-          </div> -->
-        </a>
+  <div class="logo">
+    <a href="/" class="simple-text logo-mini">
+      <div class="logo-image-small">
+        <img src="{{ asset('assets/img/logo-utm.png') }}">
       </div>
-      <div class="sidebar-wrapper">
-        <ul class="nav">
-          <li class="active ">
-            <a href="./dashboard.html">
-              <i class='bx bxs-color'></i>
-              <p>Dashboard</p>
-            </a>
-          </li>
+      <!-- <p>CT</p> -->
+    </a>
+    <a href="/" class="simple-text logo-normal">
+      Undi MPP UTMKL
+      <!-- <div class="logo-image-big">
+        <img src="../assets/img/logo-big.png">
+      </div> -->
+    </a>
+  </div>
+  <div class="sidebar-wrapper">
+    <ul class="nav">
+      <li class="{{ Request::is('candidate') ? 'active':'' }} ">
+        <a href="{{ url('candidate') }}">
+          <i class='bx bxs-home-alt-2'></i>
+          <p>Home</p>
+        </a>
+      </li>
+      <li class="{{ Request::is('candidate/profiles') ? 'active':'' }} ">
+        <a href="{{ url('candidate/profiles') }}">
+          <i class='bx bxs-user'></i>
+          <p>Profile</p>
+        </a>
+      </li>
+      <li class="{{ Request::is('candidate/electionresult') ? 'active':'' }} ">
+        <a href="{{ url('candidate/electionresult') }}">
+          <i class='bx bxs-book'></i>
+          <p>View Election Result</p>
+        </a>
+      </li>
+      <li class="{{ Request::is('mppalumni') ? 'active':'' }} ">
+        <a href="{{ url('mppalumni') }}">
+          <i class='bx bxs-institution'></i>
+          <p>MPP Alumni</p>
+        </a>
+      </li>
+      <li class="{{ Request::is('aboutmpp') ? 'active':'' }} ">
+        <a href="{{ url('aboutmpp') }}">
+          <i class='bx bxs-info-circle'></i>
+          <p>About MPP</p>
+        </a>
+      </li>
+      <li class="{{ Request::is('contact') ? 'active':'' }} ">
+        <a href="{{ url('contact') }}">
+          <i class='bx bxs-envelope'></i>
+          <p>Contact Us</p>
+        </a>
+      </li>
+      <li class="active-pro">
+        <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+          <i class='bx bxs-arrow-to-right'></i>
+          {{ __('Log Out') }}
+        </a>
+          <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+          @csrf
+          </form>
+      </li>
+    </ul>
+  </div>
+</div>
+   
+{{-- <div class="wrapper d-flex align-items-stretch">
+  
+  <nav id="sidebar">
+    <div class="custom-menu">
+      <button type="button" id="sidebarCollapse" class="btn btn-primary">
+            <i class="fa fa-bars"></i>
+            <span class="sr-only">Toggle Menu</span>
+          </button>
+        </div>
+
+    <div class="p-4 pt-5">
+    <!--<h1><a href="index.html" class="logo">Splash</a></h1>-->
+          <ul class="list-unstyled components mb-5">
+            <li class="active">
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">Profile</a>
+              </li>
+                  <li>
+                <a href="#">View Election Result</a>
+              </li>
           <li>
-            <a href="./icons.html">
-              <i class='bx bx-color' ></i>
-              <p>Icons</p>
-            </a>
-          </li>
-          <li>
-            <a href="./map.html">
-              <i class='bx bxs-map-alt' ></i>
-              <p>Maps</p>
-            </a>
-          </li>
-          <li>
-            <a href="./notifications.html">
-              <i class="nc-icon nc-bell-55"></i>
-              <p>Notifications</p>
-            </a>
-          </li>
-          <li>
-            <a href="./user.html">
-              <i class="nc-icon nc-single-02"></i>
-              <p>User Profile</p>
-            </a>
-          </li>
-          <li>
-            <a href="./tables.html">
-              <i class="nc-icon nc-tile-56"></i>
-              <p>Table List</p>
-            </a>
-          </li>
-          <li>
-            <a href="./typography.html">
-              <i class="nc-icon nc-caps-small"></i>
-              <p>Typography</p>
-            </a>
-          </li>
-          <li class="active-pro">
-            <a href="./upgrade.html">
-              <i class="nc-icon nc-spaceship"></i>
-              <p>Upgrade to PRO</p>
-            </a>
-          </li>
-        </ul>
+                  <a href="#">MPP Alumni</a>
+                </li>
+              <li>
+                  <a href="#">About MPP</a>
+            </li>
+        <li>
+                  <a href="#">Contact Us</a>
+            </li>
+        <li>
+          <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                            {{ __('Log Out') }}
+                    </a>
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                          @csrf
+                    </form>
+            </li>
+          </ul>
+
+      <div class="footer">
+        <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib.com</a></p>
       </div>
-    </div>
+
+      </div>
+    </nav>
+    
+</div> --}}

@@ -1,5 +1,25 @@
+{{-- CANDIDATE NAVIGATION BAR CONTENT --}}
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-absolute fixed-top navbar-transparent">
+  <div class="container-fluid">
+    <div class="navbar-wrapper">
+      <a class="navbar-brand" href="">
+        <img src="{{ asset('assets/img/logo-utmxjpmpp.png') }}" style="max-width: 30%">
+      </a>
+    </div>
+    <div class="collapse navbar-collapse justify-content-end" id="navigation">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link btn-magnify" href="">
+            <p>Candidate</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- End Navbar -->
+{{-- <nav class="navbar navbar-expand-lg navbar-absolute fixed-top navbar-transparent">
         <div class="container-fluid">
           <div class="navbar-wrapper">
             <div class="navbar-toggle">
@@ -65,5 +85,64 @@
             </ul>
           </div>
         </div>
-      </nav>
-      <!-- End Navbar -->
+      </nav> --}}
+      {{-- <div id="app">
+        <nav class="navbar navbar-default navbar-expand-md navbar-light bg-white shadow-sm">
+        
+            <div class="container">
+            
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Left Side Of Navbar -->
+                    <img src="{{ asset('assets/img/logo-utmxjpmpp.png') }}">
+    
+                    <!-- Right Side Of Navbar -->
+                    <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" style="color: black" href="{{ url('/') }}">{{ __('Home') }}</a>    
+                            </li>
+                        <!-- Authentication Links -->
+                        @guest
+                            @if (Route::has('login'))
+                                <li class="nav-item">
+                                    <a class="nav-link" style="color: black" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                </li>
+                            @endif
+    
+                            @if (Route::has('register'))
+                                <li class="nav-item">
+                                    <a class="nav-link" style="color: black" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                </li>
+                            @endif
+                        @else
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    {{ Auth::user()->name }}
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            My Profile
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                            {{ __('Logout') }}
+                                        </a>
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                            @csrf
+                                        </form>
+                                    </li>
+                                </ul>
+                            </li>
+                        @endguest
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        @yield('content')
+      </div> --}}
+
