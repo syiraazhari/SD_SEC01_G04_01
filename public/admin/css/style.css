@@ -5538,7 +5538,10 @@ button.bg-dark:focus {
 .d-flex {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
-  display: flex !important; }
+  display: flex !important; 
+  flex-wrap: wrap;
+  min-width: 0; 
+  justify-content:space-between;}
 
 .d-inline-flex {
   display: -webkit-inline-box !important;

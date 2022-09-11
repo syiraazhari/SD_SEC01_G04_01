@@ -26,12 +26,12 @@
     <div class="wrapper">
         @include('layouts.inc.candidate.candidatesidebar')
             <div class="main-panel">
-                @include('layouts.inc.candidate.candidatenav')
+           
 
                 <div class="content">
                     @yield('content')
                 </div>
-                @include('layouts.inc.footer')
+               
             </div>
     </div>
 

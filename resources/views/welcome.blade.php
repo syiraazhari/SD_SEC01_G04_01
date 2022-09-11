@@ -57,6 +57,14 @@
               <li><a href="#about">About</a></li>
               <li><a href="#services">Services</a></li>
               <li><a href="#contact">Contact</a></li>
+              <li>
+                  <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                    {{ __('Logout') }}
+                  </a>
+                  <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                    @csrf
+                  </form>
+              </li>
               {{-- Log out button but not working yet -mer --}}
               {{-- @if ((Auth::user()->role_as == '0') || (Auth::user()->role_as == '1') || (Auth::user()->role_as == '2'))
                 <li>

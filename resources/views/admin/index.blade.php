@@ -1,6 +1,7 @@
 {{-- MAIN ADMIN CONTENT --}}
 @extends('layouts.admin')
-@section('content')
+@extends('layouts.app')
+@section('content2')
     {{-- first four column --}}
     <div class="row">
       <div class="col-lg-3 col-md-6 col-sm-6">
@@ -107,10 +108,6 @@
           </div>
         </div>
       </div>
-    </div>
-
-    {{-- Graph --}}
-    <div class="row">
       <div class="col-md-12">
         <div class="card ">
           <div class="card-header ">
@@ -129,5 +126,5 @@
         </div>
       </div>
     </div>
-    
+
 @endsection
