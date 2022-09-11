@@ -2,16 +2,8 @@
 @extends('layouts.admin')
 
 @section('content')
+
 <div class="content">
-  <div class="row">
-    <div class="col">
-      <div class="card">
-        <h1>Admin Profile Content</h1>
-      </div>
-    </div>
-  </div>
-</div>
-{{-- <div class="content">
     <div class="row">
       <div class="col-md-4">
         <div class="card card-user">
@@ -153,7 +145,7 @@
               <div class="row">
                 <div class="col-md-4 pr-1">
                   <div class="form-group">
-                    <label>City</label>
+                    <label>Section</label>
                     <input type="text" class="form-control" placeholder="City" value="Melbourne">
                   </div>
                 </div>
@@ -188,5 +180,5 @@
         </div>
       </div>
     </div>
-</div> --}}
+</div>
 @endsection
