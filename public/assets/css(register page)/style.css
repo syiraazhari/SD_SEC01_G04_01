@@ -53,7 +53,7 @@ a:hover {
   margin-top: 50px;
   margin-bottom: 50px;
   display: flex;
-  box-shadow: 6px 6px 6px #FEE37D;}
+  box-shadow: 0px 0px 13px 1px lightgray}
   .inner .image-holder {
     border-radius: 10px 10px;
     width: 60%;
@@ -130,7 +130,7 @@ button {
   justify-content: center;
   padding: 0;
   border-radius: 10px 10px;
-  background: #FEE78D;
+  background: #ffb536;
   font-size: 15px;
   color: #000;
   vertical-align: middle;

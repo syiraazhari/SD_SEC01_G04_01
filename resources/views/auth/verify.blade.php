@@ -21,13 +21,13 @@
 @extends('layouts.app')
 @section('content')
 
-<body style="background-color:#FEF1BE; height: 100%; background-size: cover;">
+<body style="background-color:#fff; height: 100%; background-size: cover;">
 
 <div class="container" style="margin-top:20px">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header" style="background-color:#FEE37D">{{ __('Verify Your Email Address') }}</div>
+                <div class="card-header" style="background-color:#e89a13">{{ __('Verify Your Email Address') }}</div>
 
                 <div class="card-body">
                     @if (session('resent'))

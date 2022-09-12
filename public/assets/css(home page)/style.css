@@ -202,7 +202,7 @@ div#preloader {
 }
 
 .area-padding {
-  padding: 70px 0px 80px;
+  padding: 80px 0px 80px;
 }
 
 .area-padding-2 {
@@ -561,6 +561,7 @@ div#preloader {
 #hero .carousel-inner,
 #hero .carousel-item,
 #hero .carousel-item::before {
+  width:100%;
   position: absolute;
   top: 0;
   right: 0;

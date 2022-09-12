@@ -17,12 +17,20 @@
     <!-- Styles -->
 	  <link href="{{asset('admin/css/style.css')}}" rel="stylesheet">
     <link href="{{asset('admin/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{asset('admin/css/styleprofile.css') }}" rel="stylesheet">
     
+    <style>
+      .admin-flex {
+        flex-wrap: wrap;
+        min-width: 0; 
+        justify-content:space-between;
+        flex-direction: column; }
+    </style>
 </head>
 
 <body style="height: auto">
 
-<div class="wrapper d-flex align-items-stretch">
+<div class="wrapper d-flex align-items-stretch" style="height: auto;">
 	<nav id="sidebar">
 		<div class="custom-menu">
 			<button type="button" id="sidebarCollapse" class="btn btn-primary">

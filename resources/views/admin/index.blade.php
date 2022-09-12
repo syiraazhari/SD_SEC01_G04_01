@@ -3,7 +3,7 @@
 @extends('layouts.app')
 @section('content2')
     {{-- first four column --}}
-    <div class="row">
+    <div class="row" style="padding-top: 1.5rem; padding-left: 1.5rem;">
       <div class="col-lg-3 col-md-6 col-sm-6">
         <div class="card card-stats">
           <div class="card-body ">
@@ -109,7 +109,7 @@
         </div>
       </div>
       <div class="col-md-12">
-        <div class="card ">
+        <div class="card">
           <div class="card-header ">
             <h5 class="card-title">Users Behavior</h5>
             <p class="card-category">24 Hours performance</p>

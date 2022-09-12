@@ -1,183 +1,90 @@
 {{-- CANDIDATE PROFILE CONTENT --}}
 @extends('layouts.candidate')
+@extends('layouts.app')
 
-@section('content')
-<div class="content">
-    <div class="row">
-      <div class="col-md-4">
-        <div class="card card-user">
-          <div class="image">
-            <img src="{{ asset('assets/img/hero-3.png') }}" alt="...">
-          </div>
-          <div class="card-body">
-            <div class="author">
-              <a href="#">
-                
-                <img class="avatar border-gray" src="{{ asset('assets/img/user.jpg') }}" alt="...">
-                <h5 class="title">{{ Auth::user()->name }}</h5>
-              </a>
-              <p class="description">
-                {{ Auth::user()->email }}
-              </p>
-            </div>
-            <p class="description text-center">
-              "I like the way you work it <br>
-              No diggity <br>
-              I wanna bag it up"
-            </p>
-          </div>
-          <div class="card-footer">
-            <hr>
-            <div class="button-container">
-              <div class="row">
-                <div class="col-lg-3 col-md-6 col-6 ml-auto">
-                  <h5>12<br><small>Files</small></h5>
-                </div>
-                <div class="col-lg-4 col-md-6 col-6 ml-auto mr-auto">
-                  <h5>2GB<br><small>Used</small></h5>
-                </div>
-                <div class="col-lg-3 mr-auto">
-                  <h5>24,6$<br><small>Spent</small></h5>
+@section('content3')
+
+  <div class="padding">
+         <div class="card user-card-full" style="width: 100%; height: auto;">
+            <div class="row m-l-0 m-r-0" style="width:100%;">
+              <div class="col-sm-4 bg-c-lite-green user-profile">
+                <div class="card-block text-center text-white" style="margin-left:10px">
+                  <div class="m-b-25">
+                  <img src="{{ asset('assets/img/icon.png') }}" style="max-width:50%; height: auto;">
+                  </div>
+                  <h5 class="f-w-600">{{ Auth::user()->name }}</h5>
+                  <p style="font-size: 20px;">- Candidate -</p>
+                  <p style="font-size: 16px;">{{ Auth::user()->email }}</p>
+                  <i class=" mdi mdi-square-edit-outline feather icon-edit m-t-10 f-16"></i>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header">
-            <h4 class="card-title">Team Members</h4>
-          </div>
-          <div class="card-body">
-            <ul class="list-unstyled team-members">
-              <li>
-                <div class="row">
-                  <div class="col-md-2 col-2">
-                    <div class="avatar">
-                      <img src="../assets/img/faces/ayo-ogunseinde-2.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
-                    </div>
-                  </div>
-                  <div class="col-md-7 col-7">
-                    DJ Khaled
-                    <br />
-                    <span class="text-muted"><small>Offline</small></span>
-                  </div>
-                  <div class="col-md-3 col-3 text-right">
-                    <btn class="btn btn-sm btn-outline-success btn-round btn-icon"><i class="fa fa-envelope"></i></btn>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="row">
-                  <div class="col-md-2 col-2">
-                    <div class="avatar">
-                      <img src="../assets/img/faces/joe-gardner-2.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
-                    </div>
-                  </div>
-                  <div class="col-md-7 col-7">
-                    Creative Tim
-                    <br />
-                    <span class="text-success"><small>Available</small></span>
-                  </div>
-                  <div class="col-md-3 col-3 text-right">
-                    <btn class="btn btn-sm btn-outline-success btn-round btn-icon"><i class="fa fa-envelope"></i></btn>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="row">
-                  <div class="col-md-2 col-2">
-                    <div class="avatar">
-                      <img src="../assets/img/faces/clem-onojeghuo-2.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
-                    </div>
-                  </div>
-                  <div class="col-ms-7 col-7">
-                    Flume
-                    <br />
-                    <span class="text-danger"><small>Busy</small></span>
-                  </div>
-                  <div class="col-md-3 col-3 text-right">
-                    <btn class="btn btn-sm btn-outline-success btn-round btn-icon"><i class="fa fa-envelope"></i></btn>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-8">
-        <div class="card card-user">
-          <div class="card-header">
-            <h5 class="card-title">Edit Profile</h5>
-          </div>
-          <div class="card-body">
-            <form action="" method="POST">
-              <div class="row">
-                <div class="col-md-6 pr-1">
-                    <div class="form-group">
-                      <label>First Name</label>
+              <div class="col-sm-8">
+                <div class="card-block">
+                  <h6 class="m-b-20 p-b-5 b-b-default f-w-600">Basic Information</h6>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <p class="m-b-10 f-w-600">Full name</p>
+                      <div class="form-group">
                       <input type="text" class="form-control" placeholder="Username" value="{{ Auth::user()->name }}">
+                      </div>
                     </div>
-                </div>
-                <div class="col-md-6 pl-1">
-                    <div class="form-group">
-                      <label>Last Name</label>
-                      <input type="text" class="form-control" placeholder="Last Name" value="Faker">
-                    </div>
+                      <div class="col-sm-6">
+                        <p class="m-b-10 f-w-600">Password</p>
+                        @if (Route::has('password.request'))
+                                    <a href="{{ route('password.request') }}" style="color: #000000; text-decoration: underline;">
+                                    {{ __('Change Password') }}
+                                    </a>
+                        @endif
+                      </div>
                   </div>
-              </div>
-              <div class="row">
-                <div class="col-md-12 pr-1">
-                    <div class="form-group">
-                      <label>Email (disabled)</label>
+                  
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <p class="m-b-10 f-w-600">Email Address (disabled)</p>
+                      <div class="form-group">
                       <input type="text" class="form-control" disabled="" placeholder="Email" value="{{ Auth::user()->email }}">
                     </div>
+                      
+                    </div>
+                      <div class="col-sm-6">
+                        <p class="m-b-10 f-w-600">Student ID</p>
+                        <input type="text" class="form-control" placeholder="Add Student ID" value="{{ Auth::user()->studID }}">
+                      </div>
                   </div>
-              </div>
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="form-group">
-                    <label>Address</label>
-                    <input type="text" class="form-control" placeholder="Home Address" value="Melbourne, Australia">
+                  
+                  <div class="row" style="margin-bottom: 5%;">
+                    <div class="col-sm-6">
+                      <p class="m-b-10 f-w-600">Year</p>
+                      <input type="text" class="form-control" placeholder="Add Year" value="{{ Auth::user()->year }}">
+                    </div>
+                    <div class="col-sm-6">
+                      <p class="m-b-10 f-w-600">Course</p>
+                      <input type="text" class="form-control" placeholder="Add Course" value="{{ Auth::user()->course }}">
+                    </div>
+                  
                   </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-4 pr-1">
-                  <div class="form-group">
-                    <label>Section</label>
-                    <input type="text" class="form-control" placeholder="City" value="Melbourne">
+                  
+                    <h6 class="m-b-20 m-t-40 p-b-5 b-b-default f-w-600">Additional Information</h6>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <p class="m-b-10 f-w-600">Phone number</p>
+                      <input type="text" class="form-control" placeholder="Add Phone number" value="{{ Auth::user()->number }}">
+                    </div>
+                    <div class="col-sm-6">
+                      <p class="m-b-10 f-w-600">Gender</p>
+                      <input type="text" class="form-control" placeholder="Add Gender" value="{{ Auth::user()->gender }}">
+                    </div>
                   </div>
-                </div>
-                <div class="col-md-4 px-1">
-                  <div class="form-group">
-                    <label>Country</label>
-                    <input type="text" class="form-control" placeholder="Country" value="Australia">
-                  </div>
-                </div>
-                <div class="col-md-4 pl-1">
-                  <div class="form-group">
-                    <label>Postal Code</label>
-                    <input type="number" class="form-control" placeholder="ZIP Code">
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="form-group">
-                    <label>About Me</label>
-                    <textarea class="form-control textarea">Oh so, your weak rhyme You doubt I'll bother, reading into it</textarea>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
+                  <br>
+                  <div class="row">
                 <div class="update ml-auto mr-auto">
-                  <button type="submit" class="btn btn-primary btn-round">Update Profile</button>
+                  <button type="submit" class="btn btn-round" style="background-color: #f8a617; color: white;">Update Profile</button>
                 </div>
               </div>
-            </form>
+                </div>
+             </div>
           </div>
         </div>
-      </div>
     </div>
-</div>
+
 @endsection

@@ -22,12 +22,12 @@
 @extends('layouts.app')
 @section('content')
 
-<body style="background-color:#FEF1BE; height: 100%; background-size: cover;">
+<body style="background-color:#fff; height: 100%; background-size: cover;">
 
     <div class="wrapper">
 
         <div class="inner">
-            <div class="image-holder" style="background-image: url(/assets/img/resetpass.png); background-size: 100%; background-color: #FEE37D; background-repeat: no-repeat; background-position: center center;">
+            <div class="image-holder" style="background-image: url(/assets/img/resetpass.png); background-size: 100%; background-color: #e89a13; background-repeat: no-repeat; background-position: center center;">
             </div>
 
             <form method="POST" action="{{ route('password.update') }}">

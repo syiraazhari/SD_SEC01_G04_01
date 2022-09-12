@@ -18,12 +18,12 @@
 @extends('layouts.app')
 @section('content')
 
-<body style="background-color:#FEF1BE; height: 100%; background-size: cover;">
+<body style="background-color:#fff; height: 100%; background-size: cover;">
     
     <div class="wrapper">
         
 			<div class="inner">
-                <div class="image-holder" style="background-image: url(assets/img/voting.png); background-size: 100%; background-color: #FEE37D; background-repeat: no-repeat; background-position: center center;">
+                <div class="image-holder" style="background-image: url(assets/img/voting.png); background-size: 100%; background-color: #e89a13; background-repeat: no-repeat; background-position: center center;">
 			    </div>
 
 				<form method="POST" action="{{ route('login') }}">
@@ -55,7 +55,7 @@
                     <div style="text-align: right">
                     @if (Route::has('password.request'))
                                     <a href="{{ route('password.request') }}" style="color: #000000; text-decoration: none;">
-                                    {{ __('forgot password?') }}
+                                    {{ __('Forgot Password?') }}
                                     </a>
                     @endif
                     </div>
