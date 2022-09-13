@@ -33,7 +33,7 @@ class ProfileController extends Controller
         }
         
         $profile->name = $request->input('name');
-        $profile->studentID = $request->input('studentID');
+        $profile->studentID = $request->input('studID');
         $profile->year = $request->input('year');
         $profile->course = $request->input('course');
         $profile->phoneNum = $request->input('phoneNum');

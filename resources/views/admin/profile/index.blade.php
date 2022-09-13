@@ -70,7 +70,7 @@
                   <div class="row">
                     <div class="col-sm-6">
                       <p class="m-b-10 f-w-600">Phone number</p>
-                      <input name="phoneNum" type="text" class="form-control" placeholder="Add Phone number" value="{{ Auth::user()->number }}">
+                      <input name="phoneNum" type="text" class="form-control" placeholder="Add Phone number" value="{{ Auth::user()->phoneNum }}">
                     </div>
                     <div class="col-sm-6">
                       <p class="m-b-10 f-w-600">Gender</p>

@@ -27,6 +27,7 @@ Route::get('/voter/profiles','App\Http\Controllers\Voter\ProfileController@index
 Route::get('/mppalumni','App\Http\Controllers\Public\MPPAlumniController@index');
 Route::get('/aboutmpp','App\Http\Controllers\Public\AboutMPPController@index');
 Route::get('/contact','App\Http\Controllers\Public\ContactController@index');
+Route::get('/status','App\Http\Controllers\StatusController@index');
 
 
 Route::middleware(['auth','isAdmin'])->group(function () {

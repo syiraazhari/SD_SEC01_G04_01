@@ -25,12 +25,12 @@ class CandidateMiddleware
             }
             else
             {
-                return redirect('/home')->with('status','Access Denied! as you are not a candidate');
+                return redirect('/status')->with('status','Access Denied! as you are not a candidate');
             }
         }
         else
         {
-            return redirect('/home')->with('status','Please Login First');
+            return redirect('/status')->with('status','Please Login First');
         }
     }
 }
