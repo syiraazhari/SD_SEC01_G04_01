@@ -28,69 +28,9 @@
   <!-- Template Main CSS File -->
   <link href="assets/css(home page)/style.css" rel="stylesheet">
 </head>
-
+@extends('layouts.app')
+@section('content')
 <body>
-
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-center">
-    <div class="container d-flex justify-content-between">
-
-      <div class="logo">
-        <img src="{{ asset('assets/img/logo-utmxjpmpp.png') }}">
-      </div>
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li class="dropdown"><a href="#hero"><span>Home</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              {{-- Dashboard Button // Only appear when user logged in --}}
-              @if (Auth::check())
-                @if (Auth::user()->role_as == '0')
-                  <li><a href="voter">Dashboard</a></li>
-                @endif
-                @if (Auth::user()->role_as == '1')
-                  <li><a href="adminpanel">Dashboard</a></li>
-                @endif
-                @if (Auth::user()->role_as == '2')
-                  <li><a href="candidate">Dashboard</a></li>
-                @endif
-              @endif
-                
-              <li><a href="#about">About</a></li>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#contact">Contact</a></li>
-              {{-- Log out button only show if user is authenticated(already login)--}}
-              @if (Auth::check())
-                @if ((Auth::user()->role_as == '0') || (Auth::user()->role_as == '1') || (Auth::user()->role_as == '2'))
-                  <li>
-                    <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                    {{ __('Logout') }}
-                    </a>
-                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                        @csrf
-                    </form>
-                  </li>
-                @endif
-              @endif
-            </ul>
-          </li>
-                @guest
-                    @if (Route::has('login'))
-                         <li><a class="nav-link scrollto" href="{{ route('login') }}">{{ __('Login') }}</a></li>
-                    @endif
-
-                    @if (Route::has('register'))
-                         <li><a class="nav-link scrollto" href="{{ route('register') }}">{{ __('Register') }}</a>
-                            
-                    @endif
-                        @else
-                @endguest
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
-    </div>
-  </header><!-- End Header -->
 
   <!-- ======= hero Section ======= -->
   <section id="hero">
@@ -517,5 +457,5 @@
   <script src="assets/js/main(home page).js"></script>
 
 </body>
-
+@endsection
 </html>

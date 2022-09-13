@@ -41,7 +41,7 @@ a:hover {
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
-  align-items: center; }
+  }
 
 .inner {
   border-radius: 10px 10px;
@@ -80,7 +80,7 @@ a:hover {
   position: relative; }
   .form-wrapper i {
     position: absolute;
-    bottom: 18px;
+    bottom: 12px;
     right: 15px; }
 
 .form-control {
