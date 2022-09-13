@@ -1,3 +1,4 @@
+{{-- test --}}
 <!doctype html>
 <html lang="en">
 <head>
@@ -98,8 +99,3 @@
 
 </body>
 </html>
-
-@extends('layouts.app')
-@section('content4')
-
-@endsection

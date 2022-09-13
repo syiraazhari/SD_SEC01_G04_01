@@ -20,12 +20,14 @@
               </div>
               <div class="col-sm-8">
                 <div class="card-block">
-                  <h6 class="m-b-20 p-b-5 b-b-default f-w-600">Basic Information</h6>
+                  <form action="{{ url('update-users')}}" method="POST" enctype="multipart/form-data">
+                    @csrf
+                    <h6 class="m-b-20 p-b-5 b-b-default f-w-600">Basic Information</h6>
                   <div class="row">
                     <div class="col-sm-6">
                       <p class="m-b-10 f-w-600">Full name</p>
                       <div class="form-group">
-                      <input type="text" class="form-control" placeholder="Username" value="{{ Auth::user()->name }}">
+                      <input name="name" type="text" class="form-control" placeholder="Username" value="{{ Auth::user()->name }}">
                     </div>
                     </div>
                       <div class="col-sm-6">
@@ -48,39 +50,40 @@
                     </div>
                       <div class="col-sm-6">
                         <p class="m-b-10 f-w-600">Student ID</p>
-                        <input type="text" class="form-control" placeholder="Add Student ID" value="{{ Auth::user()->studID }}">
+                        <input name="studentID" type="text" class="form-control" placeholder="Add Student ID" value="{{ Auth::user()->studID }}">
                       </div>
                   </div>
                   
                   <div class="row" style="margin-bottom: 5%;">
                     <div class="col-sm-6">
                       <p class="m-b-10 f-w-600">Year</p>
-                      <input type="text" class="form-control" placeholder="Add Year" value="{{ Auth::user()->year }}">
+                      <input name="year" type="text" class="form-control" placeholder="Add Year" value="{{ Auth::user()->year }}">
                     </div>
                     <div class="col-sm-6">
                       <p class="m-b-10 f-w-600">Course</p>
-                      <input type="text" class="form-control" placeholder="Add Course" value="{{ Auth::user()->course }}">
+                      <input name="course" type="text" class="form-control" placeholder="Add Course" value="{{ Auth::user()->course }}">
                     </div>
                   
                   </div>
-                  
                     <h6 class="m-b-20 m-t-40 p-b-5 b-b-default f-w-600">Additional Information</h6>
+                  
                   <div class="row">
                     <div class="col-sm-6">
                       <p class="m-b-10 f-w-600">Phone number</p>
-                      <input type="text" class="form-control" placeholder="Add Phone number" value="{{ Auth::user()->number }}">
+                      <input name="phoneNum" type="text" class="form-control" placeholder="Add Phone number" value="{{ Auth::user()->number }}">
                     </div>
                     <div class="col-sm-6">
                       <p class="m-b-10 f-w-600">Gender</p>
-                      <input type="text" class="form-control" placeholder="Add Gender" value="{{ Auth::user()->gender }}">
+                      <input name="gender" type="text" class="form-control" placeholder="Add Gender" value="{{ Auth::user()->gender }}">
                     </div>
                   </div>
                   <br>
                   <div class="row">
-                <div class="update ml-auto mr-auto">
-                  <button type="submit" class="btn btn-round" style="background-color: #f8a617; color: white;">Update Profile</button>
-                </div>
-              </div>
+                    <div class="update ml-auto mr-auto">
+                      <button type="submit" class="btn btn-round" style="background-color: #f8a617; color: white;">Update Profile</button>
+                    </div>
+                  </div>
+                  </form>
                 </div>
              </div>
           </div>

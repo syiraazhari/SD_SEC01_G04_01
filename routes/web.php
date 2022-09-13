@@ -35,6 +35,8 @@ Route::middleware(['auth','isAdmin'])->group(function () {
     Route::get('adminpanel/profiles','App\Http\Controllers\Admin\ProfileController@index');
 
     Route::get('adminpanel/votingpage','App\Http\Controllers\Admin\VotingPageController@index');
+
+    Route::post('update-users','App\Http\Controllers\Admin\ProfileController@insert');
     
 });
 
