@@ -1,14 +1,10 @@
 {{-- MAIN CANDIDATE CONTENT --}}
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
+  <title>UndiMPP UTMKL</title>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>UndiMPP UTMKL</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
 
   <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
