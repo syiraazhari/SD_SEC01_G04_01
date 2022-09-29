@@ -28,6 +28,8 @@ Route::get('/mppalumni','App\Http\Controllers\Public\MPPAlumniController@index')
 Route::get('/aboutmpp','App\Http\Controllers\Public\AboutMPPController@index');
 Route::get('/contact','App\Http\Controllers\Public\ContactController@index');
 
+Route::get('/change-password', 'App\Http\Controllers\ChangePasswordController@index');
+Route::post('/change-password', 'App\Http\Controllers\ChangePasswordController@store')->name('change.password');
 
 Route::middleware(['auth','isAdmin'])->group(function () {
     Route::get('/adminpanel','App\Http\Controllers\Admin\FrontendController@index');
