@@ -1,5 +1,5 @@
 {{-- VOTER PROFILE CONTENT --}}
-@extends('voter')
+@extends('layouts.voter')
 @extends('layouts.app')
 
 @section('content4')

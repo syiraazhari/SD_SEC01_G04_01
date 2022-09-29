@@ -1,4 +1,4 @@
-{{-- MAIN CANDIDATE CONTENT --}}
+{{-- MAIN VOTER CONTENT --}}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,10 +41,10 @@
 
 <body>
 
-@extends('layouts.candidate')
+@extends('layouts.voter')
 @extends('layouts.app')
 
-@section('content3')
+@section('content4')
 
 <div>
 <section id="hero">

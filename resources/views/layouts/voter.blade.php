@@ -1,3 +1,4 @@
+{{-- voter --}}
 <!doctype html>
 <html lang="en">
 <head>
@@ -20,19 +21,18 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 
     <!-- Styles -->
-	<link href="{{asset('admin/css/style.css')}}" rel="stylesheet">
+	  <link href="{{asset('admin/css/style.css')}}" rel="stylesheet">
     <link href="{{asset('admin/css/bootstrap.min.css') }}" rel="stylesheet">
-	<link href="{{asset('admin/css/styleprofile.css') }}" rel="stylesheet">
+	  <link href="{{asset('admin/css/styleprofile.css') }}" rel="stylesheet">
 
 	<style>
       .admin-flex {
-        flex-wrap: wrap;
-        min-width: 0; 
-        justify-content:space-between; 
-		flex-direction: column; }
-	.icon {
-		position:relative;
-		z-index: 2; }
+          flex-wrap: wrap;
+       		min-width: 0; 
+        	justify-content:space-between; 
+			    flex-direction: column; }
+		  .icon-padding {
+			    padding-right:10px }
     </style>
     
 </head>
@@ -41,51 +41,42 @@
 
 <div class="wrapper d-flex align-items-stretch" style="height: auto;">
 	<nav id="sidebar">
-		<div class="custom-menu">
-			<button type="button" id="sidebarCollapse" class="btn btn-primary icon">
-	        	<i class="fa fa-bars"></i>
-	        	<span class="sr-only">Toggle Menu</span>
-	        </button>
-        </div>
-
-		<div class="p-4 pt-5">
+				<div class="p-4 pt-5">
 		    <ul class="list-unstyled components mb-5">
             <li class="{{ Request::is('voter') ? 'active':'' }} ">
-                <a href="{{ url('voter') }}">Home</a>
+                <a href="{{ url('voter') }}"><i class='bx bxs-home-alt-2 icon-padding'></i>Home</a>
       </li>
       <li class="{{ Request::is('voter/profiles') ? 'active':'' }} ">
-        <a href="{{ url('voter/profiles') }}">Profile</a>
+        <a href="{{ url('voter/profiles') }}"><i class='bx bxs-user icon-padding'></i>Profile</a>
       </li>
       <li class="{{ Request::is('voter/vote') ? 'active':'' }} ">
-        <a href="{{ url('voter/vote') }}">Vote Now</a>
+        <a href="{{ url('voter/vote') }}"><i class='bx bxs-institution icon-padding'></i>Vote Now</a>
       </li>
       <li class="{{ Request::is('voter/electionresult') ? 'active':'' }} ">
-        <a href="{{ url('voter/electionresult') }}">View Election Result</a>
+        <a href="{{ url('voter/electionresult') }}"><i class='bx bxs-book icon-padding'></i>Election Result</a>
       </li>
       <li class="{{ Request::is('voter/joinmpp') ? 'active':'' }} ">
-        <a href="{{ url('voter/joinmpp') }}">#JOINMPP</a>
+        <a href="{{ url('voter/joinmpp') }}"><i class='bx bxs-user icon-padding'></i>#JOINMPP</a>
       </li>
       <li class="{{ Request::is('mppalumni') ? 'active':'' }} ">
-        <a href="{{ url('mppalumni') }}">MPP Alumni</a>
+        <a href="{{ url('mppalumni') }}"><i class='bx bxs-institution icon-padding'></i>MPP Alumni</a>
       </li>
       <li class="{{ Request::is('aboutmpp') ? 'active':'' }} ">
-        <a href="{{ url('aboutmpp') }}">About MPP</a>
+        <a href="{{ url('aboutmpp') }}"><i class='bx bxs-info-circle icon-padding'></i>About MPP</a>
       </li>
       <li class="{{ Request::is('contact') ? 'active':'' }} ">
-        <a href="{{ url('contact') }}">Contact Us</a>
+        <a href="{{ url('contact') }}"><i class='bx bxs-envelope icon-padding'></i>Contact Us</a>
       </li>
       <li class="active-pro">
-        <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">{{ __('Log Out') }}</a>
-          <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+        <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+          <i class='bx bxs-arrow-to-right icon-padding'></i> 
+          {{ __('Log Out') }}
+        </a>
+        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
           @csrf
           </form>
       </li>
 	        </ul>
-
-	    <div class="footer">
-	    	<p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib.com</a></p>
-	    </div>
-
 	    </div>
     </nav>
     @yield('content4')
@@ -98,8 +89,3 @@
 
 </body>
 </html>
-
-@extends('layouts.app')
-@section('content4')
-
-@endsection
