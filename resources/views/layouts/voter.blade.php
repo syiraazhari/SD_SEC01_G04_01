@@ -58,14 +58,14 @@
       <li class="{{ Request::is('voter/joinmpp') ? 'active':'' }} ">
         <a href="{{ url('voter/joinmpp') }}"><i class='bx bxs-user icon-padding'></i>#JOINMPP</a>
       </li>
-      <li class="{{ Request::is('mppalumni') ? 'active':'' }} ">
-        <a href="{{ url('mppalumni') }}"><i class='bx bxs-institution icon-padding'></i>MPP Alumni</a>
+      <li class="{{ Request::is('voter/mppalumni') ? 'active':'' }} ">
+        <a href="{{ url('voter/mppalumni') }}"><i class='bx bxs-institution icon-padding'></i>MPP Alumni</a>
       </li>
-      <li class="{{ Request::is('aboutmpp') ? 'active':'' }} ">
-        <a href="{{ url('aboutmpp') }}"><i class='bx bxs-info-circle icon-padding'></i>About MPP</a>
+      <li class="{{ Request::is('voter/aboutmpp') ? 'active':'' }} ">
+        <a href="{{ url('voter/aboutmpp') }}"><i class='bx bxs-info-circle icon-padding'></i>About MPP</a>
       </li>
-      <li class="{{ Request::is('contact') ? 'active':'' }} ">
-        <a href="{{ url('contact') }}"><i class='bx bxs-envelope icon-padding'></i>Contact Us</a>
+      <li class="{{ Request::is('voter/contact') ? 'active':'' }} ">
+        <a href="{{ url('voter/contact') }}"><i class='bx bxs-envelope icon-padding'></i>Contact Us</a>
       </li>
       <li class="active-pro">
         <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">

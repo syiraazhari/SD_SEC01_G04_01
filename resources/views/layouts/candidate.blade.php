@@ -53,14 +53,14 @@
                   <li class="{{ Request::is('candidate/electionresult') ? 'active':'' }} ">
 	            	<a href="{{ url('candidate/electionresult') }}"><i class='bx bxs-book icon-padding'></i>Election Result</a>
 	          	</li>
-			    <li class="{{ Request::is('mppalumni') ? 'active':'' }} ">
-              		<a href="{{ url('mppalumni') }}"><i class='bx bxs-institution icon-padding'></i>MPP Alumni</a>
+			    <li class="{{ Request::is('candidate/mppalumni') ? 'active':'' }} ">
+              		<a href="{{ url('candidate/mppalumni') }}"><i class='bx bxs-institution icon-padding'></i>MPP Alumni</a>
 	        		 </li>
-	          	<li class="{{ Request::is('aboutmpp') ? 'active':'' }} ">
-              		<a href="{{ url('aboutmpp') }}"><i class='bx bxs-info-circle icon-padding'></i>About MPP</a>
+	          	<li class="{{ Request::is('candidate/aboutmpp') ? 'active':'' }} ">
+              		<a href="{{ url('candidate/aboutmpp') }}"><i class='bx bxs-info-circle icon-padding'></i>About MPP</a>
 	        	</li>
-				<li class="{{ Request::is('contact') ? 'active':'' }} ">
-              		<a href="{{ url('contact') }}"><i class='bx bxs-envelope icon-padding'></i>Contact Us</a>
+				<li class="{{ Request::is('candidate/contact') ? 'active':'' }} ">
+              		<a href="{{ url('candidate/contact') }}"><i class='bx bxs-envelope icon-padding'></i>Contact Us</a>
 	        	</li>
 				<li>
 					<a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">

@@ -55,24 +55,24 @@
              		<a href="#candidateSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class='bx bxs-institution icon-padding'></i>Candidate</a>
               		<ul class="collapse list-unstyled" id="candidateSubmenu">
                 		<li>
-                  			<a href="#">Candidate Page</a>
+                  			<a href="{{ url('adminpanel/candidatepage') }}">Candidate Page</a>
                 		</li>
                 		<li>
-                    		<a href="#">Candidate List</a>
+                    		<a href="{{ url('adminpanel/candidatelist') }}">Candidate List</a>
                 		</li>
                 		<li>
-                   			<a href="#">View Transaction</a>
+                   			<a href="{{ url('adminpanel/viewtransaction') }}">View Transaction</a>
                			</li>
              	 	</ul>
 	          	</li>
-	          	<li class="{{ Request::is('mppalumni') ? 'active':'' }} ">
-              		<a href="{{ url('mppalumni') }}"><i class='bx bxs-institution icon-padding'></i>MPP Alumni</a>
+	          	<li class="{{ Request::is('adminpanel/mppalumni') ? 'active':'' }} ">
+              		<a href="{{ url('adminpanel/mppalumni') }}"><i class='bx bxs-institution icon-padding'></i>MPP Alumni</a>
 	        		 </li>
-	          	<li class="{{ Request::is('aboutmpp') ? 'active':'' }} ">
-              		<a href="{{ url('aboutmpp') }}"><i class='bx bxs-info-circle icon-padding'></i>About MPP</a>
+	          	<li class="{{ Request::is('adminpanel/aboutmpp') ? 'active':'' }} ">
+              		<a href="{{ url('adminpanel/aboutmpp') }}"><i class='bx bxs-info-circle icon-padding'></i>About MPP</a>
 	        	</li>
-				    <li class="{{ Request::is('contact') ? 'active':'' }} ">
-              		<a href="{{ url('contact') }}"><i class='bx bxs-envelope icon-padding'></i>Contact Us</a>
+				    <li class="{{ Request::is('adminpanel/contact') ? 'active':'' }} ">
+              		<a href="{{ url('adminpanel/contact') }}"><i class='bx bxs-envelope icon-padding'></i>Contact Us</a>
 	        	</li>
 				<li>
 					<a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">

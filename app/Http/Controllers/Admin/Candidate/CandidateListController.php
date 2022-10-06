@@ -5,10 +5,10 @@ namespace App\Http\Controllers\Admin\Candidate;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class CandidatePageController extends Controller
+class CandidateListController extends Controller
 {
     public function index()
     {
-        return view('admin.candidate.candidatepage.index');
+        return view('admin.candidate.candidatelist.index');
     }
 }
