@@ -41,7 +41,7 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li class="dropdown"><a href="#hero"><span>Home</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a href="#hero"><span>HOME</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               {{-- Dashboard Button // Only appear when user logged in --}}
               @if (Auth::check())
@@ -76,11 +76,11 @@
           </li>
                 @guest
                     @if (Route::has('login'))
-                         <li><a class="nav-link scrollto" href="{{ route('login') }}">{{ __('Login') }}</a></li>
+                         <li><a class="nav-link scrollto" href="{{ route('login') }}">{{ __('LOGIN') }}</a></li>
                     @endif
 
                     @if (Route::has('register'))
-                         <li><a class="nav-link scrollto" href="{{ route('register') }}">{{ __('Register') }}</a>
+                         <li><a class="nav-link scrollto" href="{{ route('register') }}">{{ __('REGISTER') }}</a>
                             
                     @endif
                         @else

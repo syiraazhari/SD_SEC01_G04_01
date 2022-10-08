@@ -46,7 +46,7 @@
 				<a href="#voterSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class='bx bxs-institution icon-padding'></i>Voter</a>
               		<ul class="collapse list-unstyled" id="voterSubmenu">
                 		<li>
-                  			<a href="">Voting Page</a>
+                  			<a href="{{ url('adminpanel/votingpage') }}">Voting Page</a>
                 		</li>
                 		<li>
              	 	</ul>
@@ -55,6 +55,7 @@
              		<a href="#candidateSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class='bx bxs-institution icon-padding'></i>Candidate</a>
               		<ul class="collapse list-unstyled" id="candidateSubmenu">
                 		<li>
+
                   			<a href="{{ url('adminpanel/candidatepage') }}">Candidate Page</a>
                 		</li>
                 		<li>

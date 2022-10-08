@@ -46,7 +46,7 @@
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
-                                <a class="nav-link" style="color: black" href="{{ url('/') }}">{{ __('Home') }}</a>    
+                                <a class="nav-link" style="color: black; font-weight: normal;" href="{{ url('/') }}">{{ __('Home') }}</a>    
                             </li>
                         <!-- Authentication Links -->
                         @guest
@@ -63,24 +63,10 @@
                             @endif
                         @else
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a class="nav-link" style="font-weight: normal;">
                                     {{ Auth::user()->name }}
                                 </a>
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <a class="dropdown-item" href="#">
-                                            My Profile
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                                            {{ __('Logout') }}
-                                        </a>
-                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                            @csrf
-                                        </form>
-                                    </li>
-                                </ul>
+                                
                             </li>
                         @endguest
                     </ul>

@@ -1,4 +1,4 @@
-{{-- ADMIN VOTING CONTENT (SPACE SEAT VOTING)--}}
+{{-- ADMIN VOTING CONTENT (AHIBS SEAT VOTING)--}}
 @extends('layouts.admin')
 @extends('layouts.app')
 @section('content2')
@@ -56,7 +56,8 @@
             <h5 class="card-title" style="text-align: center;">School of Professional and Continuing Education (SPACE)</h5><br>
           </div>
           <div class="card-body">
-            <h4 class="card-title" style="text-align: center;">*Voter needs to vote (2) seats</h4>
+            <h4 class="card-title" style="text-align: center;">Please vote (2) seats</h4>
+            <p style="text-align: center; font-size: 16px;">0 out of 4 selected</p>
             
             <div class="box-one">
               <div class="row">
@@ -66,24 +67,38 @@
                     <img src="{{ asset('assets/img/team-4.jpg') }}" style="margin-bottom: 15px;">
                     <h5>Iskandar Hakimi Bin Zulkippli</h5>
                     <h6>3 DDWD </h6>
+               
+                      <input type="checkbox" class="checkbox">
+                      <span class="checkmark"></span>
+                    
                   </div> 
                   
                   <div class="allColumns">
                     <img src="{{ asset('assets/img/team-4.jpg') }}" style="margin-bottom: 15px">
                     <h5>Iskandar Hakimi Bin Zulkippli</h5>
-                    <h6>3 DDWD </h6>                
+                    <h6>3 DDWD </h6>
+                
+                      <input type="checkbox" class="checkbox">
+                      <span class="checkmark"></span>                  
                   </div> 
 
                   <div class="allColumns">
                     <img src="{{ asset('assets/img/team-4.jpg') }}" style="margin-bottom: 15px;">
                     <h5>Iskandar Hakimi Bin Zulkippli</h5>
                     <h6>3 DDWD </h6>
+               
+                      <input type="checkbox" class="checkbox">
+                      <span class="checkmark"></span>
+                    
                   </div> 
                   
                   <div class="allColumns">
                     <img src="{{ asset('assets/img/team-4.jpg') }}" style="margin-bottom: 15px">
                     <h5>Iskandar Hakimi Bin Zulkippli</h5>
                     <h6>3 DDWD </h6>
+                
+                      <input type="checkbox" class="checkbox">
+                      <span class="checkmark"></span>
                 </div>
 
               </div>
@@ -91,9 +106,7 @@
 
           </div>
           <div class="container" style="text-align: center;">  
-              <a href= "{{ url('#') }}" class ="button"> < Previous Seat </a>
-              <a href= "{{ url('#') }}" class ="button"> Update </a>
-              
+              <a href= "{{ url('#') }}" class ="button"> Submit Vote </a>
             </div>  
           <div class="card-footer">
             <hr>

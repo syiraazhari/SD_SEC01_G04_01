@@ -166,7 +166,3 @@
   <script src="assets/js/main(home page).js"></script>
 
 @endsection
-
-</body>
-
-</html>

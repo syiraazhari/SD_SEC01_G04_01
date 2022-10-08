@@ -1,4 +1,5 @@
-{{-- ADMIN VOTING CONTENT (SPACE SEAT VOTING)--}}
+{{-- ADMIN VOTING CONTENT (GENERAL SEAT VOTING)--}}
+{{-- NEXT: AHIBS SEAT VOTING --}}
 @extends('layouts.admin')
 @extends('layouts.app')
 @section('content2')
@@ -52,8 +53,7 @@
       <div class="col-md-12">
         <div class="card">
           <div class="card-header">
-            <h2 class="card-title" style="text-align: center;">FACULTY / SCHOOL SEAT</h2>
-            <h5 class="card-title" style="text-align: center;">School of Professional and Continuing Education (SPACE)</h5><br>
+            <h2 class="card-title" style="text-align: center;">GENERAL SEAT</h2>
           </div>
           <div class="card-body">
             <h4 class="card-title" style="text-align: center;">*Voter needs to vote (2) seats</h4>
@@ -91,9 +91,8 @@
 
           </div>
           <div class="container" style="text-align: center;">  
-              <a href= "{{ url('#') }}" class ="button"> < Previous Seat </a>
-              <a href= "{{ url('#') }}" class ="button"> Update </a>
-              
+              <a href= "{{ url('#') }}" class ="button"> < Previous </a>
+              <a href= "{{ url('#') }}" class ="button"> View Next Seat > </a>
             </div>  
           <div class="card-footer">
             <hr>
