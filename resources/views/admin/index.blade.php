@@ -4,6 +4,23 @@
 @section('content2')
     {{-- first four column --}}
     <div class="row" style="padding-top: 1.5rem; padding-left: 1.5rem;">
+    <div class="col-md-12">
+        <div class="card">
+          <div class="card-header ">
+            <h3 class="card-title">Post An Announcement</h3>
+            <p class="card-category">*Announcements will be displayed at User's Homepage</p>
+            <form action="/action_page.php">
+              <label for=""><h5>Enter Subject</h6></label><br>
+              <input type="text" id="" name="subject" placeholder="" size="147">
+              <br>
+              <label for=""><h5 style="margin-top: 15px;">Enter Comment</h5></label><br>
+              <input type="text" id="" name="comment" placeholder="" size="147" style="height: 80px;">
+              
+              <input type="submit" value="Submit" style="height: 40px; width: 80px; margin-top: 12px; margin-bottom: 12px; background-color: #f8a617; color: white; border: none;">
+            </form>
+          </div>
+        </div>
+      </div>
       <div class="col-lg-3 col-md-6 col-sm-6">
         <div class="card card-stats">
           <div class="card-body ">
@@ -108,6 +125,7 @@
           </div>
         </div>
       </div>
+      
       <div class="col-md-12">
         <div class="card">
           <div class="card-header ">
@@ -125,6 +143,7 @@
           </div>
         </div>
       </div>
+      
     </div>
 
 @endsection
