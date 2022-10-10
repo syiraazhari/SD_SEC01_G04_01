@@ -58,6 +58,9 @@
       <li class="{{ Request::is('voter/joinmpp') ? 'active':'' }} ">
         <a href="{{ url('voter/joinmpp') }}"><i class='bx bxs-user icon-padding'></i>#JOINMPP</a>
       </li>
+      <li class="{{ Request::is('voter/candidateinfo') ? 'active':'' }} ">
+        <a href="{{ url('voter/candidateinfo') }}"><i class='bx bxs-institution icon-padding'></i>Candidate Info</a>
+      </li>
       <li class="{{ Request::is('voter/mppalumni') ? 'active':'' }} ">
         <a href="{{ url('voter/mppalumni') }}"><i class='bx bxs-institution icon-padding'></i>MPP Alumni</a>
       </li>

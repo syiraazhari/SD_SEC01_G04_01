@@ -47,7 +47,7 @@
 @section('content4')
 
 <div>
-<section id="hero">
+<section id="hero" style="width: 1319px;">
     <div class="hero-container">
       <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
 
@@ -97,7 +97,7 @@
   </section><!-- End Hero Section -->
 
 <!-- ======= About UndiMPP UTMKL Section ======= -->
-<div id="about" class="about-area area-padding" >
+<div id="about" class="about-area area-padding">
   <div class="container" >
     <div class="row" style="justify-content:center; margin-left:100px">
       <div class="col-md-12 col-sm-12 col-xs-12">
@@ -111,9 +111,7 @@
       <div class="col-md-6 col-sm-6 col-xs-12">
         <div class="well-left">
           <div class="single-well">
-        
-            <iframe width="400px" height="450px"  src="https://www.youtube.com/embed/UMmFxe-jGyY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            
+            <iframe width="400px" height="350px"  src="https://www.youtube.com/embed/UMmFxe-jGyY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
           </div>
         </div>
       </div>

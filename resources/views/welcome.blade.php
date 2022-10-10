@@ -57,7 +57,7 @@
               @endif
                 
               <li><a href="#about">About</a></li>
-              <li><a href="#services">Services</a></li>
+              <li><a href="#services">Benefits</a></li>
               <li><a href="#contact">Contact</a></li>
               {{-- Log out button only show if user is authenticated(already login)--}}
               @if (Auth::check())
@@ -326,7 +326,7 @@
                 <h4>Designer</h4>
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Awesome, Awesome website!!  
+                  Awesome, Awesome website!
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
               </div>
