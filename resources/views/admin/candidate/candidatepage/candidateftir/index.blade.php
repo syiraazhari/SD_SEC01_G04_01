@@ -1,4 +1,4 @@
-{{-- ADMIN CANDIDATE PAGE CONTENT (GENERAL) --}}
+{{-- ADMIN CANDIDATE PAGE CONTENT (FTIR) --}}
 @extends('layouts.admin')
 @extends('layouts.app')
 @section('content2')
@@ -53,12 +53,12 @@
           </div>
           <div class="card-body">
             <div style="text-align: center;">
-              <p style="color: black; font-size: 15px"><b>SEAT CATEGORY : GENERAL SEAT</b></p>
-              <a href="#" class="seatCategory" style="color: black; background-color: #f8cc17;">GENERAL</a>
-              <a href="#" class="seatCategory" style="color: black;">AHIBS</a>
-              <a href="#" class="seatCategory" style="color: black;">FTIR</a>
-              <a href="#" class="seatCategory" style="color: black;">MJIIT</a>
-              <a href="#" class="seatCategory" style="color: black;">SPACE</a>
+              <p style="color: black; font-size: 15px"><b>SEAT CATEGORY : RAZAK FACULTY OF TECHNOLOGY AND INFORMATICS (FTIR)</b></p>
+              <a href="{{ url('adminpanel/candidatepage') }}" class="seatCategory" style="color: black;">GENERAL</a>
+              <a href="{{ url('adminpanel/candidatepage/candidateahibs') }}" class="seatCategory" style="color: black;">AHIBS</a>
+              <a href="{{ url('adminpanel/candidatepage/candidateftir') }}" class="seatCategory" style="color: black; background-color: #f8cc17;">FTIR</a>
+              <a href="{{ url('adminpanel/candidatepage/candidatemjiit') }}" class="seatCategory" style="color: black;">MJIIT</a>
+              <a href="{{ url('adminpanel/candidatepage/candidatespace') }}" class="seatCategory" style="color: black;">SPACE</a>
             </div>
                 <div style="margin-left: 75px; margin-right: 75px; margin-top: 20px;">
 

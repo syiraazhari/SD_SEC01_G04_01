@@ -29,6 +29,21 @@ Route::get('/voter/profiles','App\Http\Controllers\Voter\ProfileController@index
 Route::get('voter/aboutmpp','App\Http\Controllers\Voter\AboutMPP\AboutMPPController@index');
 Route::get('voter/mppalumni','App\Http\Controllers\Voter\MPPAlumni\MPPAlumniController@index');
 Route::get('voter/contact','App\Http\Controllers\Voter\Contact\ContactController@index');
+
+Route::get('voter/joinmpp','App\Http\Controllers\Voter\JoinMPP\JoinMPPController@index');
+Route::get('voter/joinmpp/register','App\Http\Controllers\Voter\JoinMPP\RegisterController@index');
+Route::get('voter/joinmpp/manifesto','App\Http\Controllers\Voter\JoinMPP\ManifestoController@index');
+Route::get('voter/joinmpp/payment','App\Http\Controllers\Voter\JoinMPP\PaymentController@index');
+
+Route::get('voter/votingpage','App\Http\Controllers\Voter\Vote\VotingController@index');
+Route::get('voter/votingpage/votingregulation','App\Http\Controllers\Voter\Vote\VotingRegulationController@index');
+Route::get('voter/votingpage/votinggeneral','App\Http\Controllers\Voter\Vote\VotingGeneralController@index');
+Route::get('voter/votingpage/votingahibs','App\Http\Controllers\Voter\Vote\VotingAHIBSController@index');
+Route::get('voter/votingpage/votingftir','App\Http\Controllers\Voter\Vote\VotingFTIRController@index');
+Route::get('voter/votingpage/votingmjiit','App\Http\Controllers\Voter\Vote\VotingMJIITController@index');
+Route::get('voter/votingpage/votingspace','App\Http\Controllers\Voter\Vote\VotingSPACEController@index');
+Route::get('voter/votingpage/votingsubmit','App\Http\Controllers\Voter\Vote\VotingSubmitController@index');
+
 Route::get('testing','App\Http\Controllers\TestingController@index');
 
 
@@ -48,13 +63,26 @@ Route::middleware(['auth','isAdmin'])->group(function () {
 
     // Route::post('update-users','App\Http\Controllers\Admin\ProfileController@insert');
 
-    Route::get('adminpanel/candidatepage','App\Http\Controllers\Admin\Candidate\CandidatePageController@index');
     Route::get('adminpanel/candidatelist','App\Http\Controllers\Admin\Candidate\CandidateListController@index');
     Route::get('adminpanel/viewtransaction','App\Http\Controllers\Admin\Candidate\ViewTransactionController@index');
 
     Route::get('adminpanel/aboutmpp','App\Http\Controllers\Admin\AboutMPP\AboutMPPController@index');
     Route::get('adminpanel/mppalumni','App\Http\Controllers\Admin\MPPAlumni\MPPAlumniController@index');
     Route::get('adminpanel/contact','App\Http\Controllers\Admin\Contact\ContactController@index');
+
+    Route::get('adminpanel/votingpage/votingregulation','App\Http\Controllers\Admin\Voter\VotingRegulationController@index');
+    Route::get('adminpanel/votingpage/votinggeneral','App\Http\Controllers\Admin\Voter\VotingGeneralController@index');
+    Route::get('adminpanel/votingpage/votingahibs','App\Http\Controllers\Admin\Voter\VotingAHIBSController@index');
+    Route::get('adminpanel/votingpage/votingftir','App\Http\Controllers\Admin\Voter\VotingFTIRController@index');
+    Route::get('adminpanel/votingpage/votingmjiit','App\Http\Controllers\Admin\Voter\VotingMJIITController@index');
+    Route::get('adminpanel/votingpage/votingspace','App\Http\Controllers\Admin\Voter\VotingSPACEController@index');
+
+    // Route::get('adminpanel/candidatepage/candidategeneral','App\Http\Controllers\Admin\Candidate\CandidateGeneralController@index');
+    Route::get('adminpanel/candidatepage','App\Http\Controllers\Admin\Candidate\CandidatePage\CandidateGeneralController@index');
+    Route::get('adminpanel/candidatepage/candidateahibs','App\Http\Controllers\Admin\Candidate\CandidatePage\CandidateAHIBSController@index');
+    Route::get('adminpanel/candidatepage/candidateftir','App\Http\Controllers\Admin\Candidate\CandidatePage\CandidateFTIRController@index');
+    Route::get('adminpanel/candidatepage/candidatemjiit','App\Http\Controllers\Admin\Candidate\CandidatePage\CandidateMJIITController@index');
+    Route::get('adminpanel/candidatepage/candidatespace','App\Http\Controllers\Admin\Candidate\CandidatePage\CandidateSPACEController@index');
     
 });
 

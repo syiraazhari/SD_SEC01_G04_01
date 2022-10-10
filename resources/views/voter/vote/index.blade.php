@@ -1,7 +1,8 @@
-{{-- ADMIN VOTING CONTENT (VOTING INSTRUCTIONS) --}}
-@extends('layouts.admin')
+{{-- VOTER VOTING CONTENT (VOTING INSTRUCTIONS) --}}
+{{-- NEXT: VOTING REGULATIONS --}}
+@extends('layouts.voter')
 @extends('layouts.app')
-@section('content2')
+@section('content4')
 
 <!DOCTYPE html>
 <html>
@@ -42,7 +43,7 @@
             <p class="card-title" style="text-align: center; color: red;"><i>Please click 'Cast Vote' to start Voting</i></p><br>
 
             <div class="container" style="text-align: center;">  
-              <a href= "{{ url('adminpanel/votingpage/votingregulation') }}" class ="button"> Cast Vote </a>
+              <a href= "{{ url('voter/votingpage/votingregulation') }}" class ="button"> Cast Vote </a>
             </div>  
           
           </div>
