@@ -106,7 +106,7 @@
 
           </div>
           <div class="container" style="text-align: center;">  
-              <a href= "{{ url('#') }}" class ="button"> Submit Vote </a>
+              <a href= "{{ url('voter/votingpage/votingahibs') }}" class ="button"> Submit Vote </a>
             </div>  
           <div class="card-footer">
             <hr>

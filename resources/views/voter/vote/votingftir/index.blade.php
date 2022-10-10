@@ -58,7 +58,7 @@
           </div>
           <div class="card-body">
             <h4 class="card-title" style="text-align: center;">Please vote (2) seats</h4>
-            <p style="text-align: center; font-size: 16px;">0 out of 4 selected</p>
+            <p style="text-align: center; font-size: 16px;">0 out of 2 selected</p>
             
             <div class="box-one">
               <div class="row">
@@ -107,7 +107,7 @@
 
           </div>
           <div class="container" style="text-align: center;">  
-              <a href= "{{ url('#') }}" class ="button"> Submit Vote </a>
+              <a href= "{{ url('voter/votingpage/votingmjiit') }}" class ="button"> Submit Vote </a>
             </div>  
           <div class="card-footer">
             <hr>
