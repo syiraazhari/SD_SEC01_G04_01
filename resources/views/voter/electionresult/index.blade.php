@@ -1,8 +1,8 @@
-{{-- CANDIDATE ELECTION RESULTS --}}
-@extends('layouts.candidate')
+{{-- VOTER ELECTION RESULTS --}}
+@extends('layouts.voter')
 @extends('layouts.app')
 
-@section('content3')
+@section('content4')
 <!DOCTYPE html>
 <html>
 <head>

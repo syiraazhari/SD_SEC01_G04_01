@@ -26,6 +26,7 @@ Auth::routes(['verify' => true]);
 Route::get('/voter','App\Http\Controllers\HomeController@index');
 Route::get('/voter/profiles','App\Http\Controllers\Voter\ProfileController@index');
 
+Route::get('voter/electionresult','App\Http\Controllers\Voter\ElectionResultController@index');
 Route::get('voter/aboutmpp','App\Http\Controllers\Voter\AboutMPP\AboutMPPController@index');
 Route::get('voter/mppalumni','App\Http\Controllers\Voter\MPPAlumni\MPPAlumniController@index');
 Route::get('voter/contact','App\Http\Controllers\Voter\Contact\ContactController@index');
@@ -43,6 +44,12 @@ Route::get('voter/votingpage/votingftir','App\Http\Controllers\Voter\Vote\Voting
 Route::get('voter/votingpage/votingmjiit','App\Http\Controllers\Voter\Vote\VotingMJIITController@index');
 Route::get('voter/votingpage/votingspace','App\Http\Controllers\Voter\Vote\VotingSPACEController@index');
 Route::get('voter/votingpage/votingsubmit','App\Http\Controllers\Voter\Vote\VotingSubmitController@index');
+
+Route::get('voter/candidateinfo','App\Http\Controllers\Voter\CandidateInfo\CandidateInfoGeneralController@index');
+Route::get('voter/candidateinfo/candidateahibs','App\Http\Controllers\Voter\CandidateInfo\CandidateInfoAHIBSController@index');
+Route::get('voter/candidateinfo/candidateftir','App\Http\Controllers\Voter\CandidateInfo\CandidateInfoFTIRController@index');
+Route::get('voter/candidateinfo/candidatemjiit','App\Http\Controllers\Voter\CandidateInfo\CandidateInfoMJIITController@index');
+Route::get('voter/candidateinfo/candidatespace','App\Http\Controllers\Voter\CandidateInfo\CandidateInfoSPACEController@index');
 
 Route::get('testing','App\Http\Controllers\TestingController@index');
 
@@ -90,6 +97,8 @@ Route::middleware(['auth','isCandidate'])->group(function () {
     Route::get('/candidate','App\Http\Controllers\Candidate\FrontendController@index');
 
     Route::get('candidate/profiles','App\Http\Controllers\Candidate\ProfileController@index');
+
+    Route::get('candidate/electionresult','App\Http\Controllers\Candidate\ElectionResultController@index');
 
     Route::get('candidate/aboutmpp','App\Http\Controllers\Candidate\AboutMPP\AboutMPPController@index');
     Route::get('candidate/mppalumni','App\Http\Controllers\Candidate\MPPAlumni\MPPAlumniController@index');
