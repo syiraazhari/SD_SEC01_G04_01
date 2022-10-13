@@ -1,5 +1,5 @@
 {{-- VOTER JOIN MPP PAYMENT CONTENT --}}
-@extends('layouts.admin')
+@extends('layouts.voter')
 @extends('layouts.app')
 
 @section('content')

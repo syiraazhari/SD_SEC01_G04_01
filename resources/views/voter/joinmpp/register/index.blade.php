@@ -52,14 +52,15 @@
             <h2 class="card-title" style="text-align: center;">Candidate Registration Form</h2><br>
           </div>
           <div class="card-body">
-            <form>
+            <form id="candidateRegisterForm" method="post" action="{{url('saveForm')}}">
+              @csrf
               <ol type="A">
               <b><li>Candidate Details</li></b><br>
 
               <div class="form-group row">
                 <label for="fullName" class="col-sm-2 col-form-label text-dark" style="font-size:1.0rem">Full Name</label>
                 <div class="col-sm-10">
-                  <input type="text" class="form-control" id="fullName" placeholder="Candidate's Full Name">
+                  <input type="text" class="form-control" name="fullName" id="fullName" placeholder="Candidate's Full Name">
                 </div>
               </div>
               
@@ -84,21 +85,21 @@
               <div class="form-group row">
                 <label for="yearCourse" class="col-sm-2 col-form-label text-dark" style="font-size:1.0rem">Year / Course</label>
                 <div class="col-sm-10">
-                  <input type="text" class="form-control" id="yearCourse" placeholder="Example: 3/DDWD">
+                  <input type="text" class="form-control" name="yearCourse" id="yearCourse" placeholder="Example: 3/DDWD">
                 </div>
               </div>
 
               <div class="form-group row">
                 <label for="matricsNum" class="col-sm-2 col-form-label text-dark" style="font-size:1.0rem">Matrics Number</label>
                 <div class="col-sm-10">
-                  <input type="text" class="form-control" id="matricsNum" placeholder="Example: A20DW0000">
+                  <input type="text" class="form-control" name="matricsNum" id="matricsNum" placeholder="Example: A20DW0000">
                 </div>
               </div>
 
               <div class="form-group row">
                 <label for="faculty" class="col-sm-2 col-form-label text-dark" style="font-size:1.0rem">Faculty</label>
                 <div class="col-sm-10">
-                  <select class="form-control" id="faculty">
+                  <select class="form-control" name="faculty" id="faculty">
                     <option value="" disabled selected hidden>Select</option>
                     <option>Azman Hashim International Business School (AHIBS)</option>
                     <option>Malaysia-Japan International Institute of Technology (MJIIT)</option>
@@ -118,7 +119,7 @@
               <div class="form-group row">
                 <label for="phoneNum" class="col-sm-2 col-form-label text-dark" style="font-size:1.0rem">Phone Number</label>
                 <div class="col-sm-10">
-                  <input type="number" class="form-control" id="phoneNum" placeholder="Example: 0123456789">
+                  <input type="number" class="form-control" name="phoneNum" id="phoneNum" placeholder="Example: 0123456789">
                 </div>
               </div>
 
@@ -139,7 +140,7 @@
               <div class="form-group row">
                 <label for="seat" class="col-sm-2 col-form-label text-dark" style="font-size:1.0rem">What seat will you be running for?</label>
                 <div class="col-sm-10">
-                  <select class="form-control" id="seat">
+                  <select class="form-control" name="seat" id="seat">
                     <option value="" disabled selected hidden>Select</option>
                     <option>General</option>
                     <option>Azman Hashim International Business School (AHIBS)</option>
@@ -197,8 +198,8 @@
 
               <div style="text-align: center; margin-right: 50px; margin-top:50px;">
                 <a href= "{{ url('voter/joinmpp') }}" class ="button"> < Previous Page </a>
-                <a href= "{{ url('voter/joinmpp/manifesto') }}" class ="button"> Next Page > </a>
-                <!--<button type="submit" class="button">Next Page > </button>-->
+                {{-- <a href= "{{ url('voter/joinmpp/manifesto') }}" class ="button"> Next Page > </a> --}}
+                <button type="submit" class="button">Next Page > </button>
               </div>
             </ol>
           </form>

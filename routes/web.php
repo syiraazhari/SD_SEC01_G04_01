@@ -33,7 +33,9 @@ Route::get('voter/contact','App\Http\Controllers\Voter\Contact\ContactController
 
 Route::get('voter/joinmpp','App\Http\Controllers\Voter\JoinMPP\JoinMPPController@index');
 Route::get('voter/joinmpp/register','App\Http\Controllers\Voter\JoinMPP\RegisterController@index');
+Route::post('saveForm','App\Http\Controllers\Voter\JoinMPP\RegisterController@register');
 Route::get('voter/joinmpp/manifesto','App\Http\Controllers\Voter\JoinMPP\ManifestoController@index');
+Route::post('upload','App\Http\Controllers\Voter\JoinMPP\RegisterController@manifesto');
 Route::get('voter/joinmpp/payment','App\Http\Controllers\Voter\JoinMPP\PaymentController@index');
 
 Route::get('voter/votingpage','App\Http\Controllers\Voter\Vote\VotingController@index');
@@ -50,6 +52,8 @@ Route::get('voter/candidateinfo/candidateahibs','App\Http\Controllers\Voter\Cand
 Route::get('voter/candidateinfo/candidateftir','App\Http\Controllers\Voter\CandidateInfo\CandidateInfoFTIRController@index');
 Route::get('voter/candidateinfo/candidatemjiit','App\Http\Controllers\Voter\CandidateInfo\CandidateInfoMJIITController@index');
 Route::get('voter/candidateinfo/candidatespace','App\Http\Controllers\Voter\CandidateInfo\CandidateInfoSPACEController@index');
+
+
 
 Route::get('testing','App\Http\Controllers\TestingController@index');
 

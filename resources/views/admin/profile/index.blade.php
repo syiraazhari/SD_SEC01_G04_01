@@ -34,9 +34,12 @@
                       <div class="col-sm-6">
                         <p class="m-b-10 f-w-600">Password</p>
                         @if (Route::has('password.request'))
-                                    <a href="{{ route('password.request') }}" style="color: #000000; text-decoration: underline;">
+                                    {{-- <a href="{{ route('password.request') }}" style="color: #000000; text-decoration: underline;">
                                     {{ __('Change Password') }}
-                                    </a>
+                                    </a> --}}
+                                    <a href="{{ route('change.password') }}" style="color: #000000; text-decoration: underline;">
+                                      {{ __('Change Password') }}
+                                      </a>
                         @endif
                       </div>
                   </div>

@@ -63,10 +63,26 @@
                             @endif
                         @else
                             <li class="nav-item dropdown">
-                                <a class="nav-link" style="font-weight: normal;">
+                                {{-- <a class="nav-link" style="font-weight: normal;">
                                     {{ Auth::user()->name }}
-                                </a>
-                                
+                                </a> --}}
+                                @if (Auth::check())
+                                    @if (Auth::user()->role_as == '0')
+                                        <a class="nav-link" style="font-weight: normal;">
+                                            Voter
+                                        </a>
+                                    @endif
+                                    @if (Auth::user()->role_as == '1')
+                                        <a class="nav-link" style="font-weight: normal;">
+                                            Admin
+                                        </a>
+                                    @endif
+                                    @if (Auth::user()->role_as == '2')
+                                        <a class="nav-link" style="font-weight: normal;">
+                                            Candidate
+                                        </a>
+                                    @endif
+                                @endif
                             </li>
                         @endguest
                     </ul>
