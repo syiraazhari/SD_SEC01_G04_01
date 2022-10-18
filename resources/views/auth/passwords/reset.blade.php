@@ -45,7 +45,7 @@
                             </span>
                         @enderror
                         <i class="zmdi zmdi-email"></i>
-                    </div>
+                </div>
 
                 <div class="form-wrapper">
                     <h6 style="margin-bottom: 10px">Password</h6>

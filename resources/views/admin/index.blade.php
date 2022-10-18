@@ -11,10 +11,10 @@
             <p class="card-category">*Announcements will be displayed at User's Homepage</p>
             <form action="/action_page.php">
               <label for=""><h5>Enter Subject</h6></label><br>
-              <input type="text" id="" name="subject" placeholder="" size="147">
+              <input type="text" id="" name="subject" placeholder="" style="width:100%">
               <br>
               <label for=""><h5 style="margin-top: 15px;">Enter Comment</h5></label><br>
-              <input type="text" id="" name="comment" placeholder="" size="147" style="height: 80px;">
+              <input type="text" id="" name="comment" placeholder="" style="height: 80px;width:100%">
               
               <input type="submit" value="Submit" style="height: 40px; width: 80px; margin-top: 12px; margin-bottom: 12px; background-color: #f8a617; color: white; border: none;">
             </form>

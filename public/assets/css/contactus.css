@@ -1,0 +1,222 @@
+.button {
+    background-color: #f8a617;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+.social ul
+{
+	display: flex;
+	position: relative;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	
+}
+.social ul li
+{
+	position: relative;
+	list-style: none;
+	margin: 0 10px;
+}
+.social ul li:before
+{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -4px;
+	width: 120px;
+	height: 8px;
+	background: #000;
+	border-radius: 50%;
+	transition: 0.5s;
+	opacity: 0;
+	filter: blur(2px);
+	transform: scale(0.8);
+}
+.social ul li:hover:before
+{
+	transition-delay: 0.2s;
+	opacity: .2;
+	transform: scale(1);
+}
+.social ul li a
+{
+	display: block;
+	position: relative;
+	width: 120px;
+	height: 120px;
+	transition: 0.5s;
+	background: #ccc;
+}
+.social ul li:hover a
+{
+	transform: translateY(-10px);
+}
+.social ul li a span:before
+{
+	font-family: fontAwesome;
+	text-align: center;
+	font-size: 40px;
+	line-height: 120px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	color: #262626;
+	transform-origin: top;
+	transition: transform 0.5s;
+}
+.social ul li:nth-child(1) a span:before
+{
+	color: #3b5999;
+}
+.social ul li:nth-child(2) a span:before
+{
+	color: #55acee;
+}
+.social ul li:nth-child(3) a span:before
+{
+	color: #0088cc;
+}
+.social ul li:nth-child(4) a span:before
+{
+	color: #0077B5;
+}
+.social ul li:nth-child(5) a span:before
+{
+	color: #e4405f;
+}
+.social ul li:hover a span:before
+{
+	transform: rotateX(90deg) translateY(-50%);
+}
+
+
+.social ul li a span:after
+{
+	font-family: fontAwesome;
+	text-align: center;
+	font-size: 40px;
+	line-height: 120px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	color: #fff;
+	transform-origin: bottom;
+	transition: transform 0.5s;
+	transform: rotateX(90deg) translateY(50%);
+}
+.social ul li:hover a span:after
+{
+	transform: rotateX(0) translateY(0);
+}
+.social ul li:nth-child(1) a span:before,
+.social ul li:nth-child(1) a span:after
+{
+	content: '\f09a';
+}
+.social ul li:nth-child(2) a span:before,
+.social ul li:nth-child(2) a span:after
+{
+	content: '\f099';
+}
+.social ul li:nth-child(3) a span:before,
+.social ul li:nth-child(3) a span:after
+{
+	content: '\f2c6';
+}
+.social ul li:nth-child(4) a span:before,
+.social ul li:nth-child(4) a span:after
+{
+	content: '\f0e1';
+}
+.social ul li:nth-child(5) a span:before,
+.social ul li:nth-child(5) a span:after
+{
+	content: '\f16d';
+}
+.social ul li:nth-child(1) a span:after
+{
+	background: #3b5999;
+}
+.social ul li:nth-child(2) a span:after
+{
+	background: #55acee;
+}
+.social ul li:nth-child(3) a span:after
+{
+	background: #0088cc;
+}
+.social ul li:nth-child(4) a span:after
+{
+	background: #0077B5;
+}
+.social ul li:nth-child(5) a span:after
+{
+	background: #e4405f;
+}
+#poor {
+    accent-color:red;
+}
+#average {
+    accent-color:orange;
+}
+#good {
+    accent-color:green;
+}
+.radio-toolbar {
+	margin: 10px;
+  }
+  
+  .radio-toolbar input[type="radio"] {
+	opacity: 0;
+	position: fixed;
+	width: 0;
+  }
+  
+  .radio-toolbar label {
+	  display: inline-block;
+	  background-color: #ddd;
+	  padding: 10px 20px;
+	  font-family: sans-serif, Arial;
+	  font-size: 16px;
+	  border: 2px solid #444;
+	  border-radius: 4px;
+  }
+  
+  .radio-toolbar label:hover {
+	background-color: #dfd;
+  }
+  
+  .radio-toolbar input[type="radio"]:focus + label {
+	  border: 2px dashed #444;
+  }
+  
+  .radio-toolbar input[type="radio"]:checked + label {
+	  background-color: #bfb;
+	  border-color: #4c4;
+  }
+  .centertext {
+	padding: 105px 0;
+	text-align: center;
+	margin: auto;
+	width: 60%;
+  }
+  .centertext h1{
+	  color:white;
+  }

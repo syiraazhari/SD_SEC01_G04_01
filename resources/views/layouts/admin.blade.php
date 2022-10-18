@@ -73,7 +73,7 @@
               		<a href="{{ url('adminpanel/aboutmpp') }}"><i class='bx bxs-info-circle icon-padding'></i>About MPP</a>
 	        	</li>
 				    <li class="{{ Request::is('adminpanel/contact') ? 'active':'' }} ">
-              		<a href="{{ url('adminpanel/contact') }}"><i class='bx bxs-envelope icon-padding'></i>Contact Us</a>
+              		<a href="{{ url('adminpanel/contact') }}"><i class='bx bxs-envelope icon-padding'></i>View Feedback</a>
 	        	</li>
 				<li>
 					<a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
