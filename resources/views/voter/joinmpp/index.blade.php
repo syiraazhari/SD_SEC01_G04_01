@@ -39,7 +39,7 @@ table {
   margin:auto;
   margin-bottom: 50px;
 }
-ol, li {
+.paddingli{
   padding-bottom: 10px;
 }
 
@@ -56,18 +56,18 @@ ol, li {
           <div class="card-body">
             <div class="box">
               <ol type="1">
-                <li>Registered under clause 1.2</li>
-                <li>Sat for the first final examination caused by UTM and obtain;</li>
+                <li class="paddingli">Registered under clause 1.2</li>
+                <li class="paddingli">Sat for the first final examination caused by UTM and obtain;</li>
     
                 <ul style="list-style-type:disc;">
-                  <li>Undergraduate: a CGPA of not less than 3.00</li>
-                  <li>Postgraduate: a satisfactory standing (MM)</li>
+                  <li class="paddingli">Undergraduate: a CGPA of not less than 3.00</li>
+                  <li class="paddingli">Postgraduate: a satisfactory standing (MM)</li>
                 </ul>
               
-                <li>Free from any misconduct and debt</li>
-                <li>Have at least two full semesters of study in UTM</li>
-                <li>Not undergoing Gap Year / Teaching Practice / Industrial Training</li>
-                <li>Not a commitee or secretariat of JPMPP session 2022/2023</li>
+                <li class="paddingli">Free from any misconduct and debt</li>
+                <li class="paddingli">Have at least two full semesters of study in UTM</li>
+                <li class="paddingli">Not undergoing Gap Year / Teaching Practice / Industrial Training</li>
+                <li class="paddingli">Not a commitee or secretariat of JPMPP session 2022/2023</li>
               </ol>
             </div>
             <div class="card-header">
@@ -108,10 +108,10 @@ ol, li {
           <div class="card-body">
             <div class="box">
               <ol type="1">
-                <li>Fill in the candidate registration form</li>
-                <li>Payment of RM150 for general seat or RM100 for faculty seat must be made after filling in the registration form.</li>
-                <li>Candidate registration confirmation will be sent by JPMPP to the candidate's email. Further process will be conducted via email.</li>
-                <li>Please contact JPMPP if you have any enquiries.</li>
+                <li class="paddingli">Fill in the candidate registration form</li>
+                <li class="paddingli">Payment of RM150 for general seat or RM100 for faculty seat must be made after filling in the registration form.</li>
+                <li class="paddingli">Candidate registration confirmation will be sent by JPMPP to the candidate's email. Further process will be conducted via email.</li>
+                <li class="paddingli">Please contact JPMPP if you have any enquiries.</li>
               </ol>
             </div>
             <div class="container" style="text-align: center;">  

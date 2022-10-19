@@ -11,6 +11,7 @@
             <p class="card-category">*Announcements will be displayed at User's Homepage</p>
             <form action="/action_page.php">
               <label for=""><h5>Enter Subject</h6></label><br>
+
               <input type="text" id="" name="subject" placeholder="" style="width:100%">
               <br>
               <label for=""><h5 style="margin-top: 15px;">Enter Comment</h5></label><br>

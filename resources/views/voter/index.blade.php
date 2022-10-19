@@ -47,7 +47,7 @@
 @section('content4')
 
 <div>
-<section id="hero" style="width: 100%;">
+<section id="hero" style="width: 116%;">
     <div class="hero-container">
       <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
 
@@ -98,7 +98,7 @@
 
 <!-- ======= About UndiMPP UTMKL Section ======= -->
 <div id="about" class="about-area area-padding">
-  <div class="container" >
+  <div class="container">
     <div class="row" style="justify-content:center; margin-left:100px">
       <div class="col-md-12 col-sm-12 col-xs-12">
         <div class="section-headline text-center">

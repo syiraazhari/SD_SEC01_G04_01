@@ -47,7 +47,7 @@
 @section('content3')
 
 <div>
-<section id="hero">
+<section id="hero" style="width: 116%;>
     <div class="hero-container">
       <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
 

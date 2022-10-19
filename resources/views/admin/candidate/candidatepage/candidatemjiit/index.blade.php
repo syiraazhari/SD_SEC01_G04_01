@@ -21,8 +21,6 @@
 
 .left,
 .right {
-  background-color: white;
-  border: 2px solid black;
   overflow: hidden;
   border-radius: 15px;
 }
@@ -32,13 +30,16 @@
   float: left;
   min-height: 250px;
   margin-top: 1em;
+  margin-bottom: 1em;
+  background-color: white;
+  border: 1px solid black;
 }
 
 .right {
   width: calc(22.8% - (.5em + 6px));
   float: right;
   min-height: 250px;
-  margin-top: 1em;
+  margin-top: auto;
 }
 
 </style>
@@ -55,18 +56,18 @@
             <div style="text-align: center;">
               <p style="color: black; font-size: 15px"><b>SEAT CATEGORY : MALAYSIA-JAPAN INTERNATIONAL INSTITUTE OF TECHNOLOGY (MJIIT)</b></p>
               <a href="{{ url('adminpanel/candidatepage') }}" class="seatCategory" style="color: black;">GENERAL</a>
-              <a href="{{ url('adminpanel/candidatepage/candidateahibs') }}" class="seatCategory" style="color: black;">AHIBS</a>
+              <a href="{{ url('adminpanel/candidatepage/candidateahibs') }}" class="seatCategory" style="color: black;" >AHIBS</a>
               <a href="{{ url('adminpanel/candidatepage/candidateftir') }}" class="seatCategory" style="color: black;">FTIR</a>
-              <a href="{{ url('adminpanel/candidatepage/candidatemjiit') }}" class="seatCategory" style="color: black; background-color: #f8cc17;">MJIIT</a>
+              <a href="{{ url('adminpanel/candidatepage/candidatemjiit') }}" class="seatCategory" style="color: black;  background-color: #f8cc17;">MJIIT</a>
               <a href="{{ url('adminpanel/candidatepage/candidatespace') }}" class="seatCategory" style="color: black;">SPACE</a>
             </div>
                 <div style="margin-left: 75px; margin-right: 75px; margin-top: 20px;">
-
+                
                   <div class="left">
                     <div style="padding: 15px">
-                        <h2>MUHAMMAD IZMEER BIN ZULKIFLEE</h2> 
+                        <h3>MUHAMMAD IZMEER BIN ZULKIFLEE</h3> 
                         <p style="font-size: 20px;">3 DDWD</p><hr color="black">
-                        <p style="font-size: 20px;">1.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO<br>
+                        <p style="font-size: 1.0rem;">1.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO<br>
                                                     2.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO<br>
                                                     3.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO<br>
                                                     4.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO</p>
@@ -80,9 +81,9 @@
 
                   <div class="left">
                     <div style="padding: 15px">
-                        <h2>MUHAMMAD IZMEER BIN ZULKIFLEE</h2> 
+                        <h3>MUHAMMAD IZMEER BIN ZULKIFLEE</h3> 
                         <p style="font-size: 20px;">3 DDWD</p><hr color="black">
-                        <p style="font-size: 20px;">1.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO<br>
+                        <p style="font-size: 1.0rem;">1.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO<br>
                                                     2.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO<br>
                                                     3.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO<br>
                                                     4.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO</p>
@@ -96,9 +97,9 @@
 
                   <div class="left">
                     <div style="padding: 15px">
-                        <h2>MUHAMMAD IZMEER BIN ZULKIFLEE</h2> 
+                        <h3>MUHAMMAD IZMEER BIN ZULKIFLEE</h3> 
                         <p style="font-size: 20px;">3 DDWD</p><hr color="black">
-                        <p style="font-size: 20px;">1.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO<br>
+                        <p style="font-size: 1.0rem;">1.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO<br>
                                                     2.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO<br>
                                                     3.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO<br>
                                                     4.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO</p>

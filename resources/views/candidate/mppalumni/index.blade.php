@@ -1,5 +1,5 @@
 {{-- CANDIDATE MPP ALUMNI CONTENT --}}
-@extends('layouts.admin')
+@extends('layouts.candidate')
 @extends('layouts.app')
 
 @section('content')

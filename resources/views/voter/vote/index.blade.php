@@ -48,7 +48,7 @@
           
           </div>
           <div class="card-footer">
-            <hr><p class="card-title" style="text-align: right;">Next : Voting Regulations</p>
+            <hr><br>
           </div>
         </div>
       </div>

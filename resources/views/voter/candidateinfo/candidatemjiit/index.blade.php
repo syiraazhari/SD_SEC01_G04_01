@@ -1,4 +1,4 @@
-{{-- VOTER CANDIDATE PAGE CONTENT (MJIIT) --}}
+{{-- VOTER CANDIDATE INFOR PAGE CONTENT (MJIIT) --}}
 @extends('layouts.voter')
 @extends('layouts.app')
 @section('content4')
@@ -21,8 +21,6 @@
 
 .left,
 .right {
-  background-color: white;
-  border: 2px solid black;
   overflow: hidden;
   border-radius: 15px;
 }
@@ -32,13 +30,16 @@
   float: left;
   min-height: 250px;
   margin-top: 1em;
+  margin-bottom: 1em;
+  background-color: white;
+  border: 1px solid black;
 }
 
 .right {
   width: calc(22.8% - (.5em + 6px));
   float: right;
   min-height: 250px;
-  margin-top: 1em;
+  margin-top: auto;
 }
 
 </style>
@@ -64,9 +65,9 @@
 
                   <div class="left">
                     <div style="padding: 15px">
-                        <h2>MUHAMMAD IZMEER BIN ZULKIFLEE</h2> 
+                        <h3>MUHAMMAD IZMEER BIN ZULKIFLEE</h3> 
                         <p style="font-size: 20px;">3 DDWD</p><hr color="black">
-                        <p style="font-size: 20px;">1.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO<br>
+                        <p style="font-size: 1.0rem;">1.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO<br>
                                                     2.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO<br>
                                                     3.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO<br>
                                                     4.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO</p>
@@ -80,9 +81,9 @@
 
                   <div class="left">
                     <div style="padding: 15px">
-                        <h2>MUHAMMAD IZMEER BIN ZULKIFLEE</h2> 
+                        <h3>MUHAMMAD IZMEER BIN ZULKIFLEE</h3> 
                         <p style="font-size: 20px;">3 DDWD</p><hr color="black">
-                        <p style="font-size: 20px;">1.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO<br>
+                        <p style="font-size: 1.0rem;">1.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO<br>
                                                     2.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO<br>
                                                     3.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO<br>
                                                     4.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO</p>
@@ -96,9 +97,9 @@
 
                   <div class="left">
                     <div style="padding: 15px">
-                        <h2>MUHAMMAD IZMEER BIN ZULKIFLEE</h2> 
+                        <h3>MUHAMMAD IZMEER BIN ZULKIFLEE</h3> 
                         <p style="font-size: 20px;">3 DDWD</p><hr color="black">
-                        <p style="font-size: 20px;">1.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO<br>
+                        <p style="font-size: 1.0rem;">1.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO<br>
                                                     2.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO<br>
                                                     3.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO<br>
                                                     4.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO</p>
