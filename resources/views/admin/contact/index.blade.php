@@ -59,16 +59,32 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Voter</td>
-                                <td>Ali Abu</td>
-                                <td>aliabu@graduate.utm.my</td>
-                                <td>Good</td>
-                                <td>Very good website love it 10/10</td>
-                            </tr>
+                            @foreach ($feedback as $item)
+                                <tr>
+                                    <th scope="row">{{ $item->id }}</th>
+                                    @if ($item->user == "0")
+                                        <td>Voter</td>
+                                    @endif
+                                    @if ($item->user == "2")
+                                        <td>Candidate</td>
+                                    @endif
+                                    <td>{{ $item->name }}</td>
+                                    <td>{{ $item->email }}</td>
+                                    {{-- <td>{{ $item->rating }}</td> --}}
+                                    @if ($item->good == "1")
+                                        <td>Good</td>
+                                    @endif
+                                    @if ($item->average == "1")
+                                        <td>Average</td>
+                                    @endif
+                                    @if ($item->poor == "1")
+                                        <td>Poor</td>
+                                    @endif
+                                    <td>{{ $item->comment }}</td>
+                                </tr>
+                            @endforeach
                         </tbody>
-                        <tbody>
+                        {{-- <tbody>
                             <tr>
                                 <th scope="row">2</th>
                                 <td>Mark</td>
@@ -87,7 +103,7 @@
                                 <td>@mdo</td>
                                 <td>@mdo</td>
                             </tr>
-                        </tbody>
+                        </tbody> --}}
                     </table>
                 </div>
             </section>

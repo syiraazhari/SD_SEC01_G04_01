@@ -52,7 +52,7 @@
 
                 <div class="container" style="padding-left: 40px; padding-right: 40px;">
                   
-                    <p style="text-align: justify;"> Majlis Perwakilan Perwakilan (MPP) adalah persatuan induk yang mewakili seluruh mahasiswa berdaftar Universiti.  
+                    {{-- <p style="text-align: justify;"> Majlis Perwakilan Perwakilan (MPP) adalah persatuan induk yang mewakili seluruh mahasiswa berdaftar Universiti.  
                     MPP dibentuk melalui proses pemilihan setiap tahun bagi memilih calon yang mewakili kerusi umum dan kerusi fakulti di Universiti.  
                     Semua mahasiswa berdaftar yang sedang mengikuti kursus di peringkat diploma dan ijazah layak bertanding dan berhak mengundi untuk memilih wakil 
                     bagi mengisi kerusi umum dan kerusi fakulti sebagai wakil mereka di MPM.<br><br>
@@ -60,7 +60,10 @@
                     Pelbagai kegiatan berbentuk akademik dan bukan akademik dikendalikan oleh MPP.  Antaranya, konvensyen, seminar, khidmat masyarakat, bengkel dan sebagainya.  
                     Setiap mahasiswa digalakkan menyertai aktiviti yang dianjurkan oleh MPP. Ini bertujuan memberi peluang para mahasiswa berkenalan dan mengeratkan 
                     tali silaturahim sesama mahasiswa yang terdiri daripada pelbagai bangsa dan agama. Selain itu, penyertaan ini dapat mewujudkan semangat kerjasama antara 
-                    mahasiswa yang berlainan fakulti. </p>
+                    mahasiswa yang berlainan fakulti. </p> --}}
+                    @foreach ($about as $item)
+                      <p style="text-align: justify;">{{ $item->content }}</p>
+                    @endforeach
                   </div>  
                 <br>
 

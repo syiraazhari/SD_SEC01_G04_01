@@ -38,6 +38,10 @@ Route::get('voter/joinmpp/manifesto','App\Http\Controllers\Voter\JoinMPP\Manifes
 Route::post('upload','App\Http\Controllers\Voter\JoinMPP\RegisterController@manifesto');
 Route::get('voter/joinmpp/payment','App\Http\Controllers\Voter\JoinMPP\PaymentController@index');
 
+Route::post('voterFeedback','App\Http\Controllers\FeedbackController@feedbackvoter');
+
+Route::post('generalVote','App\Http\Controllers\VotingController@store');
+
 Route::get('voter/votingpage','App\Http\Controllers\Voter\Vote\VotingController@index');
 Route::get('voter/votingpage/votingregulation','App\Http\Controllers\Voter\Vote\VotingRegulationController@index');
 Route::get('voter/votingpage/votinggeneral','App\Http\Controllers\Voter\Vote\VotingGeneralController@index');
@@ -78,6 +82,8 @@ Route::middleware(['auth','isAdmin'])->group(function () {
     Route::get('adminpanel/viewtransaction','App\Http\Controllers\Admin\Candidate\ViewTransactionController@index');
 
     Route::get('adminpanel/aboutmpp','App\Http\Controllers\Admin\AboutMPP\AboutMPPController@index');
+    Route::get('adminpanel/aboutmpp/editaboutmpp','App\Http\Controllers\Admin\AboutMPP\EditAboutMPPController@index');
+    Route::post('submitAboutUs','App\Http\Controllers\Admin\AboutMPP\EditAboutMPPController@edit');
     Route::get('adminpanel/mppalumni','App\Http\Controllers\Admin\MPPAlumni\MPPAlumniController@index');
     Route::get('adminpanel/contact','App\Http\Controllers\Admin\Contact\ContactController@index');
 
@@ -103,6 +109,8 @@ Route::middleware(['auth','isCandidate'])->group(function () {
     Route::get('candidate/profiles','App\Http\Controllers\Candidate\ProfileController@index');
 
     Route::get('candidate/electionresult','App\Http\Controllers\Candidate\ElectionResultController@index');
+
+    Route::post('candidateFeedback','App\Http\Controllers\FeedbackController@feedbackcandidate');
 
     Route::get('candidate/aboutmpp','App\Http\Controllers\Candidate\AboutMPP\AboutMPPController@index');
     Route::get('candidate/mppalumni','App\Http\Controllers\Candidate\MPPAlumni\MPPAlumniController@index');

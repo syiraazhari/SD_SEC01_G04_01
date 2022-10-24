@@ -2,13 +2,15 @@
 
 namespace App\Http\Controllers\Candidate\AboutMPP;
 
-use App\Http\Controllers\Controller;
+use App\Models\AboutUs;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class AboutMPPController extends Controller
 {
     public function index()
     {
-        return view('candidate.aboutmpp.index');
+        $about = AboutUs::all();
+        return view('candidate.aboutmpp.index', compact('about'));
     }
 }

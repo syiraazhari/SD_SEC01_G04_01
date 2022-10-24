@@ -1,8 +1,8 @@
-{{-- CANDIDATE ABOUT MPP CONTENT --}}
-@extends('layouts.candidate')
+{{-- ADMIN ABOUT MPP CONTENT --}}
+@extends('layouts.admin')
 @extends('layouts.app')
 
-@section('content3')
+@section('content2')
 <!DOCTYPE html>
 <html>
 <head>
@@ -33,6 +33,27 @@
       margin: 20px;
       padding: 20px;
     }
+    .btn{
+      background-color: #F8A617;
+      border: none;
+      color: white;
+      padding: 8px 12px;
+      font-size: 12px;
+      cursor: pointer;
+      margin-left: 5px;
+   }
+   .btnsubmit{
+        height: 50px; 
+        width: 100px; 
+        margin-top: 12px; 
+        margin-bottom: 12px; 
+        background-color: #f8a617; 
+        color: white; 
+        border: none;
+        border-radius: 25px;
+        font-size: 17px;
+   }
+
 </style>
 </head>
 <body>
@@ -48,23 +69,18 @@
 
             <section class="mb-4 card card-body" style="border:white">
 
-                <h2 class="h1-responsive font-weight-bold text-center my-4">About Us</h2>
+                <h2 class="h1-responsive font-weight-bold text-center my-4">About Us </h2>
 
-                <div class="container" style="padding-left: 40px; padding-right: 40px;">
-                  
-                    {{-- <p style="text-align: justify;"> Majlis Perwakilan Perwakilan (MPP) adalah persatuan induk yang mewakili seluruh mahasiswa berdaftar Universiti.  
-                    MPP dibentuk melalui proses pemilihan setiap tahun bagi memilih calon yang mewakili kerusi umum dan kerusi fakulti di Universiti.  
-                    Semua mahasiswa berdaftar yang sedang mengikuti kursus di peringkat diploma dan ijazah layak bertanding dan berhak mengundi untuk memilih wakil 
-                    bagi mengisi kerusi umum dan kerusi fakulti sebagai wakil mereka di MPM.<br><br>
-
-                    Pelbagai kegiatan berbentuk akademik dan bukan akademik dikendalikan oleh MPP.  Antaranya, konvensyen, seminar, khidmat masyarakat, bengkel dan sebagainya.  
-                    Setiap mahasiswa digalakkan menyertai aktiviti yang dianjurkan oleh MPP. Ini bertujuan memberi peluang para mahasiswa berkenalan dan mengeratkan 
-                    tali silaturahim sesama mahasiswa yang terdiri daripada pelbagai bangsa dan agama. Selain itu, penyertaan ini dapat mewujudkan semangat kerjasama antara 
-                    mahasiswa yang berlainan fakulti. </p> --}}
-                    @foreach ($about as $item)
-                      <p style="text-align: justify;">{{ $item->content }}</p>
-                    @endforeach
-                  </div>  
+                <form action="{{url('submitAboutUs')}}" method="POST" style="margin-left: 80px; margin-right: 80px;">
+                @csrf    
+                    <textarea name="content" cols="40" rows="5" placeholder="Enter about us content" style="height: 130px; width: 100%;">{{ $about->content }}</textarea>
+                    <div style="text-align: center; margin-top: 15px;">
+                        <button type="submit" class="btnsubmit">Submit</button>
+                        {{-- <a href= "{{ url('adminpanel/aboutmpp') }}">
+                            <input class="btnsubmit" type="submit" value="Submit">
+                        </a> --}}
+                    </div>
+                </form>
                 <br>
 
                 <h2 class="h1-responsive font-weight-bold text-center my-4">Vision & Mission</h2>

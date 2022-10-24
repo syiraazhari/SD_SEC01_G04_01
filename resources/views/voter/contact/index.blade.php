@@ -61,8 +61,8 @@
 
                     <!--Grid column-->
                     <div class="col-md-9 mb-md-0 mb-5">
-                        <form id="contact-form" name="contact-form" action="mail.php" method="POST">
-
+                        <form id="contact-form" name="contact-form" action="{{url('voterFeedback')}}" method="POST">
+                        @csrf
                         <!--Grid row-->
                         <div class="row">
                             <div class="col-md-12">
@@ -72,17 +72,17 @@
                                     <div class="btn-group-toggle" data-toggle="buttons">
                                         <label class="btn btn-secondary btn-danger active btn-lg" style="margin-right:15px">
                                             <i class="fa-solid fa-face-frown fa-xl"></i>
-                                            <input type="radio" name="feedback" id="poor" autocomplete="off" checked> 
+                                            <input type="radio" name="poor" value="1"{{--id="poor"--}} autocomplete="off"> 
                                         </label>
 
                                         <label class="btn btn-secondary btn-warning btn-lg" style="margin-right:15px">
                                             <i class="fa-solid fa-face-meh fa-xl"></i>
-                                            <input type="radio" name="feedback" id="average" autocomplete="off">
+                                            <input type="radio" name="average" value="1" {{--id="average"--}} autocomplete="off">
                                         </label>
                             
                                         <label class="btn btn-secondary btn-success btn-lg" style="margin-right:15px">
                                             <i class="fa-solid fa-face-smile fa-xl"></i> 
-                                            <input type="radio" name="feedback" id="good" autocomplete="off">
+                                            <input type="radio" name="good" value="1" {{--id="good"--}} autocomplete="off">
                                         </label>                    
                                     </div>
                                 </div>
@@ -116,17 +116,17 @@
                             <div class="col-md-12">
 
                                 <div class="md-form">
-                                    <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                                    <input type="text" id="comment" name="comment" rows="2" class="form-control md-textarea">
                                     <label for="message" style="font-size:1.0rem">Comments / Suggestions / Feedback</label>
                                 </div>
                             </div>
-                        </div><br>
+                        </div>
+                        <br>
+                        <div class="text-center text-md-left">
+                            {{-- <a class="button" onclick="document.getElementById('contact-form').submit();">Submit</a> --}}
+                            <button type="submit" class="button">Submit</button>
+                        </div>
                         </form>
-
-                    <div class="text-center text-md-left">
-                        <a class="button" onclick="document.getElementById('contact-form').submit();">Submit</a>
-                    </div>
-
                     <div class="status"></div>
                 </div>
    
