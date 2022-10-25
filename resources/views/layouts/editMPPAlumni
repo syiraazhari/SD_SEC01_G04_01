@@ -1,8 +1,8 @@
-{{-- CANDIDATE MPP ALUMNI CONTENT --}}
-@extends('layouts.candidate')
+{{-- ADMIN MPP ALUMNI CONTENT --}}
+@extends('layouts.admin')
 @extends('layouts.app')
 
-@section('content3')
+@section('content2')
 <!DOCTYPE html>
 <html>
 <head>
@@ -38,6 +38,15 @@
         max-height: 100%; 
         display: block;
     }
+    .btn{
+      background-color: #F8A617;
+      border: none;
+      color: white;
+      padding: 8px 12px;
+      font-size: 12px;
+      cursor: pointer;
+      margin-left: 5px;
+   }
 </style>
 </head>
 <body>
@@ -53,7 +62,18 @@
 
             <section class="mb-4 card card-body" style="border:white;">
 
-            <h2 class="h1-responsive font-weight-bold text-center my-4"> Meet MPP Alumni Team Members </h2>
+            <h2 class="h1-responsive font-weight-bold text-center my-4">Meet MPP Alumni Team Members </h2>
+
+            <form action="{{url('submitAboutUs')}}" method="POST" style="margin-left: 80px; margin-right: 80px;">
+                @csrf    
+                    <textarea name="content" cols="40" rows="5" placeholder="Enter mpp alumni caption" style="height: 130px; width: 100%;">{{ $about->content }}</textarea>
+                    <div style="text-align: center; margin-top: 15px;">
+                        <button type="submit" class="btnsubmit">Submit</button>
+                        {{-- <a href= "{{ url('adminpanel/mppalumni') }}">
+                            <input class="btnsubmit" type="submit" value="Submit">
+                        </a> --}}
+                    </div>
+                </form>
 
             <div class="container" style="padding-left: 40px; padding-right: 40px;">
                   
