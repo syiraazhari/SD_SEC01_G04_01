@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\Admin\ProfileController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\Admin\AboutMPP\EditAboutMPPController;
+use App\Http\Controllers\Admin\MPPAlumni\EditMPPAlumniController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -82,10 +84,16 @@ Route::middleware(['auth','isAdmin'])->group(function () {
     Route::get('adminpanel/viewtransaction','App\Http\Controllers\Admin\Candidate\ViewTransactionController@index');
 
     Route::get('adminpanel/aboutmpp','App\Http\Controllers\Admin\AboutMPP\AboutMPPController@index');
-    Route::get('adminpanel/aboutmpp/editaboutmpp','App\Http\Controllers\Admin\AboutMPP\EditAboutMPPController@index');
-    Route::post('submitAboutUs','App\Http\Controllers\Admin\AboutMPP\EditAboutMPPController@edit');
+    Route::get('adminpanel/aboutmpp/editaboutmpp/{id}', [EditAboutMPPController::class , 'edit']);
+    Route::pUT('update-aboutmpp/{id}',[EditAboutMPPController::class, 'update']);
+    
     Route::get('adminpanel/mppalumni','App\Http\Controllers\Admin\MPPAlumni\MPPAlumniController@index');
+    Route::get('adminpanel/mppalumni/editmppalumni/{id}', [EditMPPAlumniController::class , 'edit']);
+    Route::pUT('update-mppalumni/{id}',[EditMPPAlumniController::class, 'update']);
+
+
     Route::get('adminpanel/contact','App\Http\Controllers\Admin\Contact\ContactController@index');
+
 
     Route::get('adminpanel/votingpage/votingregulation','App\Http\Controllers\Admin\Voter\VotingRegulationController@index');
     Route::get('adminpanel/votingpage/votinggeneral','App\Http\Controllers\Admin\Voter\VotingGeneralController@index');

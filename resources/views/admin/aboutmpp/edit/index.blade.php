@@ -71,11 +71,15 @@
 
                 <h2 class="h1-responsive font-weight-bold text-center my-4">About Us </h2>
 
-                <form action="{{url('submitAboutUs')}}" method="POST" style="margin-left: 80px; margin-right: 80px;">
-                @csrf    
+                <form action="{{url('update-aboutmpp/'.$about->id)}}" method="POST" style="margin-left: 80px; margin-right: 80px;">
+                @csrf
+                @method('PUT')
+                    {{-- @foreach ($about as $item )
+                    <textarea name="content" cols="40" rows="5" placeholder="Enter about us content" style="height: 130px; width: 100%;">{{ $item->content }}</textarea>
+                    @endforeach --}}
                     <textarea name="content" cols="40" rows="5" placeholder="Enter about us content" style="height: 130px; width: 100%;">{{ $about->content }}</textarea>
                     <div style="text-align: center; margin-top: 15px;">
-                        <button type="submit" class="btnsubmit">Submit</button>
+                        <button type="submit" class="btnsubmit">Save</button>
                         {{-- <a href= "{{ url('adminpanel/aboutmpp') }}">
                             <input class="btnsubmit" type="submit" value="Submit">
                         </a> --}}

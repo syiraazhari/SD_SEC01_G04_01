@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('feedback', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('user')->unsigned();
+            $table->bigInteger('user_id')->unsigned();
             $table->string('name');
             $table->string('email');
             $table->boolean('good')->nullable();
@@ -23,7 +23,7 @@ return new class extends Migration
             $table->boolean('poor')->nullable();
             $table->longtext('comment');
             $table->timestamps();
-            $table->foreign('user')->references('role_as')->on('users')->onDelete('cascade');
+            $table->foreign('user_id')->references('role_as')->on('users')->onDelete('cascade');
         });
     }
 

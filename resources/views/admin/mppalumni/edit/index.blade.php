@@ -62,34 +62,32 @@
 
             <section class="mb-4 card card-body" style="border:white;">
 
-                <h2 class="h1-responsive font-weight-bold text-center my-4">Meet MPP Alumni Team Members 
+            <h2 class="h1-responsive font-weight-bold text-center my-4">Meet MPP Alumni Team Members </h2>
 
-                    {{-- <a href="{{ url('adminpanel/aboutmpp/editaboutmpp') }}">
-                    <button class="btn"><i class="fa fa-edit"></i> Edit </button> 
-                    </a> --}}
+            <form action="{{url('submitMPPAlumni')}}" method="POST" style="margin-left: 80px; margin-right: 80px;">
+                @csrf    
+                    <textarea name="content" cols="40" rows="5" placeholder="Enter mpp alumni caption" style="height: 130px; width: 100%;"></textarea>
+                    <div style="text-align: center; margin-top: 15px;">
+                        <button type="submit" class="btnsubmit">Submit</button>
+                        {{-- <a href= "{{ url('adminpanel/mppalumni') }}">
+                            <input class="btnsubmit" type="submit" value="Submit">
+                        </a> --}}
+                    </div>
+                </form>
 
-                </h2>
+            <div class="container" style="padding-left: 40px; padding-right: 40px;">
+                  
+                    <p style="text-align: justify;"> UTM Student Representative Council (SRC) is a Centrer association representing all university registered students. 
+                    The SRC is formed through the election process each year to select candidates representing the general and faculty chairs of the university. 
+                    All registered students who are pursuing diploma and degree courses are eligible to vote and have the right to elect representatives to fill the general 
+                    and faculty seats as their representatives in the SRC. <br><br>
                 
-                @foreach ($alumni as $item)
-                <div class="container" style="padding-left: 40px; padding-right: 40px;">
+                    The Executive Council’s main task is to act as the forefront to the leadership line of MPP UTM. Not only that, the Executive Council also monitors the job scopes and tasks of each department in MPP so that it is well integrated with all the other departments of MPP.  
+                    The Executive Council also plays a big role in ensuring that all the tasks being fulfilled are based on the mission of MPP which is our utmost priority.
+                    </p> 
                     
-                        {{-- <p style="text-align: justify;"> UTM Student Representative Council (SRC) is a Centrer association representing all university registered students. 
-                        The SRC is formed through the election process each year to select candidates representing the general and faculty chairs of the university. 
-                        All registered students who are pursuing diploma and degree courses are eligible to vote and have the right to elect representatives to fill the general 
-                        and faculty seats as their representatives in the SRC. <br><br>
-                    
-                        The Executive Council’s main task is to act as the forefront to the leadership line of MPP UTM. Not only that, the Executive Council also monitors the job scopes and tasks of each department in MPP so that it is well integrated with all the other departments of MPP.  
-                        The Executive Council also plays a big role in ensuring that all the tasks being fulfilled are based on the mission of MPP which is our utmost priority.
-                        </p>  --}}
-                        <p style="text-align: justify;">{{ $item->content }}</p>
-                        <br>
-                </div>
-                <div class="container" style="padding-left: 40px; padding-right: 40px;">
-                    <a href="{{ url('adminpanel/mppalumni/editmppalumni/'.$item->id) }}" class="btn"><i class="fa fa-edit"></i> Edit </a>
-                </div>
-                @endforeach
-                <br>
-            
+            </div><br>
+
                 <h2 class="h1-responsive font-weight-bold text-center my-4">MPP UTM SESSION: 2020/2021</h2>
 
                 <div class="container">

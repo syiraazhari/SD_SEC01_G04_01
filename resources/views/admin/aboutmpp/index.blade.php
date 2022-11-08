@@ -56,16 +56,17 @@
                 </div>
             </div>
 
-            <section class="mb-4 card card-body" style="border:white">
+            <section class="mb-4 card card-body" style="border:white;">
 
                 <h2 class="h1-responsive font-weight-bold text-center my-4">About Us 
 
-                <a href="{{ url('adminpanel/aboutmpp/editaboutmpp') }}">
+                {{-- <a href="{{ url('adminpanel/aboutmpp/editaboutmpp') }}">
                   <button class="btn"><i class="fa fa-edit"></i> Edit </button> 
-                </a>
+                </a> --}}
                 
                 </h2>
 
+                @foreach ($about as $item)
                 <div class="container" style="padding-left: 40px; padding-right: 40px;">
                   
                     {{-- <p style="text-align: justify;"> Majlis Perwakilan Perwakilan (MPP) adalah persatuan induk yang mewakili seluruh mahasiswa berdaftar Universiti.  
@@ -77,10 +78,14 @@
                     Setiap mahasiswa digalakkan menyertai aktiviti yang dianjurkan oleh MPP. Ini bertujuan memberi peluang para mahasiswa berkenalan dan mengeratkan 
                     tali silaturahim sesama mahasiswa yang terdiri daripada pelbagai bangsa dan agama. Selain itu, penyertaan ini dapat mewujudkan semangat kerjasama antara 
                     mahasiswa yang berlainan fakulti. </p> --}}
-                    @foreach ($about as $item)
+                    
                       <p style="text-align: justify;">{{ $item->content }}</p>
-                    @endforeach
-                  </div>  
+                      <br>    
+                </div>
+                <div class="container" style="padding-left: 40px; padding-right: 40px;">
+                  <a href="{{ url('adminpanel/aboutmpp/editaboutmpp/'.$item->id) }}" class="btn"><i class="fa fa-edit"></i> Edit </a>
+                </div>
+                @endforeach
                 <br>
 
                 <h2 class="h1-responsive font-weight-bold text-center my-4">Vision & Mission</h2>
