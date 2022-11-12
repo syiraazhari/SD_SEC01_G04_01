@@ -39,6 +39,7 @@ form {
 </style>
 </head>
 <body>
+  <script src="https://js.stripe.com/v3"></script>
     <div class="row" style="padding-top: 1.5rem; padding-left: 1.5rem;">
       
       <div class="col-md-12">
@@ -77,14 +78,55 @@ form {
 
               <div style="text-align: center; margin-right: 50px; margin-top:50px;">
                 <a href= "{{ url('voter/joinmpp/register') }}" class ="button"> < Previous Page </a>
-                <a href= "{{ url('voter/joinmpp/payment') }}" class ="button"> Proceed to Payment Page > </a>
-                <button type="submit" class="button">Proceed to Payment Page</button>
+                <a href= "#" class ="button" id="checkout-button-price_1M3PO6B1kXhthdzDtW7h2DDI"> Proceed to Payment Page > </a>
               </div>
+
+              <div id="error-message"></div>
               </ol>
             </form>
         </div>
       </div>
     </div>
+
+<script>
+
+(function() {
+  var stripe = Stripe('pk_test_51M2qqKB1kXhthdzDeT7TA69OwQXfkMKhRuRoCtTBUpl3yLyUS2ANqdLNj6ktBrQFuM3IUhlG9mIUIvaI0VoD5WTz00nv7OZgKs');
+
+  var checkoutButton = document.getElementById('checkout-button-price_1M3PO6B1kXhthdzDtW7h2DDI');
+  checkoutButton.addEventListener('click', function () {
+    /*
+     * When the customer clicks on the button, redirect
+     * them to Checkout.
+     */
+    stripe.redirectToCheckout({
+      lineItems: [{price: 'price_1M3PO6B1kXhthdzDtW7h2DDI', quantity: 1}],
+      mode: 'payment',
+      /*
+       * Do not rely on the redirect to the successUrl for fulfilling
+       * purchases, customers may not always reach the success_url after
+       * a successful payment.
+       * Instead use one of the strategies described in
+       * https://stripe.com/docs/payments/checkout/fulfill-orders
+       */
+      successUrl: 'http://127.0.0.1:8000/voter/joinmpp/payment/success',
+      cancelUrl: 'http://127.0.0.1:8000/voter/joinmpp/payment/canceled',
+    })
+    .then(function (result) {
+      if (result.error) {
+        /*
+         * If `redirectToCheckout` fails due to a browser or network
+         * error, display the localized error message to your customer.
+         */
+        var displayError = document.getElementById('error-message');
+        displayError.textContent = result.error.message;
+      }
+    });
+  });
+})();
+
+
+</script>
     
 </body>
 </html>
