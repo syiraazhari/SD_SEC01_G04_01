@@ -82,23 +82,23 @@ table {
               </tr>
               <tr>
                 <td>General</td>
-                <td>2</td>
+                <td>1</td>
               </tr>
               <tr>
                 <td>Azman Hashim International Business School</td>
-                <td>2</td>
+                <td>1</td>
               </tr>
               <tr>
                 <td>Malaysia-Japan International Institute of Technology</td>
-                <td>2</td>
+                <td>1</td>
               </tr>
               <tr>
                 <td>Razak Faculty of Technology and Informatics</td>
-                <td>2</td>
+                <td>1</td>
               </tr>
               <tr>
                 <td>School of Professional and Continuing Education</td>
-                <td>2</td>
+                <td>1</td>
               </tr>
             </table>
 

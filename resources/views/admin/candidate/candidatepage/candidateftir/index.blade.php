@@ -64,55 +64,35 @@
             </div>
                 <div style="margin-left: 75px; margin-right: 75px; margin-top: 20px;">
                 
-                  <div class="left">
+                <div class="left">
                     <div style="padding: 15px">
-                        <h3>MUHAMMAD IZMEER BIN ZULKIFLEE</h3> 
-                        <p style="font-size: 20px;">3 DDWD</p><hr color="black">
-                        <p style="font-size: 1.0rem;">1.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO<br>
-                                                    2.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO<br>
-                                                    3.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO<br>
-                                                    4.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO</p>
+                        <h3>AINA NURAIN BINTI MOHD AROFF</h3> 
+                        <p style="font-size: 20px;">3 DDWZ</p><hr color="black">
+                        <p style="font-size: 1.0rem;">1. I will make sure all students get their opinions and voices heard by the higher-ups<br>
+                                                    2. I will vouch to fix the health-hazard carpets in Makmal Sistem 1<br></p>
                     </div>
                   </div> 
                   <div class="right">
                     <div style="width: 930px;">
-                    <img src="{{ asset('assets/img/team-2.jpg') }}">  
+                    <img src="{{ asset('assets/img/team-1.jpg') }}">  
                     </div>         
                   </div> 
 
                   <div class="left">
-                    <div style="padding: 15px">
-                        <h3>MUHAMMAD IZMEER BIN ZULKIFLEE</h3> 
+                    <div style="padding: 15px; ">
+                        <h3>AFIQ IRFAN BIN MOHAMAD IZAM</h3> 
                         <p style="font-size: 20px;">3 DDWD</p><hr color="black">
-                        <p style="font-size: 1.0rem;">1.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO<br>
-                                                    2.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO<br>
-                                                    3.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO<br>
-                                                    4.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO</p>
+                        <p style="font-size: 1.0rem;">1. I will ensure all labs in UTMKL are clean and free of dust<br>
+                                                    2.  I will be the voice to make sure that UTMKL reduces their fees to aid students during this pandemic<br></p>
                     </div>
                   </div> 
                   <div class="right">
-                    <div style="width: 930px;">
-                    <img src="{{ asset('assets/img/team-2.jpg') }}">  
+                    <div style="width: 930px;margin-top:50px">
+                    <img src="{{ asset('assets/img/team-6.jpeg') }}">  
                     </div>         
                   </div> 
 
-                  <div class="left">
-                    <div style="padding: 15px">
-                        <h3>MUHAMMAD IZMEER BIN ZULKIFLEE</h3> 
-                        <p style="font-size: 20px;">3 DDWD</p><hr color="black">
-                        <p style="font-size: 1.0rem;">1.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO<br>
-                                                    2.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO<br>
-                                                    3.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO<br>
-                                                    4.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO</p>
-                    </div>
-                  </div> 
-                  <div class="right">
-                    <div style="width: 930px;">
-                    <img src="{{ asset('assets/img/team-2.jpg') }}">  
-                    </div>         
-                  </div> 
                   
-                </div>
               
           </div>
           <div class="card-footer">

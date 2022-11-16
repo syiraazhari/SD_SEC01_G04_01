@@ -65,12 +65,24 @@
 
                   <div class="left">
                     <div style="padding: 15px">
+                        <h3>ISKANDAR HAKIMI BIN ZULKIPPLI</h3> 
+                        <p style="font-size: 20px;">3 DDWC</p><hr color="black">
+                        <p style="font-size: 1.0rem;">1. I will give free textbooks to all students<br>
+                                                    2. I will introduce a new basketball court in campus<br></p>
+                    </div>
+                  </div> 
+                  <div class="right">
+                    <div style="width: 930px;">
+                    <img src="{{ asset('assets/img/team-4.jpg') }}">  
+                    </div>         
+                  </div> 
+
+                  <div class="left">
+                    <div style="padding: 15px">
                         <h3>MUHAMMAD IZMEER BIN ZULKIFLEE</h3> 
                         <p style="font-size: 20px;">3 DDWD</p><hr color="black">
-                        <p style="font-size: 1.0rem;">1.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO<br>
-                                                    2.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO<br>
-                                                    3.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO<br>
-                                                    4.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO</p>
+                        <p style="font-size: 1.0rem;">1. I will make sure the food in campus is affordable and healthy<br>
+                                                    2. I will fix the tennis court <br></p>
                     </div>
                   </div> 
                   <div class="right">
@@ -79,37 +91,6 @@
                     </div>         
                   </div> 
 
-                  <div class="left">
-                    <div style="padding: 15px">
-                        <h3>MUHAMMAD IZMEER BIN ZULKIFLEE</h3> 
-                        <p style="font-size: 20px;">3 DDWD</p><hr color="black">
-                        <p style="font-size: 1.0rem;">1.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO<br>
-                                                    2.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO<br>
-                                                    3.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO<br>
-                                                    4.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO</p>
-                    </div>
-                  </div> 
-                  <div class="right">
-                    <div style="width: 930px;">
-                    <img src="{{ asset('assets/img/team-2.jpg') }}">  
-                    </div>         
-                  </div> 
-
-                  <div class="left">
-                    <div style="padding: 15px">
-                        <h3>MUHAMMAD IZMEER BIN ZULKIFLEE</h3> 
-                        <p style="font-size: 20px;">3 DDWD</p><hr color="black">
-                        <p style="font-size: 1.0rem;">1.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO<br>
-                                                    2.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO<br>
-                                                    3.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO<br>
-                                                    4.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO</p>
-                    </div>
-                  </div> 
-                  <div class="right">
-                    <div style="width: 930px;">
-                    <img src="{{ asset('assets/img/team-2.jpg') }}">  
-                    </div>         
-                  </div> 
                   
                 </div>
               

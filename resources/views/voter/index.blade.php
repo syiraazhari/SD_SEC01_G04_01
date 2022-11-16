@@ -46,7 +46,6 @@
 
 @section('content4')
 
-<div>
 <div class="content-margin" style="width:100%">
     <div class="row" style="padding-top: 0rem;margin: auto; width:100%">
 <section id="hero" style="width: 100%;">
@@ -154,8 +153,8 @@
   </div>
 </div><!-- About UndiMPP UTMKL Section -->
 </div>
-            </div>
-            </div>
+</div>
+         
   
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

@@ -46,10 +46,9 @@
 
 @section('content3')
 
-<div>
-<div class="content-margin">
+<div class="content-margin" style="width:100%">
     <div class="row" style="padding-top: 0rem;margin: auto; width:100%">
-<section id="hero" style="width: 116%;>
+<section id="hero" style="width:100%">
     <div class="hero-container">
       <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
 
@@ -169,7 +168,7 @@
 
 @endsection
             </div>
-            </div>
+           
 </body>
 
 </html>

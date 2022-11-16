@@ -65,54 +65,34 @@
 
                   <div class="left">
                     <div style="padding: 15px">
-                        <h3>MUHAMMAD IZMEER BIN ZULKIFLEE</h3> 
-                        <p style="font-size: 20px;">3 DDWD</p><hr color="black">
-                        <p style="font-size: 1.0rem;">1.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO<br>
-                                                    2.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO<br>
-                                                    3.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO<br>
-                                                    4.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO</p>
+                        <h3>AINA AMISHA BINTI AHMAD FAKRURROZI</h3> 
+                        <p style="font-size: 20px;">3 DDWA</p><hr color="black">
+                        <p style="font-size: 1.0rem;">1.  Anyone can make their voice heard and express their opinion on the running of the school,
+regardless of faculty, year or any other factor<br>
+                                                    2.  The student body (you!) are kept informed of the decisions made by the council<br>
                     </div>
                   </div> 
                   <div class="right">
                     <div style="width: 930px;">
-                    <img src="{{ asset('assets/img/team-2.jpg') }}">  
+                    <img src="{{ asset('assets/img/team-3.jpeg') }}">  
                     </div>         
                   </div> 
 
                   <div class="left">
                     <div style="padding: 15px">
-                        <h3>MUHAMMAD IZMEER BIN ZULKIFLEE</h3> 
-                        <p style="font-size: 20px;">3 DDWD</p><hr color="black">
-                        <p style="font-size: 1.0rem;">1.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO<br>
-                                                    2.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO<br>
-                                                    3.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO<br>
-                                                    4.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO</p>
+                        <h3>ANUSHKA ROSHNI SIVAKUMAR</h3> 
+                        <p style="font-size: 20px;">3 DDWB</p><hr color="black">
+                        <p style="font-size: 1.0rem;">1.  Decisions made by the council are to the benefit of all undergraduates<br>
+                                                    2.  Monthly free meal vouchers at KSJ cafe <br></p>
+                                                   
                     </div>
                   </div> 
                   <div class="right">
-                    <div style="width: 930px;">
-                    <img src="{{ asset('assets/img/team-2.jpg') }}">  
+                    <div style="width: 930px; margin-top:50px">
+                    <img src="{{ asset('assets/img/team-5.jpeg') }}">  
                     </div>         
-                  </div> 
-
-                  <div class="left">
-                    <div style="padding: 15px">
-                        <h3>MUHAMMAD IZMEER BIN ZULKIFLEE</h3> 
-                        <p style="font-size: 20px;">3 DDWD</p><hr color="black">
-                        <p style="font-size: 1.0rem;">1.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO<br>
-                                                    2.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO<br>
-                                                    3.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO<br>
-                                                    4.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO</p>
-                    </div>
-                  </div> 
-                  <div class="right">
-                    <div style="width: 930px;">
-                    <img src="{{ asset('assets/img/team-2.jpg') }}">  
-                    </div>         
-                  </div> 
-                  
+                  </div>
                 </div>
-              
           </div>
           <div class="card-footer">
             <hr>

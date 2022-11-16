@@ -64,56 +64,34 @@
             </div>
                 <div style="margin-left: 75px; margin-right: 75px; margin-top: 20px;">
                 
-                  <div class="left">
+                <div class="left">
                     <div style="padding: 15px">
-                        <h3>MUHAMMAD IZMEER BIN ZULKIFLEE</h3> 
+                        <h3>MEI XING</h3> 
                         <p style="font-size: 20px;">3 DDWD</p><hr color="black">
-                        <p style="font-size: 1.0rem;">1.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO<br>
-                                                    2.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO<br>
-                                                    3.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO<br>
-                                                    4.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO</p>
+                        <p style="font-size: 1.0rem;">1. I will encourage students to go to campus by bicycle<br>
+                                                    2. I will bring in more food trucks to campus for students to enjoy new food<br></p>
                     </div>
                   </div> 
                   <div class="right">
                     <div style="width: 930px;">
-                    <img src="{{ asset('assets/img/team-2.jpg') }}">  
+                    <img src="{{ asset('assets/img/winner4.jpeg') }}">  
                     </div>         
                   </div> 
 
                   <div class="left">
                     <div style="padding: 15px">
-                        <h3>MUHAMMAD IZMEER BIN ZULKIFLEE</h3> 
-                        <p style="font-size: 20px;">3 DDWD</p><hr color="black">
-                        <p style="font-size: 1.0rem;">1.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO<br>
-                                                    2.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO<br>
-                                                    3.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO<br>
-                                                    4.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO</p>
+                        <h3>WAHYU BAKTI</h3> 
+                        <p style="font-size: 20px;">2 DDWP</p><hr color="black">
+                        <p style="font-size: 1.0rem;">1. I want to make UTMKL a safe space for everyone<br>
+                                                    2. I will make the library open for 24 hours to give student a space to study at all times<br></p>
                     </div>
                   </div> 
                   <div class="right">
                     <div style="width: 930px;">
-                    <img src="{{ asset('assets/img/team-2.jpg') }}">  
+                    <img src="{{ asset('assets/img/winner5.jpg') }}">  
                     </div>         
                   </div> 
 
-                  <div class="left">
-                    <div style="padding: 15px">
-                        <h3>MUHAMMAD IZMEER BIN ZULKIFLEE</h3> 
-                        <p style="font-size: 20px;">3 DDWD</p><hr color="black">
-                        <p style="font-size: 1.0rem;">1.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO<br>
-                                                    2.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO<br>
-                                                    3.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO<br>
-                                                    4.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO</p>
-                    </div>
-                  </div> 
-                  <div class="right">
-                    <div style="width: 930px;">
-                    <img src="{{ asset('assets/img/team-2.jpg') }}">  
-                    </div>         
-                  </div> 
-                  
-                </div>
-              
           </div>
           <div class="card-footer">
             <hr>

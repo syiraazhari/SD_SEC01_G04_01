@@ -65,51 +65,31 @@
 
                   <div class="left">
                     <div style="padding: 15px">
-                        <h3>MUHAMMAD IZMEER BIN ZULKIFLEE</h3> 
-                        <p style="font-size: 20px;">3 DDWD</p><hr color="black">
-                        <p style="font-size: 1.0rem;">1.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO<br>
-                                                    2.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO<br>
-                                                    3.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO<br>
-                                                    4.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO</p>
+                        <h3>FAIZUL AHMAD BIN SAIFUL</h3> 
+                        <p style="font-size: 20px;">3 DDWP</p><hr color="black">
+                        <p style="font-size: 1.0rem;">1. I will conduct frequent discussions with the high council to fix all the problems in UTMKL<br>
+                                                    2. I will collect feedback and comments from UTMKL students to make UTM a better learning environment<br></p>
                     </div>
                   </div> 
                   <div class="right">
-                    <div style="width: 930px;">
-                    <img src="{{ asset('assets/img/team-2.jpg') }}">  
+                    <div style="width: 930px; margin-top:50px;">
+                    <img src="{{ asset('assets/img/winner3.jpg') }}">  
                     </div>         
                   </div> 
 
                   <div class="left">
                     <div style="padding: 15px">
-                        <h3>MUHAMMAD IZMEER BIN ZULKIFLEE</h3> 
-                        <p style="font-size: 20px;">3 DDWD</p><hr color="black">
-                        <p style="font-size: 1.0rem;">1.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO<br>
-                                                    2.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO<br>
-                                                    3.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO<br>
-                                                    4.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO</p>
+                        <h3>ALIA ROSDINA BINTI MOHD ALI</h3> 
+                        <p style="font-size: 20px;">3 DDWG</p><hr color="black">
+                        <p style="font-size: 1.0rem;">1. I want to give free food to students every weekend<br>
+                                                    2. I will increase the number of water dispensers around campus<br></p>
                     </div>
                   </div> 
                   <div class="right">
                     <div style="width: 930px;">
-                    <img src="{{ asset('assets/img/team-2.jpg') }}">  
+                    <img src="{{ asset('assets/img/winner2.jpg') }}">  
                     </div>         
-                  </div> 
-
-                  <div class="left">
-                    <div style="padding: 15px">
-                        <h3>MUHAMMAD IZMEER BIN ZULKIFLEE</h3> 
-                        <p style="font-size: 20px;">3 DDWD</p><hr color="black">
-                        <p style="font-size: 1.0rem;">1.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO<br>
-                                                    2.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO<br>
-                                                    3.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO<br>
-                                                    4.  MANIFESTO  MANIFESTOMANIFESTO  MANIFESTO</p>
-                    </div>
-                  </div> 
-                  <div class="right">
-                    <div style="width: 930px;">
-                    <img src="{{ asset('assets/img/team-2.jpg') }}">  
-                    </div>         
-                  </div> 
+                  </div>
                   
                 </div>
               

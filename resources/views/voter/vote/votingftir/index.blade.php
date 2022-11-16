@@ -57,7 +57,7 @@
           <h5 class="card-title" style="text-align: center;">Razak Faculty of Technology and Informatics (FTIR)</h5><br>
         </div>
         <div class="card-body">
-          <h4 class="card-title" style="text-align: center;">Please vote 1 seats</h4>
+          <h4 class="card-title" style="text-align: center;">Please vote for one (1) candidate</h4>
 
           <form method="post" action="{{url('ftirVote')}}" enctype="multipart/form-data">
             @csrf

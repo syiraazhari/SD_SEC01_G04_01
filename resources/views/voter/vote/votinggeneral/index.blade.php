@@ -56,7 +56,7 @@
             <h2 class="card-title" style="text-align: center;">GENERAL SEAT</h2>
           </div>
           <div class="card-body">
-            <h4 class="card-title" style="text-align: center;">Please vote 1 seats</h4>
+            <h4 class="card-title" style="text-align: center;">Please vote for one (1) candidate</h4>
 
             <form method="post" action="{{url('generalVote')}}" enctype="multipart/form-data">
             @csrf

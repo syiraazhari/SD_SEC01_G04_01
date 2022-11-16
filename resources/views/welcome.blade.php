@@ -146,9 +146,9 @@
 <body>
 
   <div id="popup1" class="overlay">
-    <div class="popup">
+    <div class="popup" style="margin:0px; margin-top:230px">
 
-      <div style="font-size: 28px; text-align: center">
+      <div style="font-size: 28px;">
         <i class="bi bi-exclamation-square" style="color: #ed9e00fd;"></i> ATTENTION TO ALL
         <hr>
       </div>
