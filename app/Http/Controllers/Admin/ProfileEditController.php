@@ -25,7 +25,6 @@ class ProfileEditController extends Controller
             $profile = new Profile();
             $profile->user_id = Auth::user()->id;
             $profile->save();
-
         }
         $user = User::find(Auth::user()->id);
 
@@ -52,5 +51,4 @@ class ProfileEditController extends Controller
         $profile->update();
         return redirect('adminpanel/profiles')->with('status', "Profile Updated Successfully");
     }
-    
 }

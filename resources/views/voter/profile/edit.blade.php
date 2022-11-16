@@ -20,8 +20,9 @@
                     </div>
                 </div>
                 <div class="col-sm-8">
-                    <form id="update-profile" name="update-profile" action="{{ url('updatevProfile/' . $profile->user_id) }}"
-                        method="POST" enctype="multipart/form-data">
+                    <form id="update-profile" name="update-profile"
+                        action="{{ url('updatevProfile/' . $profile->user_id) }}" method="POST"
+                        enctype="multipart/form-data">
                         @csrf
                         <div class="card-block">
                             <h6 class="m-b-20 p-b-5 b-b-default f-w-600">Edit Basic Information</h6>

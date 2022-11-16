@@ -16,7 +16,7 @@ class ProfileController extends Controller
     public $course;
     public $phoneNum;
     public $gender;
-    
+
     public function index()
     {
         $userProfile = Profile::where('user_id', Auth::user()->id)->first();
@@ -24,7 +24,6 @@ class ProfileController extends Controller
             $profile = new Profile();
             $profile->user_id = Auth::user()->id;
             $profile->save();
-
         }
         $user = User::find(Auth::user()->id);
 
