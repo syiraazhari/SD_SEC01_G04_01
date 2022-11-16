@@ -68,9 +68,9 @@
 
               <div style="text-align: right">
                 <div class="allColumns">
-                  <img src="{{ asset('assets/img/team-4.jpg') }}" style="margin-bottom: 15px;">
-                  <h5>Iskandar Hakimi Bin Zulkippli</h5>
-                  <h6>3 DDWD </h6>
+                <img src="{{ asset('assets/img/team-3.jpeg') }}" style="margin-bottom: 15px;">
+                    <h5>Aina Amisha Binti Ahmad Fakrurrozi</h5>
+                    <h6>3 DDWA </h6>
               
                     <input type="checkbox" class="checkbox" name="candidate_id" value="1">
                     <span class="checkmark"></span>
@@ -78,31 +78,13 @@
                 </div> 
                 
                 <div class="allColumns">
-                  <img src="{{ asset('assets/img/team-4.jpg') }}" style="margin-bottom: 15px">
-                  <h5>Iskandar Hakimi Bin Zulkippli</h5>
-                  <h6>3 DDWD </h6>
+                <img src="{{ asset('assets/img/team-5.jpeg') }}" style="margin-bottom: 15px; margin-top: 22px">
+                    <h5>Anushka Roshni Sivakumar</h5>
+                    <h6>3 DDWB </h6>   
               
                     <input type="checkbox" class="checkbox" name="candidate_id" value="2">
                     <span class="checkmark"></span>                  
                 </div> 
-
-                <div class="allColumns">
-                  <img src="{{ asset('assets/img/team-4.jpg') }}" style="margin-bottom: 15px;">
-                  <h5>Iskandar Hakimi Bin Zulkippli</h5>
-                  <h6>3 DDWD </h6>
-              
-                    <input type="checkbox" class="checkbox" name="candidate_id" value="3">
-                    <span class="checkmark"></span>
-                  
-                </div> 
-                
-                <div class="allColumns">
-                  <img src="{{ asset('assets/img/team-4.jpg') }}" style="margin-bottom: 15px">
-                  <h5>Iskandar Hakimi Bin Zulkippli</h5>
-                  <h6>3 DDWD </h6>
-                  <input type="checkbox" class="checkbox" name="candidate_id" value="4">
-                    <span class="checkmark"></span>
-              </div>
               </div>
             </div>
           </div>

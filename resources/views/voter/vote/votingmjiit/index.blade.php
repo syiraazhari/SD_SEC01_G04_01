@@ -74,9 +74,9 @@
 
                                     <div style="text-align: right">
                                         <div class="allColumns">
-                                            <img src="{{ asset('assets/img/team-4.jpg') }}" style="margin-bottom: 15px;">
-                                            <h5>Iskandar Hakimi Bin Zulkippli</h5>
-                                            <h6>3 DDWD </h6>
+                                        <img src="{{ asset('assets/img/team-4.jpg') }}" style="margin-bottom: 15px;">
+                                        <h5>Iskandar Hakimi Bin Zulkippli</h5>
+                                        <h6>3 DDWC </h6>
 
                                             <input type="checkbox" class="checkbox" name="candidate_id" value="1">
                                             <span class="checkmark"></span>
@@ -84,30 +84,11 @@
                                         </div>
 
                                         <div class="allColumns">
-                                            <img src="{{ asset('assets/img/team-4.jpg') }}" style="margin-bottom: 15px">
-                                            <h5>Iskandar Hakimi Bin Zulkippli</h5>
-                                            <h6>3 DDWD </h6>
+                                        <img src="{{ asset('assets/img/team-2.jpg') }}" style="margin-bottom: 15px; height: 114px">
+                                        <h5>Muhammad Izmeer Bin Zulkiflee</h5>
+                                        <h6>3 DDWD </h6>   
 
                                             <input type="checkbox" class="checkbox" name="candidate_id" value="2">
-                                            <span class="checkmark"></span>
-                                        </div>
-
-                                        <div class="allColumns">
-                                            <img src="{{ asset('assets/img/team-4.jpg') }}" style="margin-bottom: 15px;">
-                                            <h5>Iskandar Hakimi Bin Zulkippli</h5>
-                                            <h6>3 DDWD </h6>
-
-                                            <input type="checkbox" class="checkbox" name="candidate_id" value="3">
-                                            <span class="checkmark"></span>
-
-                                        </div>
-
-                                        <div class="allColumns">
-                                            <img src="{{ asset('assets/img/team-4.jpg') }}" style="margin-bottom: 15px">
-                                            <h5>Iskandar Hakimi Bin Zulkippli</h5>
-                                            <h6>3 DDWD </h6>
-
-                                            <input type="checkbox" class="checkbox" name="candidate_id" value="4">
                                             <span class="checkmark"></span>
                                         </div>
 

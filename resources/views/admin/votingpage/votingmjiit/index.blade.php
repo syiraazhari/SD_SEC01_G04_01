@@ -63,29 +63,17 @@
               <div class="row">
 
                 <div style="text-align: right">
-                  <div class="allColumns">
+                <div class="allColumns">
                     <img src="{{ asset('assets/img/team-4.jpg') }}" style="margin-bottom: 15px;">
                     <h5>Iskandar Hakimi Bin Zulkippli</h5>
-                    <h6>3 DDWD </h6>
+                    <h6>3 DDWC </h6>
                   </div> 
                   
                   <div class="allColumns">
-                    <img src="{{ asset('assets/img/team-4.jpg') }}" style="margin-bottom: 15px">
-                    <h5>Iskandar Hakimi Bin Zulkippli</h5>
+                    <img src="{{ asset('assets/img/team-2.jpg') }}" style="margin-bottom: 15px; height: 114px">
+                    <h5>Muhammad Izmeer Bin Zulkiflee</h5>
                     <h6>3 DDWD </h6>                
                   </div> 
-
-                  <div class="allColumns">
-                    <img src="{{ asset('assets/img/team-4.jpg') }}" style="margin-bottom: 15px;">
-                    <h5>Iskandar Hakimi Bin Zulkippli</h5>
-                    <h6>3 DDWD </h6>
-                  </div> 
-                  
-                  <div class="allColumns">
-                    <img src="{{ asset('assets/img/team-4.jpg') }}" style="margin-bottom: 15px">
-                    <h5>Iskandar Hakimi Bin Zulkippli</h5>
-                    <h6>3 DDWD </h6>
-                </div>
 
               </div>
             </div>

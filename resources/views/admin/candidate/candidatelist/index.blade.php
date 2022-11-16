@@ -14,37 +14,37 @@
                 
                     <div style="padding: 15px">
                         <h4>GENERAL SEAT</h4> 
-                        <p style="font-size: 1.0rem;">1.  ISKANDAR HAKIMI ZULKIPPLI (3 DDWD)<br>
-                                                    2.  ISKANDAR HAKIMI ZULKIPPLI (3 DDWD)<br>
-                                                    3.  ISKANDAR HAKIMI ZULKIPPLI (3 DDWD)</p>
+                        <p style="font-size: 1.0rem;">1.  FAIZUL AHMAD BIN SAIFUL (3 DDWP)<br>
+                                                    2.  ALIA ROSDINA BINTI MOHD ALI (3 DDWG)<br>
+                        </p>
                     </div>
 
                     <div style="padding: 15px">
                         <h4>AZMAN HASHIM INTERNATIONAL BUSINESS SCHOOL (AHIBS)</h4> 
-                        <p style="font-size: 1.0rem;">1.  ISKANDAR HAKIMI ZULKIPPLI (2 DDWD)<br>
-                                                    2.  ISKANDAR HAKIMI ZULKIPPLI (2 DDWD)<br>
-                                                    3.  ISKANDAR HAKIMI ZULKIPPLI (2 DDWD)</p>
+                        <p style="font-size: 1.0rem;">1.  AINA AMISHA BINTI FAKRURROZI (3 DDWA)<br>
+                                                    2.  ANUSHKA ROSHNI SIVAKUMAR (3 DDWB)<br>
+                        </p>
                     </div>
 
                     <div style="padding: 15px">
                         <h4>RAZAK FACULTY OF TECHNOLOGY AND INFORMATICS (FTIR)</h4> 
-                        <p style="font-size: 1.0rem;">1.  ISKANDAR HAKIMI ZULKIPPLI (2 DDWD)<br>
-                                                    2.  ISKANDAR HAKIMI ZULKIPPLI (2 DDWD)<br>
-                                                    3.  ISKANDAR HAKIMI ZULKIPPLI (2 DDWD)</p>
+                        <p style="font-size: 1.0rem;">1.  AINA NURAIN BINTI MOHD AROFF (2 DDWZ)<br>
+                                                    2.  AFIQ IRFAN BIN MOHAMMAD IZAM (2 DDWD)<br>
+                        </p>
                     </div>
 
                     <div style="padding: 15px">
                         <h4>MALAYSIA-JAPAN INTERNATIONAL INSTITUTE OF TECHNOLOGY (MJIIT)</h4> 
-                        <p style="font-size: 1.0rem;">1.  ISKANDAR HAKIMI ZULKIPPLI (3 DDWD)<br>
-                                                    2.  ISKANDAR HAKIMI ZULKIPPLI (3 DDWD)<br>
-                                                    3.  ISKANDAR HAKIMI ZULKIPPLI (3 DDWD)</p>
+                        <p style="font-size: 1.0rem;">1.  ISKANDAR HAKIMI BIN ZULKIPPLI (3 DDWC)<br>
+                                                    2.  MUHAMMAD IZMEER BIN ZULKIFLEE (3 DDWD)<br>
+                        </p>
                     </div>
 
                     <div style="padding: 15px">
                         <h4>SCHOOL OF PROFESSIONAL AND CONTINUING EDUCATION (SPACE)</h4> 
-                        <p style="font-size: 1.0rem;">1.  ISKANDAR HAKIMI ZULKIPPLI (3 DDWD)<br>
-                                                    2.  ISKANDAR HAKIMI ZULKIPPLI (3 DDWD)<br>
-                                                    3.  ISKANDAR HAKIMI ZULKIPPLI (3 DDWD)</p>
+                        <p style="font-size: 1.0rem;">1.  MEI XING (3 DDWD)<br>
+                                                    2.  WAHYU BAKTI (2 DDWP)<br>
+                        </p>
                     </div>
                   
                 </div>

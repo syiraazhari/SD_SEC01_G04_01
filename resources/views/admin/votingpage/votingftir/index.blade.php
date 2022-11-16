@@ -64,28 +64,16 @@
 
                 <div style="text-align: right">
                   <div class="allColumns">
-                    <img src="{{ asset('assets/img/team-4.jpg') }}" style="margin-bottom: 15px;">
-                    <h5>Iskandar Hakimi Bin Zulkippli</h5>
-                    <h6>3 DDWD </h6>
+                    <img src="{{ asset('assets/img/team-1.jpg') }}" style="margin-bottom: 15px;">
+                    <h5>Aina Nurain Binti Mohd Aroff</h5>
+                    <h6>2 DDWZ </h6>
                   </div> 
                   
                   <div class="allColumns">
-                    <img src="{{ asset('assets/img/team-4.jpg') }}" style="margin-bottom: 15px">
-                    <h5>Iskandar Hakimi Bin Zulkippli</h5>
-                    <h6>3 DDWD </h6>                
+                    <img src="{{ asset('assets/img/team-6.jpeg') }}" style="margin-bottom: 15px; margin-top: 28px">
+                    <h5>Afiq Irfan Bin Mohamad Izam</h5>
+                    <h6>2 DDWD </h6>                
                   </div> 
-
-                  <div class="allColumns">
-                    <img src="{{ asset('assets/img/team-4.jpg') }}" style="margin-bottom: 15px;">
-                    <h5>Iskandar Hakimi Bin Zulkippli</h5>
-                    <h6>3 DDWD </h6>
-                  </div> 
-                  
-                  <div class="allColumns">
-                    <img src="{{ asset('assets/img/team-4.jpg') }}" style="margin-bottom: 15px">
-                    <h5>Iskandar Hakimi Bin Zulkippli</h5>
-                    <h6>3 DDWD </h6>
-                </div>
 
               </div>
             </div>

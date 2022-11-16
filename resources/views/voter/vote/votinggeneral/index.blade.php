@@ -66,9 +66,9 @@
                 
                 <div style="text-align: right">
                   <div class="allColumns">
-                    <img src="{{ asset('assets/img/team-2.jpg') }}">
-                    <h5>Muhammad Izmeer bin Zulkiflee</h5>
-                    <h6>3 DDWD </h6>
+                  <img src="{{ asset('assets/img/mjiit-2.jpg') }}" style="margin-bottom: 15px; margin-top: 22px">
+                    <h5>Faizul Ahmad Bin Saiful</h5>
+                    <h6>3 DDWP </h6>
                
                       <input type="checkbox" class="checkbox" name="candidate_id" value="1">
                       <span class="checkmark"></span>
@@ -76,32 +76,14 @@
                   </div> 
                   
                   <div class="allColumns">
-                    <img src="{{ asset('assets/img/team-4.jpg') }}" style="margin-bottom: 15px">
-                    <h5>Iskandar Hakimi Bin Zulkippli</h5>
-                    <h6>3 DDWD </h6>
+                  <img src="{{ asset('assets/img/mjiit-1.jpg') }}" style="margin-bottom: 15px">
+                    <h5>Alia Rosdina Binti Mohd Ali</h5>
+                    <h6>3 DDWG </h6>   
                 
                       <input type="checkbox" class="checkbox" name="candidate_id" value="2">
                       <span class="checkmark"></span>                  
                   </div> 
 
-                  <div class="allColumns">
-                    <img src="{{ asset('assets/img/team-4.jpg') }}" style="margin-bottom: 15px;">
-                    <h5>Iskandar Hakimi Bin Zulkippli</h5>
-                    <h6>3 DDWD </h6>
-               
-                      <input type="checkbox" class="checkbox" name="candidate_id" value="3">
-                      <span class="checkmark"></span>
-                    
-                  </div> 
-                  
-                  <div class="allColumns">
-                    <img src="{{ asset('assets/img/team-4.jpg') }}" style="margin-bottom: 15px">
-                    <h5>Iskandar Hakimi Bin Zulkippli</h5>
-                    <h6>3 DDWD </h6>
-                
-                      <input type="checkbox" class="checkbox" name="candidate_id" value="4">
-                      <span class="checkmark"></span>
-                  </div>
                 </div>
               </div>
               </div>

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -15,7 +16,9 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
@@ -29,183 +32,195 @@
   <link href="assets/css(home page)/style.css" rel="stylesheet">
 
   <style>
+    *,
+    *:after,
+    *:before {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
 
-    *, *:after, *:before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-body {
-  font-family: Arial, sans-serif;
-  background: url(http://www.shukatsu-note.com/wp-content/uploads/2014/12/computer-564136_1280.jpg) no-repeat;
-  background-size: cover;
-  height: 100vh;
-}
+    body {
+      font-family: Arial, sans-serif;
+      background: url(http://www.shukatsu-note.com/wp-content/uploads/2014/12/computer-564136_1280.jpg) no-repeat;
+      background-size: cover;
+      height: 100vh;
+    }
 
-h1 {
-  text-align: center;
-  font-family: Tahoma, Arial, sans-serif;
-  color: #06D85F;
-  margin: 100px 0;
-}
+    h1 {
+      text-align: center;
+      font-family: Tahoma, Arial, sans-serif;
+      color: #06D85F;
+      margin: 100px 0;
+    }
 
-.box {
-  width: 40%;
-  margin: 0 auto;
-  background: rgba(255,255,255,0.2);
-  padding: 35px;
-  border: 2px solid #fff;
-  border-radius: 20px/50px;
-  background-clip: padding-box;
-  text-align: center;
-}
+    .box {
+      width: 40%;
+      margin: 0 auto;
+      background: rgba(255, 255, 255, 0.2);
+      padding: 35px;
+      border: 2px solid #fff;
+      border-radius: 20px/50px;
+      background-clip: padding-box;
+      text-align: center;
+    }
 
-.popup h2 {
-  margin-top: 0;
-  color: #333;
-  font-family: Tahoma, Arial, sans-serif;
-}
+    .popup h2 {
+      margin-top: 0;
+      color: #333;
+      font-family: Tahoma, Arial, sans-serif;
+    }
 
-.popup .close {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  transition: all 0.2s;
-  font-size: 30px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #333;
-}
-.popup .close:hover {
-  color: #F8A617;
-}
-.popup .content {
-  max-height: 30%;
-  overflow: auto;
-  margin-top: 20px;
-}
+    .popup .close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      transition: all 0.2s;
+      font-size: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      color: #333;
+    }
 
-/*Let's make it appear when the page loads*/
-.overlay:target:before {
-    display: none;
-}
-.overlay:before {
-  content:"";
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: block;
-  background: rgba(0, 0, 0, 0.6);
-  position: fixed;
-  z-index: 9;
-}
-.overlay .popup {
-  background: #fff;
-  border-radius: 5px;
-  width: 30%;
-  position: fixed;
-  top: 0;
-  left: 35%;
-  padding: 25px;
-  margin: 70px auto;
-  z-index: 10;
-  -webkit-transition: all 0.6s ease-in-out;
-  -moz-transition: all 0.6s ease-in-out;
-  transition: all 0.6s ease-in-out;
-}
-.overlay:target .popup {
-    top: -100%;
-    left: -100%;
-}
+    .popup .close:hover {
+      color: #F8A617;
+    }
 
-@media screen and (max-width: 768px){
-  .box{
-    width: 70%;
-  }
-  .overlay .popup{
-    width: 70%;
-    left: 15%;
-  }
-}
+    .popup .content {
+      max-height: 30%;
+      overflow: auto;
+      margin-top: 20px;
+    }
 
+    /*Let's make it appear when the page loads*/
+    .overlay:target:before {
+      display: none;
+    }
+
+    .overlay:before {
+      content: "";
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: block;
+      background: rgba(0, 0, 0, 0.6);
+      position: fixed;
+      z-index: 9;
+    }
+
+    .overlay .popup {
+      background: #fff;
+      border-radius: 5px;
+      width: 30%;
+      position: fixed;
+      top: 0;
+      left: 35%;
+      padding: 25px;
+      margin: 70px auto;
+      z-index: 10;
+      -webkit-transition: all 0.6s ease-in-out;
+      -moz-transition: all 0.6s ease-in-out;
+      transition: all 0.6s ease-in-out;
+    }
+
+    .overlay:target .popup {
+      top: -100%;
+      left: -100%;
+    }
+
+    @media screen and (max-width: 768px) {
+      .box {
+        width: 70%;
+      }
+
+      .overlay .popup {
+        width: 70%;
+        left: 15%;
+      }
+    }
   </style>
 
 </head>
 
 <body>
 
-<div id="popup1" class="overlay">
-  <div class="popup">
-  
-  <div style="font-size: 28px; text-align: center">
-  <i class="bi bi-exclamation-square" style="color: #ed9e00fd;"></i>  ATTENTION TO ALL <hr>
-  </div>
-  <h4 style="margin-top: 20px">DON'T FORGET TO VOTE</h4>
-    <a class="close" href="#popup1">&times;</a>
-    <div class="content">
-      <h5>Your vote counts.</h5>
+  <div id="popup1" class="overlay">
+    <div class="popup">
+
+      <div style="font-size: 28px; text-align: center">
+        <i class="bi bi-exclamation-square" style="color: #ed9e00fd;"></i> ATTENTION TO ALL
+        <hr>
+      </div>
+      <h4 style="margin-top: 20px">DON'T FORGET TO VOTE</h4>
+      <a class="close" href="#popup1">&times;</a>
+      <div class="content">
+        <h5>Your vote counts.</h5>
+      </div>
     </div>
   </div>
-</div>
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container d-flex justify-content-between" style="padding:10px; padding-left:30px; height: 90px; width:100>
 
-      <div class="logo">
-        <img src="{{ asset('assets/img/logo-utmxjpmpp.png') }}">
-      </div>
+      <div class=" logo">
+      <img src="{{ asset('assets/img/logo-utmxjpmpp.png') }}">
+    </div>
 
-      <nav id="navbar" class="navbar" style="padding:30px">
-        <ul>
-          <li class="dropdown"><a href="#hero" style="padding:8px; font-size:14px;"><span>HOME</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              {{-- Dashboard Button // Only appear when user logged in --}}
-              @if (Auth::check())
-                @if (Auth::user()->role_as == '0')
-                  <li><a href="voter">Dashboard</a></li>
-                @endif
-                @if (Auth::user()->role_as == '1')
-                  <li><a href="adminpanel">Dashboard</a></li>
-                @endif
-                @if (Auth::user()->role_as == '2')
-                  <li><a href="candidate">Dashboard</a></li>
-                @endif
-              @endif
-                
-              <li><a href="#about">About</a></li>
-              <li><a href="#services">Benefits</a></li>
-              <li><a href="#contact">Contact</a></li>
-              {{-- Log out button only show if user is authenticated(already login)--}}
-              @if (Auth::check())
-                @if ((Auth::user()->role_as == '0') || (Auth::user()->role_as == '1') || (Auth::user()->role_as == '2'))
-                  <li>
-                    <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                    {{ __('Logout') }}
-                    </a>
-                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                        @csrf
-                    </form>
-                  </li>
-                @endif
-              @endif
-            </ul>
-          </li>
-                @guest
-                    @if (Route::has('login'))
-                         <li><a class="nav-link scrollto" style="padding:8px; font-size:14px;" href="{{ route('login') }}">{{ __('LOGIN') }}</a></li>
-                    @endif
+    <nav id="navbar" class="navbar" style="padding:30px">
+      <ul>
+        <li class="dropdown"><a href="#hero" style="padding:8px; font-size:14px;"><span>HOME</span> <i
+              class="bi bi-chevron-down"></i></a>
+          <ul>
+            {{-- Dashboard Button // Only appear when user logged in --}}
+            @if (Auth::check())
+            @if (Auth::user()->role_as == '0')
+            <li><a href="voter">Dashboard</a></li>
+            @endif
+            @if (Auth::user()->role_as == '1')
+            <li><a href="adminpanel">Dashboard</a></li>
+            @endif
+            @if (Auth::user()->role_as == '2')
+            <li><a href="candidate">Dashboard</a></li>
+            @endif
+            @endif
 
-                    @if (Route::has('register'))
-                         <li><a class="nav-link scrollto" style="padding:8px; font-size:14px;" href="{{ route('register') }}">{{ __('REGISTER') }}</a>
-                            
-                    @endif
-                        @else
-                @endguest
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Benefits</a></li>
+            <li><a href="#contact">Contact</a></li>
+            {{-- Log out button only show if user is authenticated(already login)--}}
+            @if (Auth::check())
+            @if ((Auth::user()->role_as == '0') || (Auth::user()->role_as == '1') || (Auth::user()->role_as == '2'))
+            <li>
+              <a class="dropdown-item" href="{{ route('logout') }}"
+                onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                {{ __('Logout') }}
+              </a>
+              <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                @csrf
+              </form>
+            </li>
+            @endif
+            @endif
+          </ul>
+        </li>
+        @guest
+        @if (Route::has('login'))
+        <li><a class="nav-link scrollto" style="padding:8px; font-size:14px;" href="{{ route('login') }}">{{ __('LOGIN')
+            }}</a></li>
+        @endif
+
+        @if (Route::has('register'))
+        <li><a class="nav-link scrollto" style="padding:8px; font-size:14px;" href="{{ route('register') }}">{{
+            __('REGISTER') }}</a>
+
+          @endif
+          @else
+          @endguest
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav><!-- .navbar -->
 
     </div>
   </header><!-- End Header -->
@@ -223,7 +238,8 @@ h1 {
             <div class="carousel-container">
               <div class="container">
                 <h2 class="animate__animated animate__fadeInDown">Imagine Something Better</h2>
-                <p class="animate__animated animate__fadeInUp">"One of the definitions of cast is to  register to a VOTE"</p>
+                <p class="animate__animated animate__fadeInUp">"One of the definitions of cast is to register to a VOTE"
+                </p>
               </div>
             </div>
           </div>
@@ -235,7 +251,7 @@ h1 {
                 <p class="animate__animated animate__fadeInUp">Raise your Voice, Cast your Vote</p>
               </div>
             </div>
-          </div>            
+          </div>
 
           <div class="carousel-item" style="background-image: url(assets/img/hero-3.png);">
             <div class="carousel-container">
@@ -277,9 +293,12 @@ h1 {
           <div class="col-md-6 col-sm-6 col-xs-12">
             <div class="well-left">
               <div class="single-well">
-            
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/UMmFxe-jGyY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/UMmFxe-jGyY"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+
               </div>
             </div>
           </div>
@@ -291,8 +310,10 @@ h1 {
                   <h4 class="sec-head">MPP Voting System</h4>
                 </a>
                 <p>
-                  This system will mainly focus on providing a platform for UTM students to vote and represent themselves. 
-                  This system can provide information regarding each candidate, allows a discrete voting procedure as well as providing an easy vote calculation. 
+                  This system will mainly focus on providing a platform for UTM students to vote and represent
+                  themselves.
+                  This system can provide information regarding each candidate, allows a discrete voting procedure as
+                  well as providing an easy vote calculation.
                   The system is available through a web-server and requires internet connection.
                 </p>
                 <ul>
@@ -306,7 +327,8 @@ h1 {
                     <i class="bi bi-check" style="color: #ed9e00fd"></i> Auditability and Verifiability
                   </li>
                   <li>
-                    <i class="bi bi-check" style="color: #ed9e00fd"></i> Security, Confidence, and Trust in Your Election Results
+                    <i class="bi bi-check" style="color: #ed9e00fd"></i> Security, Confidence, and Trust in Your
+                    Election Results
                   </li>
                   <li>
                     <i class="bi bi-check" style="color: #ed9e00fd"></i> Make Quality Products
@@ -341,7 +363,8 @@ h1 {
                   </a>
                   <h4>Cost Savings & Efficiency</h4>
                   <p>
-                  Switching to web-based online voting systems from more expensive and less efficient voting technologies will reap these benefits without increasing risk.
+                    Switching to web-based online voting systems from more expensive and less efficient voting
+                    technologies will reap these benefits without increasing risk.
                   </p>
                 </div>
               </div>
@@ -357,7 +380,8 @@ h1 {
                   </a>
                   <h4>Voter Accessibility</h4>
                   <p>
-                  Tapping a link on your mobile device that securely logs you into the online voting system website is an example of a vote or election with high accessibility.
+                    Tapping a link on your mobile device that securely logs you into the online voting system website is
+                    an example of a vote or election with high accessibility.
                   </p>
                 </div>
               </div>
@@ -374,7 +398,8 @@ h1 {
                   </a>
                   <h4>Security, Confidence, and Trust</h4>
                   <p>
-                  The confidence in your voting and election results is by far the most valuable aspect that online voting systems will offer to your group.
+                    The confidence in your voting and election results is by far the most valuable aspect that online
+                    voting systems will offer to your group.
                   </p>
                 </div>
               </div>
@@ -383,12 +408,12 @@ h1 {
           </div>
           <div class="col-md-4 col-sm-4 col-xs-12">
             <!-- end col-md-4 -->
-            
-              <!-- end about-details -->
-            </div>
+
+            <!-- end about-details -->
           </div>
         </div>
       </div>
+    </div>
     </div><!-- Benefits Section -->
 
     <!-- ======= Testimonials Section ======= -->
@@ -418,7 +443,8 @@ h1 {
                 <h4>Developer</h4>
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  We were very pleased with UndiMPP and the overall development process for our website. Not only the website exceed our expectations but the added value provided by our team was amazing.
+                  We were very pleased with UndiMPP and the overall development process for our website. Not only the
+                  website exceed our expectations but the added value provided by our team was amazing.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
               </div>
@@ -431,7 +457,8 @@ h1 {
                 <h4>Developer</h4>
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  It has been a pleasure working with UndiMPP UTMKL team members. I appreciate every dedication to the project that me and my team are on.  
+                  It has been a pleasure working with UndiMPP UTMKL team members. I appreciate every dedication to the
+                  project that me and my team are on.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
               </div>
@@ -457,7 +484,8 @@ h1 {
                 <h4>Documentation Specialist</h4>
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Thank you so much for the report! I think our system and election campaign is performing extremely well.
+                  Thank you so much for the report! I think our system and election campaign is performing extremely
+                  well.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
               </div>
@@ -525,7 +553,7 @@ h1 {
               <div class="contact-icon text-center">
                 <div class="single-icon">
                   <i class="bi bi-geo-alt"></i>
-                  <p> 
+                  <p>
                     Location: Jalan Sultan Yahya Petra, Kampung Datuk Keramat 54100 Kuala Lumpur <br>
                   </p>
                 </div>
@@ -534,7 +562,7 @@ h1 {
           </div>
           <div class="row">
 
-            
+
           </div>
         </div>
       </div>
@@ -554,7 +582,8 @@ h1 {
                   <h2><span>Undi</span>MPP UTMKL</h2>
                 </div>
 
-                <p>We realize that the enthusiasm possessed by students is a power to create change. The idealism and freedom of the soul possessed are the basis for moving on the basis of truth.</p>
+                <p>We realize that the enthusiasm possessed by students is a power to create change. The idealism and
+                  freedom of the soul possessed are the basis for moving on the basis of truth.</p>
                 <div class="footer-icons">
                   <ul>
                     <li>
@@ -580,7 +609,7 @@ h1 {
               <div class="footer-head">
                 <h4>information</h4>
                 <p>
-                If you require any further information, feel free to contact us.
+                  If you require any further information, feel free to contact us.
                 </p>
                 <div class="footer-contacts">
                   <p><span>Tel:</span> +60 196120403</p>
