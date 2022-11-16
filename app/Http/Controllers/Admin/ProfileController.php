@@ -30,4 +30,16 @@ class ProfileController extends Controller
 
         return view('admin.profile.index', compact('user'));
     }
+
+    public function mount()
+    {
+        $user = User::find(Auth::user()->id);
+        $this->name = $user->name;
+        $this->email = $user->email;
+        $this->studID = $user->profile->studID;
+        $this->year = $user->profile->year;
+        $this->course = $user->profile->course;
+        $this->phoneNum = $user->profile->phoneNum;
+        $this->gender = $user->profile->gender;
+    }
 }

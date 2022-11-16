@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers\Voter\JoinMPP;
 
+use App\Models\User;
 use App\Models\Candidate;
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
 use App\Models\CandidateManifesto;
+use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 
 class RegisterController extends Controller
@@ -13,6 +14,18 @@ class RegisterController extends Controller
     public function index()
     {
         return view('voter.joinmpp.register.index');
+    }
+
+    public function mount()
+    {
+        $user = User::find(Auth::user()->id);
+        $this->name = $user->name;
+        $this->email = $user->email;
+        $this->studID = $user->profile->studID;
+        $this->year = $user->profile->year;
+        $this->course = $user->profile->course;
+        $this->phoneNum = $user->profile->phoneNum;
+        $this->gender = $user->profile->gender;
     }
 
     public function register(Request $request)

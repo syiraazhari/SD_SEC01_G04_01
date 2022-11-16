@@ -2,9 +2,6 @@
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\HomeController;
-use App\Http\Controllers\Admin\ProfileController;
-use App\Http\Controllers\admin\ProfileEditController;
 use App\Http\Controllers\Admin\AboutMPP\EditAboutMPPController;
 use App\Http\Controllers\Admin\MPPAlumni\EditMPPAlumniController;
 
@@ -37,7 +34,10 @@ Route::post('/change-password', 'App\Http\Controllers\ChangePasswordController@s
 
 Route::middleware(['auth', 'isVoter'])->group(function () {
     Route::get('/voter', 'App\Http\Controllers\HomeController@index');
-    Route::get('/voter/profiles', 'App\Http\Controllers\Voter\ProfileController@index');
+
+    Route::get('voter/profiles', 'App\Http\Controllers\Voter\ProfileController@index');
+    Route::get('voter/profiles/edit/{id}', 'App\Http\Controllers\Voter\ProfileEditController@edit');
+    Route::post('updatevProfile/{id}', 'App\Http\Controllers\Voter\ProfileEditController@updateProfile');
 
     Route::get('voter/electionresult', 'App\Http\Controllers\Voter\ElectionResultController@index');
     Route::get('voter/aboutmpp', 'App\Http\Controllers\Voter\AboutMPP\AboutMPPController@index');
@@ -79,7 +79,7 @@ Route::middleware(['auth', 'isAdmin'])->group(function () {
     Route::get('/adminpanel', 'App\Http\Controllers\Admin\FrontendController@index');
 
     Route::get('adminpanel/profiles', 'App\Http\Controllers\Admin\ProfileController@index');
-    Route::get('adminpanel/profiles/edit/{id}', [ProfileEditController::class, 'edit']);
+    Route::get('adminpanel/profiles/edit/{id}', 'App\Http\Controllers\Admin\ProfileEditController@edit');
     Route::post('updateProfile/{id}', 'App\Http\Controllers\Admin\ProfileEditController@updateProfile');
 
 
@@ -92,11 +92,11 @@ Route::middleware(['auth', 'isAdmin'])->group(function () {
 
     Route::get('adminpanel/aboutmpp', 'App\Http\Controllers\Admin\AboutMPP\AboutMPPController@index');
     Route::get('adminpanel/aboutmpp/editaboutmpp/{id}', [EditAboutMPPController::class, 'edit']);
-    Route::pUT('update-aboutmpp/{id}', [EditAboutMPPController::class, 'update']);
+    Route::post('update-aboutmpp/{id}', [EditAboutMPPController::class, 'update']);
 
     Route::get('adminpanel/mppalumni', 'App\Http\Controllers\Admin\MPPAlumni\MPPAlumniController@index');
     Route::get('adminpanel/mppalumni/editmppalumni/{id}', [EditMPPAlumniController::class, 'edit']);
-    Route::pUT('update-mppalumni/{id}', [EditMPPAlumniController::class, 'update']);
+    Route::post('update-mppalumni/{id}', [EditMPPAlumniController::class, 'update']);
 
 
     Route::get('adminpanel/contact', 'App\Http\Controllers\Admin\Contact\ContactController@index');
@@ -121,8 +121,8 @@ Route::middleware(['auth', 'isCandidate'])->group(function () {
     Route::get('/candidate', 'App\Http\Controllers\Candidate\FrontendController@index');
 
     Route::get('candidate/profiles', 'App\Http\Controllers\Candidate\ProfileController@index');
-    Route::get('candidate/profiles/edit/{id}', [ProfileEditController::class, 'edit']);
-    Route::post('updateProfile/{id}', 'App\Http\Controllers\Candidate\ProfileEditController@updateProfile');
+    Route::get('candidate/profiles/edit/{id}', 'App\Http\Controllers\Candidate\ProfileEditController@edit');
+    Route::post('updatecProfile/{id}', 'App\Http\Controllers\Candidate\ProfileEditController@updateProfile');
 
     Route::get('candidate/electionresult', 'App\Http\Controllers\Candidate\ElectionResultController@index');
 

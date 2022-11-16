@@ -16,15 +16,15 @@ class EditMPPAlumniController extends Controller
 
     public function edit($id)
     {
-        $about = Alumni::find($id);
-        return view('admin.aboutmpp.edit.index', compact('about'));
+        $alumni = Alumni::find($id);
+        return view('admin.mppalumni.edit.index', compact('alumni'));
     }
 
     public function update(Request $request, $id)
     {
-        $about = Alumni::find($id);
-        $about->content= $request->input('content');
-        $about->update();
-        return redirect('adminpanel/mppalumni')->with('status', "About Us Updated Successfully");
+        $alumni = Alumni::find($id);
+        $alumni->content= $request->input('content');
+        $alumni->update();
+        return redirect('adminpanel/mppalumni')->with('status', "MPP Alumni Updated Successfully");
     }
 }
