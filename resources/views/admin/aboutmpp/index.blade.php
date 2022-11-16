@@ -16,7 +16,7 @@
         <style>
             .banner {
                 width: 100%;
-                background-image: url(../assets/img/blackgold.jpg);
+                background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/img/blackgold-4.jpg);
                 height: 300px;
                 background-color: black;
                 background-position: center;
@@ -52,14 +52,13 @@
     </head>
 
     <body>
-        <div class="row" style="margin:auto;">
-
+    <div class="content-margin" style="width:100%">
+    <div class="row" style="padding-top: 0rem;margin: auto; width:100%">
             <div class="col-md-12">
 
                 <div class="banner">
                     <div class="centertext">
-                        <h1 style="font-size:45px; color: #F8A617; font-weight: 630;">MAJLIS PERWAKILAN PELAJAR (MPP) UTM
-                        </h1>
+                        <h1 style="font-size:50px; color: #F8A617; font-weight: 630;">Majlis Perwakilan Pelajar UTMKL</h1>
                     </div>
                 </div>
 
@@ -158,6 +157,7 @@
                 </section>
             </div>
         </div>
+                        </div>
     </body>
 
     </html>

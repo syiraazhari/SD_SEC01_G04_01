@@ -13,7 +13,7 @@
 <style>
     .banner {
         width: 100%;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)), url(../assets/img/hero-2.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/img/blackgold-4.jpg);
         height: 300px;
         background-color: purple;
         background-position: center;
@@ -32,7 +32,7 @@
 
             <div class="banner">
                 <div class="centertext">
-                    <h1 style="font-size:50px">Feedback</h1>
+                    <h1 style="font-size:50px; color: #F8A617; font-weight: 630;">Feedback</h1>
                 </div>
             </div>
 

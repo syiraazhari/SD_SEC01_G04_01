@@ -3,7 +3,7 @@
 @extends('layouts.app')
 
 @section('content3')
-<div class="content-margin">
+<div class="content-margin" style="width:100%">
     <div class="row" style="padding-top: 1.5rem;margin: auto; width:100%">
     <div class="col-md-12">
         <div class="card user-card-full" style="width: 100%; height: auto;">
