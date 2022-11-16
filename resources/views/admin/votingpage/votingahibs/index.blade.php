@@ -57,7 +57,7 @@
             <h5 class="card-title" style="text-align: center;">Azman Hashim International Business School (AHIBS)</h5><br>
           </div>
           <div class="card-body">
-            <h4 class="card-title" style="text-align: center;">*Voter needs to vote (2) seats</h4>
+            <h4 class="card-title" style="text-align: center;">*Voter needs to vote (1) candidate</h4>
             
             <div class="box-one">
               <div class="row">

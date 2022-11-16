@@ -56,7 +56,7 @@
             <h2 class="card-title" style="text-align: center;">GENERAL SEAT</h2>
           </div>
           <div class="card-body">
-            <h4 class="card-title" style="text-align: center;">*Voter needs to vote (2) seats</h4>
+            <h4 class="card-title" style="text-align: center;">*Voter needs to vote (1) candidte</h4>
             
             <div class="box-one">
               <div class="row">

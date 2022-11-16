@@ -32,9 +32,9 @@
           <div class="card-body">
             <h4 class="card-title" style="text-align: center;">There are two sections for you to vote:</h4><br>
             <p class="card-title" style="text-align: center;">1) General Seat</p>
-            <p class="card-title" style="text-align: center;">- Please choose (<b>2</b>) candidate only for General Seats.</p><br>
+            <p class="card-title" style="text-align: center;">- Please choose (<b>1</b>) candidate only for General Seats.</p><br>
             <p class="card-title" style="text-align: center;">2) School / Faculty Seat</p>
-            <p class="card-title" style="text-align: center;">- Please choose (<b>2</b>) candidate only for School / Faculty Seats.</p><br><br>
+            <p class="card-title" style="text-align: center;">- Please choose (<b>1</b>) candidate only for School / Faculty Seats.</p><br><br>
             <p class="card-title" style="text-align: center; color: red;"><i>Please click 'Cast Vote' to start Voting</i></p><br>
 
             <div class="container" style="text-align: center;">  
