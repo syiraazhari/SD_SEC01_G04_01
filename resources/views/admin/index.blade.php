@@ -2,26 +2,98 @@
 @extends('layouts.admin')
 @extends('layouts.app')
 @section('content2')
+
+<style>
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+}
+
+#success{
+  display:none;
+}
+
+#history{
+  display:none;
+}
+
+#edithistory{
+  display:none;
+}
+
+</style>
+
 {{-- first four column --}}
   <div class="content-margin">
     <div class="row" style="padding-top: 1.5rem; margin: auto; width:100%">
     <div class="col-md-12">
-        <div class="card">
+
+    <div id="success" style="background-color: #CFFBCF; border: 1px solid black; padding: 10px;">
+      <h3>Success!</h3>
+      <p>Announcement Succesfully Posted to Homepage.</p>
+    </div>
+
+    <div class="card">
           <div class="card-header ">
             <h3 class="card-title">Post An Announcement</h3>
-            <p class="card-category">*Announcements will be displayed at User's Homepage</p>
-            <form action="/action_page.php">
-              <label for=""><h5>Enter Subject</h6></label><br>
+            <p class="card-category">*Announcements will be displayed at User's Homepage (One Announcement at a time)</p>
+            <form>
 
-              <input type="text" id="" name="subject" placeholder="" style="width:100%">
+              <label><h5>Enter Subject</h5></label><br>
+
+              <textarea style="height: 50px" placeholder="Enter Subject"></textarea>
               <br>
-              <label for=""><h5 style="margin-top: 15px;">Enter Comment</h5></label><br>
-              <input type="text" id="" name="comment" placeholder="" style="height: 80px;width:100%">
-              
-              <input type="submit" value="Submit" style="height: 40px; width: 80px; margin-top: 12px; margin-bottom: 12px; background-color: #f8a617; color: white; border: none;">
+              <label><h5 style="margin-top: 15px;">Enter Comment</h5></label><br>
+              <textarea placeholder="Enter Comment"></textarea>
+
+              <button type="button" 
+              onclick="document.getElementById('success').style.display='block'" 
+              style="height: 40px; width: 80px; margin-top: 12px; margin-bottom: 12px; background-color: #f8a617; color: white; border: none;">Submit</button>
+
+              <button type="reset" 
+              onclick="document.getElementById('success').style.display='none'" 
+              style="height: 40px; width: 80px; margin-top: 12px; margin-bottom: 25px; background-color: #f8a617; color: white; border: none;">Clear</button>
+
             </form>
+
           </div>
         </div>
+
+        <div class="card">
+          <div class="card-header ">
+            <h5>Active Announcements:</h5>
+            <button type="button" 
+            onclick="document.getElementById('history').style.display='block'" 
+              style="height: 40px; width: 130px; margin-top: 12px; margin-bottom: 12px; background-color: #f8a617; color: white; border: none;">View</button>
+
+            <button type="button" 
+              onclick="document.getElementById('edithistory').style.display='block'" 
+              style="height: 40px; width: 130px; margin-top: 12px; margin-bottom: 12px; background-color: #f8a617; color: white; border: none;">Edit / Confirm</button>
+            
+              <div id="history" style="background-color: white; border: 1px solid black; padding: 10px; margin-bottom: 20px">
+            
+              <h3>DON'T FORGET TO VOTE</h3>
+              <p>Your vote counts.</p>
+
+              </div>
+
+            <div id="edithistory" style="background-color: white; border: 1px solid black; padding: 10px; margin-bottom: 20px">
+            
+            <textarea>DON'T FORGET TO VOTE
+Your vote counts.</textarea>
+
+            </div>
+          </div>
+        </div>
+
       </div>
       <div class="col-lg-3 col-md-6 col-sm-6">
         <div class="card card-stats">
@@ -148,4 +220,5 @@
       
     </div>
 </div>
+
 @endsection
