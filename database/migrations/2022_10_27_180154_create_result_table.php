@@ -15,11 +15,11 @@ return new class extends Migration
     {
         Schema::create('result', function (Blueprint $table) {
             $table->id();
-            $table->integer('voter_id')->unsigned();
+            $table->bigInteger('voter_id')->unsigned();
             $table->integer('position_id')->unsigned();
             $table->integer('candidate_id')->unsigned();
-            $table->foreign('voter_id')->references('id')->on('users')->onDelete('cascade');
             $table->timestamps();
+            $table->foreign('voter_id')->references('id')->on('users')->onDelete('cascade');
         });
     }
 

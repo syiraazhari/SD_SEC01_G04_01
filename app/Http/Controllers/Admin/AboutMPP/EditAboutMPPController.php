@@ -14,14 +14,6 @@ class EditAboutMPPController extends Controller
         return view('admin.aboutmpp.edit.index', compact('about'));
     }
 
-    // public function edit(Request $request)
-    // {
-    //     $about = new AboutUs;
-    //     $about->content = $request->content;
-    //     $about->save();
-    //     return redirect('adminpanel/aboutmpp');
-    // }
-
     public function edit($id)
     {
         $about = AboutUs::find($id);

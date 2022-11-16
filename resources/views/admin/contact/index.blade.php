@@ -62,10 +62,10 @@
                             @foreach ($feedback as $item)
                                 <tr>
                                     <th scope="row">{{ $item->id }}</th>
-                                    @if ($item->user == "0")
+                                    @if ($item->user_id == "0")
                                         <td>Voter</td>
                                     @endif
-                                    @if ($item->user == "2")
+                                    @if ($item->user_id == "2")
                                         <td>Candidate</td>
                                     @endif
                                     <td>{{ $item->name }}</td>

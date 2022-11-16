@@ -57,21 +57,20 @@
           </div>
           <div class="card-body">
             <h4 class="card-title" style="text-align: center;">Please vote 1 seats</h4>
-            <p style="text-align: center; font-size: 16px;"><label id="selected">0</label> out of 2 selected</p>
 
             <form method="post" action="{{url('generalVote')}}" enctype="multipart/form-data">
             @csrf
-            <input type="text" name="name" class="form-control"/>
+            <input type="hidden" name="position_id" value="1">
               <div class="box-one">
               <div class="row">
                 
                 <div style="text-align: right">
                   <div class="allColumns">
-                    <img src="{{ asset('assets/img/team-4.jpg') }}" style="margin-bottom: 15px;">
-                    <h5>Iskandar Hakimi Bin Zulkippli</h5>
+                    <img src="{{ asset('assets/img/team-2.jpg') }}">
+                    <h5>Muhammad Izmeer bin Zulkiflee</h5>
                     <h6>3 DDWD </h6>
                
-                      <input type="checkbox" class="checkbox" name="category" value="1">
+                      <input type="checkbox" class="checkbox" name="candidate_id" value="1">
                       <span class="checkmark"></span>
                     
                   </div> 
@@ -81,7 +80,7 @@
                     <h5>Iskandar Hakimi Bin Zulkippli</h5>
                     <h6>3 DDWD </h6>
                 
-                      <input type="checkbox" class="checkbox" name="category" value="2">
+                      <input type="checkbox" class="checkbox" name="candidate_id" value="2">
                       <span class="checkmark"></span>                  
                   </div> 
 
@@ -90,7 +89,7 @@
                     <h5>Iskandar Hakimi Bin Zulkippli</h5>
                     <h6>3 DDWD </h6>
                
-                      <input type="checkbox" class="checkbox" name="category" value="3">
+                      <input type="checkbox" class="checkbox" name="candidate_id" value="3">
                       <span class="checkmark"></span>
                     
                   </div> 
@@ -100,7 +99,7 @@
                     <h5>Iskandar Hakimi Bin Zulkippli</h5>
                     <h6>3 DDWD </h6>
                 
-                      <input type="checkbox" class="checkbox" name="category" value="4">
+                      <input type="checkbox" class="checkbox" name="candidate_id" value="4">
                       <span class="checkmark"></span>
                   </div>
                 </div>

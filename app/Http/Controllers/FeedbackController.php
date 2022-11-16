@@ -30,7 +30,7 @@ class FeedbackController extends Controller
     public function feedbackcandidate(Request $request)
     {
         $feedback = new Feedback;
-        $feedback->user = Auth::user()->role_as;
+        $feedback->user_id = Auth::user()->role_as;
         $feedback->name = $request->name;
         $feedback->email = $request->email;
         $feedback->good = $request->good;

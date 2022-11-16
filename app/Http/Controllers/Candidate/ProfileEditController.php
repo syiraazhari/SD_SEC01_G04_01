@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\admin;
+namespace App\Http\Controllers\Candidate;
 
 use App\Models\User;
 use App\Models\Profile;
@@ -29,13 +29,13 @@ class ProfileEditController extends Controller
         }
         $user = User::find(Auth::user()->id);
 
-        return view('admin.profile.edit', compact('user'));
+        return view('candidate.profile.edit', compact('user'));
     }
 
     public function edit($id)
     {
         $profile = Profile::find($id);
-        return view('admin.profile.edit', compact('profile'));
+        return view('candidate.profile.edit', compact('profile'));
     }
 
     public function updateProfile(Request $request, $id)
@@ -50,7 +50,7 @@ class ProfileEditController extends Controller
         $profile->phoneNum = $request->input('phoneNum');
         $profile->gender = $request->input('gender');
         $profile->update();
-        return redirect('adminpanel/profiles')->with('status', "Profile Updated Successfully");
+        return redirect('candidate/profiles')->with('status', "Profile Updated Successfully");
     }
     
 }

@@ -69,68 +69,68 @@
 
             <section class="mb-4 card card-body" style="border:white">
 
-                <h2 class="h1-responsive font-weight-bold text-center my-4">About Us </h2>
+              <h2 class="h1-responsive font-weight-bold text-center my-4">About Us </h2>
 
-                <form action="{{url('update-aboutmpp/'.$about->id)}}" method="POST" style="margin-left: 80px; margin-right: 80px;">
-                @csrf
-                @method('PUT')
-                    {{-- @foreach ($about as $item )
-                    <textarea name="content" cols="40" rows="5" placeholder="Enter about us content" style="height: 130px; width: 100%;">{{ $item->content }}</textarea>
-                    @endforeach --}}
-                    <textarea name="content" cols="40" rows="5" placeholder="Enter about us content" style="height: 130px; width: 100%;">{{ $about->content }}</textarea>
-                    <div style="text-align: center; margin-top: 15px;">
-                        <button type="submit" class="btnsubmit">Save</button>
-                        {{-- <a href= "{{ url('adminpanel/aboutmpp') }}">
-                            <input class="btnsubmit" type="submit" value="Submit">
-                        </a> --}}
-                    </div>
-                </form>
-                <br>
+              <form action="{{url('update-aboutmpp/'.$about->id)}}" method="POST" style="margin-left: 80px; margin-right: 80px;">
+              @csrf
+              @method('PUT')
+                  {{-- @foreach ($about as $item )
+                  <textarea name="content" cols="40" rows="5" placeholder="Enter about us content" style="height: 130px; width: 100%;">{{ $item->content }}</textarea>
+                  @endforeach --}}
+                  <textarea name="content" cols="40" rows="5" placeholder="Enter about us content" style="height: 130px; width: 100%;">{{ $about->content }}</textarea>
+                  <div style="text-align: center; margin-top: 15px;">
+                      <button type="submit" class="btnsubmit">Save</button>
+                      {{-- <a href= "{{ url('adminpanel/aboutmpp') }}">
+                          <input class="btnsubmit" type="submit" value="Submit">
+                      </a> --}}
+                  </div>
+              </form>
+              <br>
 
-                <h2 class="h1-responsive font-weight-bold text-center my-4">Vision & Mission</h2>
+              <h2 class="h1-responsive font-weight-bold text-center my-4">Vision & Mission</h2>
 
-                <div class="container">
-                  <div class="cards">
-                    <h3 style="font-weight: 600">VISION</h3>
-                    <p style="text-align: justify;"> Offer a significant contrast of dynamic service through action towards the welfare of UTMians and Malaysia. Empower the soft skills throughout all aspects 
-                      among the students to ensure the quality and marketability of students and thus enable the students to become the catalyst for country development. </p>
-                  </div>  
-                  <div class="cards" style="background-color: #F8A617;">
-                    <h3 style="color: white; font-weight: 600;">MISSION</h3>
-                    <p style="color: white; text-align: justify;"> Expand and fasten the coverage of the current issue with accuracy and act as a medium to represent the students’ voice to solve their problems 
-                      through maximum transparency and develop the student leader with integrity characteristics. </p>       
-                  </div> 
-                </div><br>
+              <div class="container">
+                <div class="cards">
+                  <h3 style="font-weight: 600">VISION</h3>
+                  <p style="text-align: justify;"> Offer a significant contrast of dynamic service through action towards the welfare of UTMians and Malaysia. Empower the soft skills throughout all aspects 
+                    among the students to ensure the quality and marketability of students and thus enable the students to become the catalyst for country development. </p>
+                </div>  
+                <div class="cards" style="background-color: #F8A617;">
+                  <h3 style="color: white; font-weight: 600;">MISSION</h3>
+                  <p style="color: white; text-align: justify;"> Expand and fasten the coverage of the current issue with accuracy and act as a medium to represent the students’ voice to solve their problems 
+                    through maximum transparency and develop the student leader with integrity characteristics. </p>       
+                </div> 
+              </div><br>
 
-                <h2 class="h1-responsive font-weight-bold text-center my-4">Get-To-Know: MPP</h2>
+              <h2 class="h1-responsive font-weight-bold text-center my-4">Get-To-Know: MPP</h2>
 
-                <div class="container" style="margin-top: 20px;">
-                  <iframe width="500" height="315" src="https://www.youtube.com/embed/UMmFxe-jGyY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-                  clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                  <img src="{{ asset('assets/img/mpp.png') }}" style="max-width: 50%; height: auto;">
-                </div><br>
+              <div class="container" style="margin-top: 20px;">
+                <iframe width="500" height="315" src="https://www.youtube.com/embed/UMmFxe-jGyY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+                clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <img src="{{ asset('assets/img/mpp.png') }}" style="max-width: 50%; height: auto;">
+              </div><br>
 
 
-                <h2 class="h1-responsive font-weight-bold text-center my-4">Our Core Value</h2>
+              <h2 class="h1-responsive font-weight-bold text-center my-4">Our Core Value</h2>
 
-                <div class="container">
-                  <div class="cards">
-                    <h3 style="font-weight: 450">EXAMPLARY</h3>
-                    <p > Showing an exemplary behaviour with adaption of various merits and values in order to be worthy of imitation. </p>
-                  </div>  
-                  <div class="cards" style="background-color: #F8A617;">
-                    <h3 style="font-weight: 450; color: white">RESILIENCE</h3>
-                    <p style="color: white"> Being creative and efficient with problems, issues or situations require taking the right and proper action in a short period of time. </p>       
-                  </div> 
-                  <div class="cards">
-                    <h3 style="font-weight: 450;">ENERGETIC</h3>
-                    <p> Staying passionate and energetic in working as it can be a form of measurement of ability. </p>       
-                  </div> 
-                  <div class="cards" style="background-color: #F8A617;">
-                    <h3 style="font-weight: 450; color: white">VISION</h3>
-                    <p style="color: white"> Able to visionize the most efficient things that needed to be done. The message must be shared in a meaningful, actionable, and engaging way. </p>       
-                  </div> 
-                </div><br>
+              <div class="container">
+                <div class="cards">
+                  <h3 style="font-weight: 450">EXAMPLARY</h3>
+                  <p > Showing an exemplary behaviour with adaption of various merits and values in order to be worthy of imitation. </p>
+                </div>  
+                <div class="cards" style="background-color: #F8A617;">
+                  <h3 style="font-weight: 450; color: white">RESILIENCE</h3>
+                  <p style="color: white"> Being creative and efficient with problems, issues or situations require taking the right and proper action in a short period of time. </p>       
+                </div> 
+                <div class="cards">
+                  <h3 style="font-weight: 450;">ENERGETIC</h3>
+                  <p> Staying passionate and energetic in working as it can be a form of measurement of ability. </p>       
+                </div> 
+                <div class="cards" style="background-color: #F8A617;">
+                  <h3 style="font-weight: 450; color: white">VISION</h3>
+                  <p style="color: white"> Able to visionize the most efficient things that needed to be done. The message must be shared in a meaningful, actionable, and engaging way. </p>       
+                </div> 
+              </div><br>
 
             </section>
         </div>

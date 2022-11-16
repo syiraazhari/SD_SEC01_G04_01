@@ -1,8 +1,8 @@
-{{-- ADMIN EDIT PROFILE CONTENT --}}
-@extends('layouts.admin')
+{{-- CANDIDATE EDIT PROFILE CONTENT --}}
+@extends('layouts.candidate')
 @extends('layouts.app')
 
-@section('content2')
+@section('content3')
     <div class="padding">
         <div class="card user-card-full" style="width: 100%; height: auto;">
             <div class="row m-l-0 m-r-0" style="width:100%;">
@@ -12,7 +12,7 @@
                             <img src="{{ asset('assets/img/icon.png') }}" style="max-width:50%; height: auto;">
                         </div>
                         <h5 class="f-w-600">{{ Auth::user()->name }}</h5>
-                        <p style="font-size: 20px;">- Admin -</p>
+                        <p style="font-size: 20px;">- Candidate -</p>
                         <p style="font-size: 16px;">{{ Auth::user()->email }}</p>
                         <i class=" mdi mdi-square-edit-outline feather icon-edit m-t-10 f-16"></i>
                     </div>

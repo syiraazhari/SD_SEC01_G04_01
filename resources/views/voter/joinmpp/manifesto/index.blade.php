@@ -56,15 +56,19 @@ form {
               <div class="form-group row">
                 <label for="formalPhoto" class="col-sm-2 col-form-label text-dark" style="font-size:1.0rem; padding-top: 0px">Formal Passport Photo</label>
                 <div class="custom-file col-sm-10">
-                  <input type="file" class="custom-file-input col-sm-2 col-form-label" name="formalPhoto" id="formalPhoto">
+                  {{-- <input type="file" class="custom-file-input col-sm-2 col-form-label" name="formalPhoto" id="formalPhoto"> --}}
+                  <input type="file" name="formalPhoto" id="formalPhoto">
                   <label class="custom-file-label" for="formalPhoto">Choose file</label>
                 </div>
               </div>
 
               <div class="form-group row">
+                
                 <label for="matricsCard" class="col-sm-2 col-form-label text-dark" style="font-size:1.0rem; padding-top: 0px">Copy of Matrics Card</label>
+                
                 <div class="custom-file col-sm-10">
-                  <input type="file" class="custom-file-input col-sm-2 col-form-label" name="matricCardPhoto" id="matricsCardPhoto">
+                  {{-- <input type="file" class="custom-file-input col-sm-2 col-form-label" name="matricCardPhoto" id="matricsCardPhoto"> --}}
+                  <input type="file" name="matricCardPhoto" id="matricsCardPhoto">
                   <label class="custom-file-label" for="matricsCard">Choose file</label>
                 </div>
               </div>

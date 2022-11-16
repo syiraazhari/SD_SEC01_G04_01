@@ -48,74 +48,75 @@
 </style>
 </head>
 <body>
-    <div class="row" style="padding-top: 1.5rem; padding-left: 1.5rem;">
-      
-      <div class="col-md-12">
-        <div class="card">
-          <div class="card-header">
-            <h2 class="card-title" style="text-align: center;">FACULTY / SCHOOL SEAT</h2>
-            <h5 class="card-title" style="text-align: center;">Azman Hashim International Business School (AHIBS)</h5><br>
-          </div>
-          <div class="card-body">
-            <h4 class="card-title" style="text-align: center;">Please vote (2) seats</h4>
-            <p style="text-align: center; font-size: 16px;">0 out of 2 selected</p>
-            
-            <div class="box-one">
-              <div class="row">
+  <div class="row" style="padding-top: 1.5rem; padding-left: 1.5rem;">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header">
+          <h2 class="card-title" style="text-align: center;">FACULTY / SCHOOL SEAT</h2>
+          <h5 class="card-title" style="text-align: center;">Azman Hashim International Business School (AHIBS)</h5><br>
+        </div>
+        <div class="card-body">
+          <h4 class="card-title" style="text-align: center;">Please vote 1 seats</h4>
+          
+          <form method="post" action="{{url('ahibsVote')}}" enctype="multipart/form-data">
+            @csrf
+            <input type="hidden" name="position_id" value="2">
+          
+          <div class="box-one">
+            <div class="row">
 
-                <div style="text-align: right">
-                  <div class="allColumns">
-                    <img src="{{ asset('assets/img/team-4.jpg') }}" style="margin-bottom: 15px;">
-                    <h5>Iskandar Hakimi Bin Zulkippli</h5>
-                    <h6>3 DDWD </h6>
-               
-                      <input type="checkbox" class="checkbox">
-                      <span class="checkmark"></span>
-                    
-                  </div> 
+              <div style="text-align: right">
+                <div class="allColumns">
+                  <img src="{{ asset('assets/img/team-4.jpg') }}" style="margin-bottom: 15px;">
+                  <h5>Iskandar Hakimi Bin Zulkippli</h5>
+                  <h6>3 DDWD </h6>
+              
+                    <input type="checkbox" class="checkbox" name="candidate_id" value="1">
+                    <span class="checkmark"></span>
                   
-                  <div class="allColumns">
-                    <img src="{{ asset('assets/img/team-4.jpg') }}" style="margin-bottom: 15px">
-                    <h5>Iskandar Hakimi Bin Zulkippli</h5>
-                    <h6>3 DDWD </h6>
+                </div> 
                 
-                      <input type="checkbox" class="checkbox">
-                      <span class="checkmark"></span>                  
-                  </div> 
+                <div class="allColumns">
+                  <img src="{{ asset('assets/img/team-4.jpg') }}" style="margin-bottom: 15px">
+                  <h5>Iskandar Hakimi Bin Zulkippli</h5>
+                  <h6>3 DDWD </h6>
+              
+                    <input type="checkbox" class="checkbox" name="candidate_id" value="2">
+                    <span class="checkmark"></span>                  
+                </div> 
 
-                  <div class="allColumns">
-                    <img src="{{ asset('assets/img/team-4.jpg') }}" style="margin-bottom: 15px;">
-                    <h5>Iskandar Hakimi Bin Zulkippli</h5>
-                    <h6>3 DDWD </h6>
-               
-                      <input type="checkbox" class="checkbox">
-                      <span class="checkmark"></span>
-                    
-                  </div> 
+                <div class="allColumns">
+                  <img src="{{ asset('assets/img/team-4.jpg') }}" style="margin-bottom: 15px;">
+                  <h5>Iskandar Hakimi Bin Zulkippli</h5>
+                  <h6>3 DDWD </h6>
+              
+                    <input type="checkbox" class="checkbox" name="candidate_id" value="3">
+                    <span class="checkmark"></span>
                   
-                  <div class="allColumns">
-                    <img src="{{ asset('assets/img/team-4.jpg') }}" style="margin-bottom: 15px">
-                    <h5>Iskandar Hakimi Bin Zulkippli</h5>
-                    <h6>3 DDWD </h6>
+                </div> 
                 
-                      <input type="checkbox" class="checkbox">
-                      <span class="checkmark"></span>
-                </div>
-
+                <div class="allColumns">
+                  <img src="{{ asset('assets/img/team-4.jpg') }}" style="margin-bottom: 15px">
+                  <h5>Iskandar Hakimi Bin Zulkippli</h5>
+                  <h6>3 DDWD </h6>
+                  <input type="checkbox" class="checkbox" name="candidate_id" value="4">
+                    <span class="checkmark"></span>
+              </div>
               </div>
             </div>
-
           </div>
           <div class="container" style="text-align: center;">  
-              <a href= "{{ url('voter/votingpage/votingftir') }}" class ="button"> Submit Vote </a>
-            </div>  
-          <div class="card-footer">
-            <hr>
-          </div>
+            {{-- <a href= "{{ url('voter/votingpage/votingftir') }}" class ="button"> Submit Vote </a> --}}
+            <button id="button" type="submit" class="button">Submit Vote</button>
+          </div>  
+        </form>
+            <div class="card-footer">
+              <hr>
+            </div>
         </div>
       </div>
     </div>
-    
+  </div>
 </body>
 </html>
 @endsection
