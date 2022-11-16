@@ -479,7 +479,8 @@ pre {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-right: -15px;
-  margin-left: -15px; }
+  margin-left: -15px; 
+}
 
 .no-gutters {
   margin-right: 0;
@@ -8208,6 +8209,7 @@ h1, h2, h3, h4, h5,
 
 #sidebar {
   width:200px;
+  height:100%;
   background: #f8a617;
   color: #fff;
   -webkit-transition: all 0.3s;
@@ -8333,3 +8335,35 @@ a[data-toggle="collapse"] {
   .form-control:-moz-placeholder {
     /* Firefox 18- */
     color: rgba(0, 0, 0, 0.3); }
+
+.navbar.navbar-default { 
+    margin-bottom: 0; 
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.sidenavi {
+  height: 100%;
+  width: 195px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  margin-top:90px;
+}
+
+.sidenavi a {
+  padding: 6px 8px 6px 16px;
+  display: block;
+}
+
+.content-margin{
+  padding-left:200px;
+  
+}

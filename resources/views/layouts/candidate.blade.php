@@ -40,6 +40,7 @@
 <body style="height: auto">
 
 <div class="wrapper d-flex align-items-stretch" style="height: auto;">
+<div class="sidenavi">
 	<nav id="sidebar">
 
 		<div class="p-4 pt-5">
@@ -74,7 +75,7 @@
 	        </ul>
 	    </div>
     </nav>
-	
+		</div>
     @yield('content3')
 </div>
 

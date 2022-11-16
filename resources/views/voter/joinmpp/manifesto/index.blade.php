@@ -28,9 +28,7 @@
   width: 80%;
   border-radius: 5px;
 }
-ol, li {
-  padding-bottom: 10px;
-}
+
 form {
   margin-left: 50px;
 }
@@ -40,8 +38,8 @@ form {
 </head>
 <body>
   <script src="https://js.stripe.com/v3"></script>
-    <div class="row" style="padding-top: 1.5rem; padding-left: 1.5rem;">
-      
+  <div class="content-margin" style="width:100%">
+    <div class="row" style="padding-top: 1.5rem;margin: auto; width:100%">
       <div class="col-md-12">
         <div class="card">
         <div class="card-header">
@@ -50,8 +48,8 @@ form {
           <div class="card-body">
             <form method="post" action="{{url('upload')}}" enctype="multipart/form-data">
               @csrf
-            <ol type="A" start="3">
-            <b><li>Attach Documents</li></b><br>
+            <ol type="A" start="3" style="padding-bottom: 10px;">
+            <b><li style="padding-bottom: 10px;">Attach Documents</li></b><br>
 
               <div class="form-group row">
                 <label for="formalPhoto" class="col-sm-2 col-form-label text-dark" style="font-size:1.0rem; padding-top: 0px">Formal Passport Photo</label>
@@ -91,7 +89,7 @@ form {
         </div>
       </div>
     </div>
-
+</div>
 <script>
 
 (function() {

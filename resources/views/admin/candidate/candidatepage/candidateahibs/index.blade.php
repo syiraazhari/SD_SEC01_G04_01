@@ -45,7 +45,8 @@
 </style>
 </head>
 <body>
-    <div class="row" style="padding-top: 1.5rem; padding-left: 1.5rem;">
+<div class="content-margin">
+    <div class="row" style="padding-top: 1.5rem; margin: auto; width:100%">
       
       <div class="col-md-12">
         <div class="card">
@@ -120,7 +121,7 @@
         </div>
       </div>
     </div>
-    
+</div> 
 </body>
 </html>
 @endsection

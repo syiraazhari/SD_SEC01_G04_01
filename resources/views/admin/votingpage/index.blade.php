@@ -19,15 +19,11 @@
   margin: 4px 2px;
   cursor: pointer;
 }
-
-  <div class="card">
-    <div class="card-body">
-      <h1>Admin Voting Page Content</h1>
 </style>
 </head>
 <body>
-    <div class="row" style="padding-top: 1.5rem; padding-left: 1.5rem;">
-      
+<div class="content-margin" style="width:100%">
+    <div class="row" style="padding-top: 1.5rem; margin: auto; width:100%">
       <div class="col-md-12">
         <div class="card">
           <div class="card-header">
@@ -52,7 +48,7 @@
         </div>
       </div>
     </div>
-    
+    </div>
 </body>
 </html>
 @endsection

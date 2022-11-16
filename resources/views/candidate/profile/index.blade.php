@@ -3,7 +3,9 @@
 @extends('layouts.app')
 
 @section('content3')
-    <div class="padding">
+<div class="content-margin">
+    <div class="row" style="padding-top: 1.5rem;margin: auto; width:100%">
+    <div class="col-md-12">
         <div class="card user-card-full" style="width: 100%; height: auto;">
             <div class="row m-l-0 m-r-0" style="width:100%;">
                 <div class="col-sm-4 bg-c-lite-green user-profile">
@@ -93,4 +95,6 @@
             </div>
         </div>
     </div>
+</div>
+</div>
 @endsection

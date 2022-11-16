@@ -32,9 +32,6 @@
   width: 80%;
   border-radius: 5px;
   }
-  ol, li {
-   padding-bottom: 10px;
-  }
   form {
     margin-left: 50px;
   }
@@ -44,8 +41,8 @@
 </style>
 </head>
 <body>
-    <div class="row" style="padding-top: 1.5rem; padding-left: 1.5rem;">
-      
+<div class="content-margin" style="width:100%">
+    <div class="row" style="padding-top: 1.5rem;margin: auto; width:100%">
       <div class="col-md-12">
         <div class="card">
         <div class="card-header">
@@ -54,8 +51,8 @@
           <div class="card-body">
             <form id="candidateRegisterForm" method="post" action="{{url('saveForm')}}">
               @csrf
-              <ol type="A">
-              <b><li>Candidate Details</li></b><br>
+              <ol type="A" style="padding-bottom: 10px;">
+              <b><li style="padding-bottom: 10px;">Candidate Details</li></b><br>
 
               <div class="form-group row">
                 <label for="fullName" class="col-sm-2 col-form-label text-dark" style="font-size:1.0rem">Full Name</label>
@@ -151,7 +148,7 @@
                 </div>
               </div>
 
-              <br><b><li>Proposer and Supporter Details</li></b><br>
+              <br><b><li style="padding-bottom: 10px;">Proposer and Supporter Details</li></b><br>
               <b><p>Proposer</p></b>
               <div class="form-group row">
                 <label for="proFullName" class="col-sm-2 col-form-label text-dark" style="font-size:1.0rem">Full Name</label>
@@ -206,7 +203,7 @@
         </div>
       </div>
     </div>
-    
+</div>
 </body>
 </html>
 @endsection

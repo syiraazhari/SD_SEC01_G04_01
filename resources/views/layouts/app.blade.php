@@ -25,26 +25,26 @@
             max-height: 22%;
             max-width: 22%;
         }
-        .navbar.navbar-default { margin-bottom: 0; }
 
     </style>
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-default navbar-expand-md navbar-light bg-white shadow-sm">
+        <div id="myHeader">
+            <nav class="navbar navbar-default navbar-expand-md navbar-light bg-white shadow-sm" style="padding:30px; height: 90px; width:100>
         
-            <div class="container">
+                <div class="container" style="margin:0;">
             
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
+                        
+                    </button>
                 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Left Side Of Navbar -->
-                    <img src="{{ asset('assets/img/logo-utmxjpmpp.png') }}">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <!-- Left Side Of Navbar -->
+                        <img src="{{ asset('assets/img/logo-utmxjpmpp.png') }}" style="margin:0">
 
-                    <!-- Right Side Of Navbar -->
-                    <ul class="navbar-nav ms-auto">
+                        <!-- Right Side Of Navbar -->
+                        <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
                                 <a class="nav-link" style="color: black; font-weight: normal;" href="{{ url('/') }}">{{ __('Home') }}</a>    
                             </li>
@@ -85,13 +85,28 @@
                                 @endif
                             </li>
                         @endguest
-                    </ul>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </div>
         @yield('content')
     </div>
         <!-- Scripts -->
-        <script src="{{ asset('frontend/js/bootstrap.bundle.min.js') }}" defer></script>
+    <script src="{{ asset('frontend/js/bootstrap.bundle.min.js') }}" defer></script>
+    <script>
+        window.onscroll = function() {myFunction()};
+
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+        } else {
+            header.classList.remove("sticky");
+            }
+        }
+    </script>
 </body>
 </html>

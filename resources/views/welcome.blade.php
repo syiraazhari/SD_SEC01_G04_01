@@ -33,15 +33,15 @@
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center">
-    <div class="container d-flex justify-content-between">
+    <div class="container d-flex justify-content-between" style="padding:10px; padding-left:30px; height: 90px; width:100>
 
       <div class="logo">
         <img src="{{ asset('assets/img/logo-utmxjpmpp.png') }}">
       </div>
 
-      <nav id="navbar" class="navbar">
+      <nav id="navbar" class="navbar" style="padding:30px">
         <ul>
-          <li class="dropdown"><a href="#hero"><span>HOME</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a href="#hero" style="padding:8px; font-size:14px;"><span>HOME</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               {{-- Dashboard Button // Only appear when user logged in --}}
               @if (Auth::check())
@@ -76,11 +76,11 @@
           </li>
                 @guest
                     @if (Route::has('login'))
-                         <li><a class="nav-link scrollto" href="{{ route('login') }}">{{ __('LOGIN') }}</a></li>
+                         <li><a class="nav-link scrollto" style="padding:8px; font-size:14px;" href="{{ route('login') }}">{{ __('LOGIN') }}</a></li>
                     @endif
 
                     @if (Route::has('register'))
-                         <li><a class="nav-link scrollto" href="{{ route('register') }}">{{ __('REGISTER') }}</a>
+                         <li><a class="nav-link scrollto" style="padding:8px; font-size:14px;" href="{{ route('register') }}">{{ __('REGISTER') }}</a>
                             
                     @endif
                         @else

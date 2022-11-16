@@ -20,19 +20,17 @@
     <link href="{{asset('admin/css/styleprofile.css') }}" rel="stylesheet">
     
     <style>
-      .admin-flex {
-        flex-wrap: wrap;
-        min-width: 0; 
-        justify-content:space-between;
-        flex-direction: column; }
       .icon-padding {
-			  padding-right:10px }
+			  padding-right:10px 
+      }
+
     </style>
 </head>
 
 <body style="height: auto">
 
 <div class="wrapper d-flex align-items-stretch" style="height: auto;">
+<div class="sidenavi">
 	<nav id="sidebar">
 		<div class="p-4 pt-5">
 	    <ul class="list-unstyled components mb-5">
@@ -87,6 +85,7 @@
 	        </ul>
 	    </div>
     </nav>
+    </div>
     @yield('content2')
 </div>
    

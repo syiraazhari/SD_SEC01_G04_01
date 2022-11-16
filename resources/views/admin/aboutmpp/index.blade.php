@@ -46,8 +46,8 @@
 </style>
 </head>
 <body>
-    <div class="row" style="margin:auto;">
-      
+<div class="content-margin">
+    <div class="row" style="padding-top: 0rem; margin: auto; width:100%">
         <div class="col-md-12">
 
             <div class="banner">
@@ -142,6 +142,7 @@
             </section>
         </div>
     </div> 
+</div>
 </body>
 </html>
 @endsection
