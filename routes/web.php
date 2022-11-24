@@ -22,11 +22,6 @@ Route::get('/', function () {
 
 Auth::routes(['verify' => true]);
 
-// Route::get('/voter', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-
-Route::get('testing', 'App\Http\Controllers\TestingController@index');
-
 Route::get('/status', 'App\Http\Controllers\StatusController@index');
 
 Route::get('/change-password', 'App\Http\Controllers\ChangePasswordController@index');
@@ -82,10 +77,7 @@ Route::middleware(['auth', 'isAdmin'])->group(function () {
     Route::get('adminpanel/profiles/edit/{id}', 'App\Http\Controllers\Admin\ProfileEditController@edit');
     Route::post('updateProfile/{id}', 'App\Http\Controllers\Admin\ProfileEditController@updateProfile');
 
-
     Route::get('adminpanel/votingpage', 'App\Http\Controllers\Admin\VotingPageController@index');
-
-    // Route::post('update-users','App\Http\Controllers\Admin\ProfileController@insert');
 
     Route::get('adminpanel/candidatelist', 'App\Http\Controllers\Admin\Candidate\CandidateListController@index');
     Route::get('adminpanel/viewtransaction', 'App\Http\Controllers\Admin\Candidate\ViewTransactionController@index');
@@ -109,7 +101,6 @@ Route::middleware(['auth', 'isAdmin'])->group(function () {
     Route::get('adminpanel/votingpage/votingmjiit', 'App\Http\Controllers\Admin\Voter\VotingMJIITController@index');
     Route::get('adminpanel/votingpage/votingspace', 'App\Http\Controllers\Admin\Voter\VotingSPACEController@index');
 
-    // Route::get('adminpanel/candidatepage/candidategeneral','App\Http\Controllers\Admin\Candidate\CandidateGeneralController@index');
     Route::get('adminpanel/candidatepage', 'App\Http\Controllers\Admin\Candidate\CandidatePage\CandidateGeneralController@index');
     Route::get('adminpanel/candidatepage/candidateahibs', 'App\Http\Controllers\Admin\Candidate\CandidatePage\CandidateAHIBSController@index');
     Route::get('adminpanel/candidatepage/candidateftir', 'App\Http\Controllers\Admin\Candidate\CandidatePage\CandidateFTIRController@index');
