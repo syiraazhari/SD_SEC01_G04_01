@@ -4,110 +4,91 @@
 
 # Installation Manual
 
-## Install Node.js and NPM
+## Installation
 
-**Step 1: Download the Installer**
-    
-Download the Windows Installer from [NodeJs official website](https://nodejs.org/en/download/). Make sure you have downloaded the latest version of NodeJs. It includes the NPM package manager.
+To run this program, you need to install these things:
+   
+- Node.js and NPM
+- XAMPP and PHP
+- Composer
 
-Here, we are choosing the 64-bit version of the Node.js installer.
+### Install Node.js and NPM
 
-![install-nodejs](https://github.com/syiraazhari/SD_SEC01_G04_01/blob/main/installation/nodejs/install-nodejs.png?raw=true)
-    
-The LTS (Long-term Support) version is highly recommended for you. After downloading the installer package, install it with a double-click. 
+Download the Windows Installer from [NodeJs official website](https://nodejs.org/en/download/).
 
-Now .msi file will be downloaded to your browser. Choose the desired location for that.
+Make sure you have downloaded the latest version of NodeJs. It includes the NPM package manager.
 
-**Step 2: Installing Node.js and NPM**
+![install-nodejs](https://github.com/syiraazhari/SD_SEC01_G04_01/blob/main/installer/img/install-nodejs.png?raw=true)
 
-![install-nodejs-2](https://github.com/syiraazhari/SD_SEC01_G04_01/blob/main/installation/nodejs/install-nodejs-2.png?raw=true)
+### Install XAMPP and PHP
 
-After choosing the path, double-click to install .msi binary files to initiate the installation process. Then give access to run the application.
+Download the Windows Installer from [XAMPP Official Website](https://www.apachefriends.org/download.html).
 
-You will get a welcome message on your screen and click the “Next” button. The installation process will start.
+Make sure you have downloaded the latest version of XAMPP. It includes PHP.
 
-- Choose the desired path where you want to install Node.js.
+![install-xampp](https://github.com/syiraazhari/SD_SEC01_G04_01/blob/main/installer/img/install-xampp.png?raw=true)
 
-![install-nodejs-3](https://github.com/syiraazhari/SD_SEC01_G04_01/blob/main/installation/nodejs/install-nodejs-3.png?raw=true)
+### Install Composer
 
-- By clicking on the Next button, you will get a custom page setup on the screen. Make sure to choose npm package manager, not the default of Node.js runtime. This way, we can install Node and NPM simultaneously.
+Download the Windows Installer from [Composer Official Website](https://getcomposer.org/download/).
 
-You should have 143MB of space to install Node.js and npm features.
+Make sure you have downloaded the latest version of Composer.
 
-The following features will be installed by default:
+![install-composer](https://github.com/syiraazhari/SD_SEC01_G04_01/blob/main/installer/img/install-composer.png?raw=true)
 
-- Node.js runtime
-- Npm package manager
-- Online documentation shortcuts
-- Add to Path
+## Run Locally
 
-![install-nodejs-4](https://github.com/syiraazhari/SD_SEC01_G04_01/blob/main/installation/nodejs/install-nodejs-4.png?raw=true)
+- Clone Github
 
-- The setup is ready to install Node and NPM. Click on the Install button.
+First, you need to clone this github repositories to `htdocs` folder inside xampp.
 
-![install-nodejs-5](https://github.com/syiraazhari/SD_SEC01_G04_01/blob/main/installation/nodejs/install-nodejs-5.png?raw=true)
-    
-**Step 3: Check Node.js and NPM version**
-- If you have a doubt whether you have installed everything correctly or not, let’s verify it with “Command Prompt”.
+![htdocs](https://github.com/syiraazhari/SD_SEC01_G04_01/blob/main/installer/img/htdocs.png?raw=true)
 
-![install-nodejs-6](https://github.com/syiraazhari/SD_SEC01_G04_01/blob/main/installation/nodejs/install-nodejs-6.png?raw=true)
+- Run XAMPP
 
-Command Prompt window will appear on the screen.
+Then, run XAMPP Control Panel and start `apache` and `MySQL` actions.
 
-To confirm Node installation, type `node -v` command.
+![run-xampp](https://github.com/syiraazhari/SD_SEC01_G04_01/blob/main/installer/img/run-xampp.png?raw=true)
 
-To confirm NPM installation, type `npm -v` command.
-    
-![install-nodejs-7](https://github.com/syiraazhari/SD_SEC01_G04_01/blob/main/installation/nodejs/install-nodejs-7.png?raw=true)
+- Open Terminal
 
-## Install XAMPP
+For this example, we will using Visual Studio Code Terminal.
 
-**Step 1: Download the installer**
+Click on the Terminal tab on top of Visual Studio Code and select `New Terminal`.
 
-Download the Windows Installer from [XAMPP Official Website](https://www.apachefriends.org/download.html). Make sure you have downloaded the latest version of XAMPP.
+A new terminal will open.
 
-Here, we are choosing the 64-bit version of the XAMPP installer.
+Type `php artisan migrate` to migrate the database. You can view the new database through `Admin` button on XAMPP Control Panel.
 
-![install-xampp](https://github.com/syiraazhari/SD_SEC01_G04_01/blob/main/installation/nodejs/install-xampp.png?raw=true)
+Type `php artisan serve` to run your website locally.
 
-After the download of the installer package, install it with a double-click on it. 
+![visual-studio-code](https://github.com/syiraazhari/SD_SEC01_G04_01/blob/main/installer/img/visual-studio-code.png?raw=true)
 
-Now .msi file will be downloaded to your browser. Choose the desired location for that.
+Follow link by `Control + Click` on the link.
 
-**Step 2:Installing XAMPP**
-
-![install-xampp-2](https://github.com/syiraazhari/SD_SEC01_G04_01/blob/main/installation/nodejs/install-xampp-2.png?raw=true)
-
-
-
-
-
-## Link of Github
+# Link of Github
 [Github](https://github.com/syiraazhari/SD_SEC01_G04_01)
 
-## Link of the Website
-[UndiUTMKL]()
+# Link of the Website
+[UndiUTMKL](https://undimpputmkl.tech)
 
-## List Of Username and Password
+# List Of Username and Password
 
-### Admin User
+## Admin User
 
     Username : muhd.izmeer@gmail.com
 
-    Password : 
+    Password : 123456789
 
-### Candidate User
+## Candidate User
 
     Username : faizul@graduate.utm.my
 
-    Password : 
+    Password : 123456789
 
-### Voter User
-
-    Username : iskandar@graduate.utm.my
-
-    Password : 
+## Voter User
 
     Username : muhammadizmeer@graduate.utm.my
 
-    Password : 
+    Password : 123456789
+	
