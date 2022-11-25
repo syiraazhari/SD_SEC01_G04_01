@@ -58,7 +58,11 @@ Click on the Terminal tab on top of Visual Studio Code and select `New Terminal`
 
 A new terminal will open.
 
-Type `php artisan migrate` to migrate the database. You can view the new database through `Admin` button on XAMPP Control Panel.
+Type `php artisan migrate` to migrate the database.
+
+You can view the new database through `Admin` button on XAMPP Control Panel.
+
+![phpmyadmin-database](https://github.com/syiraazhari/SD_SEC01_G04_01/blob/main/installer/img/phpmyadmin-database.png?raw=true)
 
 Type `php artisan serve` to run your website locally.
 
@@ -66,11 +70,13 @@ Type `php artisan serve` to run your website locally.
 
 Follow link by `Control + Click` on the link.
 
+You're done!. You are now hosting your website locally.
+
 # Link of Github
 [Github](https://github.com/syiraazhari/SD_SEC01_G04_01)
 
 # Link of the Website
-[UndiUTMKL](https://undimpputmkl.tech)
+[UndiMPPUTMKL](https://undimpputmkl.tech)
 
 # List Of Username and Password
 
